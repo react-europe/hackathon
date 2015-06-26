@@ -7,7 +7,7 @@ We have two challenge, you need to pick one:
 - Challenge #1: build a mobile app using the meetup api that shows all reactjs meetup around the world, prize is a GoPro hero 4 sponsored by [RedBadger](http://red-badger.com/)
 - Challenge #2: build an app using [touchstone.js](http://touchstonejs.io/), prize is €700 credit on Apple Store.
 
-See this blog post for more details on the challenges.
+[See our blog post for more details on the challenges](https://medium.com/@patcito/hackathon-challenges-are-in-you-can-start-right-now-4905874b0ae2).
 
 Once the theme is posted, you will need to:
 - fork this repo.
