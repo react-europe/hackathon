@@ -44,3 +44,6 @@ ant-build
 ant-gen
 gen
 out
+
+# Remove build output
+www
