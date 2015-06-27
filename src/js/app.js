@@ -9,6 +9,8 @@ var config = require('./config');
 var views = {
 
   // app
+  'start': require('./views/start'),
+
   'home': require('./views/home'),
 
   // components
@@ -41,7 +43,7 @@ var App = React.createClass({
   mixins: [Touchstone.createApp(views)],
 
   getInitialState: function () {
-    var startView = 'home';
+    var startView = 'start';
 
     // resort to #viewName if it exists
     if (window.location.hash) {
@@ -59,7 +61,7 @@ var App = React.createClass({
   },
 
   gotoDefaultView: function () {
-    this.showView('home', 'fade');
+    this.showView('start', 'fade');
   },
 
   render: function () {
