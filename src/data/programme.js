@@ -1,6 +1,7 @@
 module.exports = [
     {
         title: "Keynote",
+        time: 'Thu Jul 02 2015 10:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Christopher",
             lastName: "Chedeau",
@@ -12,6 +13,7 @@ module.exports = [
     },
     {
         title: "Inline Styles: themes, media queries, contexts, and when it's best to use CSS",
+        time: 'Thu Jul 02 2015 10:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Michael",
             lastName: "Chan",
@@ -23,6 +25,7 @@ module.exports = [
     },
     {
         title: "Flux over the Wire",
+        time: 'Thu Jul 02 2015 11:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Elie",
             lastName: "Rotenberg",
@@ -34,6 +37,7 @@ module.exports = [
     },
     {
         title: "React Native: Building Fluid User Experiences",
+        time: 'Thu Jul 02 2015 12:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Spencer",
             lastName: "Ahrens",
@@ -44,6 +48,7 @@ module.exports = [
     },
     {
         title: "Exploring GraphQL",
+        time: 'Thu Jul 02 2015 14:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Lee",
             lastName: "Byron",
@@ -55,6 +60,7 @@ module.exports = [
     },
     {
         title: "Don't Rewrite, React!",
+        time: 'Thu Jul 02 2015 14:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Ryan",
             lastName: "Florence",
@@ -66,6 +72,7 @@ module.exports = [
     },
     {
         title: "Live React: Hot Reloading with Time Travel",
+        time: 'Thu Jul 02 2015 15:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Dan",
             lastName: "Abramov",
@@ -77,6 +84,7 @@ module.exports = [
     },
     {
         title: "Relay: An Application Framework For React",
+        time: 'Thu Jul 02 2015 16:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Joseph",
             lastName: "Savona",
@@ -88,6 +96,7 @@ module.exports = [
     },
     {
         title: "Back to Text UI",
+        time: 'Thu Jul 02 2015 17:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Mikhail",
             lastName: "Davydov",
@@ -99,6 +108,7 @@ module.exports = [
     },
     {
         title: "DOM as a Second-class Citizen",
+        time: 'Thu Jul 02 2015 17:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Sebastian",
             lastName: "Markbåge",
@@ -110,9 +120,11 @@ module.exports = [
     },
     {
         title: "Lightning Talks"
+        time: 'Thu Jul 02 2015 18:00:00 UTC+0200 (CEST)'
     },
     {
         title: "Improving Your Workflow With Code Transformation",
+        time: 'Thu Jul 03 2015 10:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Sebastian",
             lastName: "McKenzie",
@@ -124,6 +136,7 @@ module.exports = [
     },
     {
         title: "The State of Animation in React",
+        time: 'Thu Jul 03 2015 10:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Cheng",
             lastName: "Lou",
@@ -134,6 +147,7 @@ module.exports = [
     },
     {
         title: "Simplifying the data layer",
+        time: 'Thu Jul 03 2015 11:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Kevin",
             lastName: "Robinson",
@@ -145,6 +159,7 @@ module.exports = [
     },
     {
         title: "Going Mobile with React",
+        time: 'Thu Jul 03 2015 12:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Jed",
             lastName: "Watson",
@@ -156,6 +171,7 @@ module.exports = [
     },
     {
         title: "React Router",
+        time: 'Thu Jul 03 2015 14:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Michael",
             lastName: "Jackson",
@@ -167,6 +183,7 @@ module.exports = [
     },
     {
         title: "Creating a GraphQL Server",
+        time: 'Thu Jul 03 2015 14:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Nick",
             lastName: "Schrock",
@@ -186,6 +203,7 @@ module.exports = [
     },
     {
         title: "Isomorphic Flux",
+        time: 'Thu Jul 03 2015 15:30:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Michael",
             lastName: "Ridgway",
@@ -197,6 +215,7 @@ module.exports = [
     },
     {
         title: "Building submarines that don't leak",
+        time: 'Thu Jul 03 2015 16:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Aria",
             lastName: "Buckles",
@@ -208,6 +227,7 @@ module.exports = [
     },
     {
         title: "How React & Flux Turn Applications Into Extensible Platforms",
+        time: 'Thu Jul 03 2015 17:00:00 UTC+0200 (CEST)'
         speakers: [{
             firstName: "Evan Morikawa ",
             lastName: "Evan Morikawa ",
@@ -224,5 +244,9 @@ module.exports = [
             github: "https://github.com/bengotow",
             pic: "https://www.react-europe.org/images/ben-gotow.jpg"
         }]
+    },
+    {
+        title: "Q and A",
+        time: 'Thu Jul 03 2015 17:30:00 UTC+0200 (CEST)'
     }
 ]
