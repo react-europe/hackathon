@@ -4,6 +4,8 @@ var Navigation = require('touchstonejs').Navigation;
 var Link = require('touchstonejs').Link;
 var UI = require('touchstonejs').UI;
 
+var MUI = require('../myui');
+
 var Timers = require('react-timers');
 
 module.exports = React.createClass({
@@ -51,11 +53,12 @@ module.exports = React.createClass({
     },
 
     render: function () {
+
         return (
             <UI.View>
                 <UI.Headerbar type="default" label="React Europe 2015" />
                 <UI.ViewContent grow scrollable>
-                    <div className="panel-header text-caps">Bars</div>
+                    <div className="panel-header text-caps">Now</div>
                     <div className="panel">
                         <Link component="div" to="component-headerbar"
                             viewTransition="show-from-right"
@@ -78,7 +81,7 @@ module.exports = React.createClass({
                             <div className="item-inner">Footer Bar</div>
                         </Link>
                     </div>
-                    <div className="panel-header text-caps">Lists</div>
+                    <div className="panel-header text-caps">Next</div>
                     <div className="panel">
                         <Link component="div" to="component-simple-list"
                             viewTransition="show-from-right"
@@ -90,49 +93,20 @@ module.exports = React.createClass({
                             className="list-item is-tappable">
                             <div className="item-inner">Complex List</div>
                         </Link>
-                        {/* This is covered in other components
-                        <Link component="div" to="component-categorised-list"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Categorised List</div>
-                        </Link>*/}
                     </div>
-                    <div className="panel-header text-caps">UI Elements</div>
+                    <div className="panel-header text-caps">Time Travel!</div>
                     <div className="panel">
-                        <Link component="div" to="component-toggle"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Toggle</div>
-                        </Link>
-                        <Link component="div" to="component-form"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Form Fields</div>
-                        </Link>
-                        <Link component="div" to="component-passcode"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Passcode / Keypad</div>
-                        </Link>
-                        <Tappable component="div" onTap={this.showLoadingPopup}
-                            className="list-item is-tappable">
-                            <div className="item-inner">Loading Spinner</div>
-                        </Tappable>
-                    </div>
-                    <div className="panel-header text-caps">Application State</div>
-                    <div className="panel">
-                        <Link component="div" to="transitions"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">View Transitions</div>
-                        </Link>
-                        <Link component="div" to="component-feedback"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">View Feedback</div>
-                        </Link>
+                        <MUI.Range startIcon="ion-arrow-left-b"
+                            endIcon="ion-arrow-right-b" />
                     </div>
                 </UI.ViewContent>
+
+                <UI.Footerbar type="default">
+                    <UI.FooterbarButton active label="Now" icon="ion-flash" />
+                    <UI.FooterbarButton label="Programme" icon="ion-mic-a" />
+                    <UI.FooterbarButton label="Buzz" icon="ion-ios7-pulse-strong" />
+                    <UI.FooterbarButton label="Explore" icon="ion-compass" />
+                </UI.Footerbar>
             </UI.View>
         );
     }
