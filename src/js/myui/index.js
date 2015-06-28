@@ -1,4 +1,5 @@
 
 module.exports = {
-    Range : require('./Range')
+    Range: require('./Range'),
+    BackgroundPanel: require('./BackgroundPanel')
 };

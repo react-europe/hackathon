@@ -60,26 +60,26 @@ module.exports = React.createClass({
                 <UI.ViewContent grow scrollable>
                     <div className="panel-header text-caps">Now</div>
                     <div className="panel">
-                        <Link component="div" to="component-headerbar"
+                        <div className="rebg" style={{
+                            width: "100%",
+                            minHeight: "auto",
+                            height: "auto",
+                            }} >
+
+                        <Link component="div"
                             viewTransition="show-from-right"
                             className="list-item is-tappable">
-                            <div className="item-inner">Header Bar</div>
+                            <div className="item-inner">Getting there</div>
                         </Link>
                         <Link component="div" to="component-headerbar-search"
                             viewTransition="show-from-right"
                             className="list-item is-tappable">
-                            <div className="item-inner">Header Bar Search</div>
+                            <div className="item-inner">What people are saying...</div>
                         </Link>
-                        <Link component="div" to="component-alertbar"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Alert Bar</div>
-                        </Link>
-                        <Link component="div" to="component-footerbar"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Footer Bar</div>
-                        </Link>
+
+
+                        </div>
+
                     </div>
                     <div className="panel-header text-caps">Next</div>
                     <div className="panel">

@@ -7,6 +7,13 @@
 @import "views/passcode.less";
 @import "demo.less";
 
+
+@re-blue: rgb(70, 86, 160);
+@re-yellow: #FDFD00;
+@re-light-blue: #3498DB;
+@re-orange: #EC971F;
+@re-grey: #F5F5F5;
+
 .Range-input {
     .display-flex();
 //    padding: 12px 0;
@@ -28,5 +35,22 @@
     span::before {
         font-size: @ionicons-size-large;
         padding: 0 5px;
+    }
+}
+
+.rebg {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-image: url(../img/reacteurope.png);
+        opacity: 0.6;
+        background-position: 50% 50%;
+        //background-size: contain;
+        background-repeat: no-repeat;
     }
 }
