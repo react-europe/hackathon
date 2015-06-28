@@ -30,7 +30,7 @@ var ComplexListItem = React.createClass({
         return (
             <Link viewTransition="show-from-right"
                 className="list-item" component="div">
-                <UI.ItemMedia avatar={avatar}
+                <MUI.FlipMedia avatar={avatar}
                     avatarInitials={initials} />
 
                 <div className="item-inner" style={{fontSize: "90%"}}>
