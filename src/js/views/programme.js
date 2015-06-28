@@ -26,15 +26,15 @@ var ComplexListItem = React.createClass({
         return (
             <Link viewTransition="show-from-right"
                 className="list-item" component="div">
-                <UI.ItemMedia avatar={speaker ? this.props.event.speakers[0].pic : undefined}
+                <UI.ItemMedia avatar={
+                    speaker ?
+                        this.props.event.speakers[0].pic : "img/reacteurope.png"}
                     avatarInitials={initials} />
                 <div className="item-inner">
                     <div className="item-content">
                         <div className="item-title">{this.props.event.title}</div>
                         <div className="item-subtitle">
-                            {[
-                            firstName,
-                            lastName].join(' ')}
+                            {[firstName, lastName].join(' ')}
                         </div>
                     </div>
                     <UI.ItemNote type="default"
@@ -64,8 +64,6 @@ var ComplexList = React.createClass({
                 </div>
             </div>
         );
-
-        // return (<div/>)
     }
 });
 
@@ -84,6 +82,12 @@ module.exports = React.createClass({
                 <UI.ViewContent grow scrollable>
                     <ComplexList events={Events} />
                 </UI.ViewContent>
+                <UI.Footerbar type="default">
+                    <UI.FooterbarButton showView="start" viewTransition="show-from-right" label="Now" icon="ion-flash" />
+                    <UI.FooterbarButton active label="Programme" icon="ion-mic-a" />
+                    <UI.FooterbarButton label="Buzz" icon="ion-ios7-pulse-strong" />
+                    <UI.FooterbarButton label="Explore" icon="ion-compass" />
+                </UI.Footerbar>
             </UI.View>
         );
     }
