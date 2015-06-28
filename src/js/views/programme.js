@@ -20,19 +20,20 @@ var ComplexListItem = React.createClass({
             date = new Date(this.props.event.time),
             language = navigator.language || 'en-US',
             time = date.toLocaleTimeString(
-                language, {hour: '2-digit', minute:'2-digit'}),
+                language, {hour: '2-digit', minute: '2-digit'}),
                     //http://stackoverflow.com/a/20430558
             initials = firstName.charAt(0).toUpperCase() +
-                lastName.charAt(0).toUpperCase();
+                lastName.charAt(0).toUpperCase(),
+            avatar = speaker ?
+                        this.props.event.speakers[0].pic : "img/reacteurope.png";
 
         return (
             <Link viewTransition="show-from-right"
                 className="list-item" component="div">
-                <UI.ItemMedia avatar={
-                    speaker ?
-                        this.props.event.speakers[0].pic : "img/reacteurope.png"}
+                <UI.ItemMedia avatar={avatar}
                     avatarInitials={initials} />
-                <div className="item-inner" style={{fontSize:"90%"}}>
+
+                <div className="item-inner" style={{fontSize: "90%"}}>
                     <div style={{padding: "0 4px"}} className="item-content">
                         {this.props.event.title}
 
@@ -49,7 +50,7 @@ var ComplexListItem = React.createClass({
                 </div>
             </Link>
         );
-    }
+    },
 });
 
 var ComplexList = React.createClass({
@@ -68,7 +69,7 @@ var ComplexList = React.createClass({
                 </div>
             </div>
         );
-    }
+    },
 });
 
 module.exports = React.createClass({
@@ -94,5 +95,5 @@ module.exports = React.createClass({
                 </UI.Footerbar>
             </UI.View>
         );
-    }
+    },
 });
