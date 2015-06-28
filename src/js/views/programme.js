@@ -3,12 +3,10 @@ var React = require('react'),
     Tappable = require('react-tappable'),
     Navigation = require('touchstonejs').Navigation,
     Link = require('touchstonejs').Link,
-    UI = require('touchstonejs').UI;
+    UI = require('touchstonejs').UI,
+    MUI = require('../myui');
 
 var Events = require('../../data/programme');
-
-console.log(Events);
-
 
 var ComplexListItem = React.createClass({
     mixins: [Navigation],
@@ -33,17 +31,18 @@ var ComplexListItem = React.createClass({
                         this.props.event.speakers[0].pic : "img/reacteurope.png"}
                     avatarInitials={initials} />
                 <div className="item-inner">
-                    <div className="item-content">
+                    <div style={{padding: "0 4px"}} className="item-content">
                         {this.props.event.title}
-                        <div style={{textAlign: 'right'}}>
-                        <div className="item-subtitle">
-                            {[firstName, lastName].join(' ')}
-                        </div>
-                        <div>{time}</div>
-                        </div>
+
                     </div>
-                    <UI.ItemNote type="default"
-                        icon="ion-chevron-right" />
+                    <MUI.ItemNote>
+                        <div style={{textAlign: 'right'}}>
+                        <div className="item-subtitle">{firstName}
+                        </div>
+                        <div className="item-subtitle">{lastName}</div>
+                        <div className="item-subtitle">{time}</div>
+                        </div>
+                        </MUI.ItemNote>
                 </div>
             </Link>
         );

@@ -230,8 +230,8 @@ module.exports = [
         title: "How React & Flux Turn Applications Into Extensible Platforms",
         time: 'Thu Jul 03 2015 17:00:00 UTC+0200 (CEST)',
         speakers: [{
-            firstName: "Evan Morikawa ",
-            lastName: "Evan Morikawa ",
+            firstName: "Evan",
+            lastName: "Morikawa ",
             twitter: "https://twitter.com/E0M",
             linkedin: "https://www.linkedin.com/in/evanmorikawa",
             github: "https://github.com/emorikawa",
