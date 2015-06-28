@@ -22,6 +22,10 @@ module.exports = React.createClass({
     },
 
     render: function () {
+        // would normally use a ::before pseudo element
+        // http://stackoverflow.com/a/13509036
+        // 'react way' described here:
+        // http://stackoverflow.com/a/28269950
         var before = <span style={{
                     content: "",
                     position: 'absolute',
