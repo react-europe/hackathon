@@ -36,7 +36,9 @@ var views = {
 
   // details view
   'details': require('./views/details'),
-  'radio-list': require('./views/radio-list')
+  'radio-list': require('./views/radio-list'),
+
+  'programme': require('./views/programme'),
 };
 
 var App = React.createClass({

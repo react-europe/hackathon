@@ -26,6 +26,9 @@ module.exports = React.createClass({
         this.setState({value: event.target.value});
     },
 
+    // TODO styling:
+    // http://ionicframework.com/docs/components/#range
+    // http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html
     render: function () {
 
         var outerClassName = classnames('Range-input', this.props.className,
