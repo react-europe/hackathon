@@ -17,6 +17,8 @@
     "underscore": "^1.7.0"
   },
   "devDependencies": {
+    "eslint": "^0.24.0",
+    "eslint-plugin-react": "^2.6.1",
     "gulp": "^3.8.10",
     "happiness": "*",
     "touchstonejs-tasks": "^0.2.0"

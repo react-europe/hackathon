@@ -1,0 +1,26 @@
+{
+  "parser": "espree",
+
+  "env": {
+    "browser": true,
+  },
+
+  "rules": {
+    "quotes" : 0,
+    "strict": [2, "never"],
+    "comma-dangle": [2, "always-multiline"]
+  },
+
+  "ecmaFeatures": {
+    "jsx": true
+  },
+
+  "plugins": [
+      "react"
+  ],
+
+  "globals": {
+    "module" : false,
+    "require" : false,
+  }
+}
