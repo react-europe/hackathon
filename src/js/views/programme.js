@@ -27,11 +27,13 @@ var ComplexListItem = React.createClass({
             avatar = speaker ?
                         this.props.event.speakers[0].pic : "img/reacteurope.png";
 
+        var maybeMedia = this.props.index === 0 ? <MUI.FlipMedia avatar={avatar}
+                    avatarInitials={initials}/> : <span/>;
+
         return (
             <Link viewTransition="show-from-right"
                 className="list-item" component="div">
-                <MUI.FlipMedia avatar={avatar}
-                    avatarInitials={initials} />
+                {maybeMedia}
 
                 <div className="item-inner" style={{fontSize: "90%"}}>
                     <div style={{padding: "0 4px"}} className="item-content">
@@ -59,7 +61,7 @@ var ComplexList = React.createClass({
 
         this.props.events.forEach(function (event, i) {
             var key = 'event-' + i;
-            events.push(React.createElement(ComplexListItem, { key: key, event: event }));
+            events.push(React.createElement(ComplexListItem, { index: i, key: key, event: event }));
         });
 
         return (

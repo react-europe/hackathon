@@ -12,7 +12,7 @@ module.exports = React.createClass({
     },
 
     render: function () {
-        var className = classnames({
+        var className = classnames('flip-container', {
             'item-media': true,
             'is-icon': this.props.icon,
             'is-avatar': this.props.avatar || this.props.avatarInitials,
@@ -24,16 +24,16 @@ module.exports = React.createClass({
             <div className={'item-icon ' + this.props.icon} />
         ) : null;
         var avatar = this.props.avatar || this.props.avatarInitials ? (
-            <div className={classnames('flip-container')}>
+
                 <div className={classnames("item-avatar", 'flipper')}> {this.props.avatar ?
                     <img className="front" src={this.props.avatar} /> :
                         this.props.avatarInitials}
 
                     {this.props.avatar ?
-                    <img className="back" src={this.props.avatar} /> :
+                    <img className="back" src='img/reacteurope.png' /> :
                         this.props.avatarInitials}
                 </div>
-            </div>
+
         ) : null;
         var thumbnail = this.props.thumbnail ? (
             <div className="item-thumbnail">
