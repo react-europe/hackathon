@@ -60,25 +60,24 @@ module.exports = React.createClass({
                 <UI.ViewContent grow scrollable>
                     <div className="panel-header text-caps">Now</div>
                     <div className="panel">
-                        <div className="rebg" style={{
-                            width: "100%",
-                            minHeight: "auto",
-                            height: "auto",
-                            }} >
 
-                        <Link component="div"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">Getting there</div>
-                        </Link>
-                        <Link component="div" to="component-headerbar-search"
-                            viewTransition="show-from-right"
-                            className="list-item is-tappable">
-                            <div className="item-inner">What people are saying...</div>
-                        </Link>
+                        <MUI.BackgroundPanel
+                            opacity={0.6}
+                            backgroundImage="url(img/reacteurope.png)">
 
+                            <Link component="div"
+                                viewTransition="show-from-right"
+                                className="list-item is-tappable">
+                                <div className="item-inner">Getting there</div>
+                            </Link>
+                            <Link component="div" to="component-headerbar-search"
+                                viewTransition="show-from-right"
+                                className="list-item is-tappable">
+                                <div className="item-inner">What people are saying...</div>
+                            </Link>
 
-                        </div>
+                        </MUI.BackgroundPanel>
+
 
                     </div>
                     <div className="panel-header text-caps">Next</div>

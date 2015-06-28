@@ -2,31 +2,39 @@ var classnames = require('classnames');
 var React = require('react/addons');
 
 module.exports = React.createClass({
-    displayName: 'Range',
+    displayName: 'BackgroundPanel',
 
     propTypes: {
-
+        backgroundSize: React.PropTypes.oneOf(['contain', 'auto']),
+        backgroundRepeat: React.PropTypes.oneOf(['no-repeat']),
+        backgroundPosition: React.PropTypes.string,
+        backgroundImage: React.PropTypes.string.isRequired,
+        opacity: React.PropTypes.number,
     },
 
     getDefaultProps: function () {
         return {
+            backgroundSize: 'auto',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: "50% 50%",
+            opacity: 1,
         };
     },
 
     render: function () {
         var before = <span style={{
                     content: "",
-        position: absolute,
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0,
-        zIndex: 1,
-        backgroundImage: "url(img/reacteurope.png)",
-        opacity: 0.6,
-        backgroundPosition: "50% 50%",
-        //background-size: contain;
-        backgroundRepeat: "no-repeat",
+                    position: 'absolute',
+                    top: 0,
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    zIndex: 1,
+                    backgroundImage: this.props.backgroundImage,
+                    opacity: this.props.opacity,
+                    backgroundPosition: this.props.backgroundPosition,
+                    backgroundSize: this.props.backgroundSize,
+                    backgroundRepeat: this.props.backgroundRepeat,
         }}/>
 
         return <div style={{
