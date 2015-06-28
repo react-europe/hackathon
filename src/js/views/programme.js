@@ -9,6 +9,7 @@ var Events = require('../../data/programme');
 
 console.log(Events);
 
+
 var ComplexListItem = React.createClass({
     mixins: [Navigation],
 
@@ -19,9 +20,10 @@ var ComplexListItem = React.createClass({
             firstName = speaker ? speaker.firstName : '',
             lastName = speaker ? speaker.lastName : '',
             date = new Date(this.props.event.time),
-            time = date.getHours() + ":" + date.getMinutes(),
+            language = navigator.language || 'en-US',
+            time = date.toLocaleTimeString(language, {hour: '2-digit', minute:'2-digit'}), //http://stackoverflow.com/a/20430558
             initials = firstName.charAt(0).toUpperCase() +
-            lastName.charAt(0).toUpperCase();
+                lastName.charAt(0).toUpperCase();
 
         return (
             <Link viewTransition="show-from-right"
@@ -32,13 +34,15 @@ var ComplexListItem = React.createClass({
                     avatarInitials={initials} />
                 <div className="item-inner">
                     <div className="item-content">
-                        <div className="item-title">{this.props.event.title}</div>
+                        {this.props.event.title}
+                        <div style={{textAlign: 'right'}}>
                         <div className="item-subtitle">
                             {[firstName, lastName].join(' ')}
                         </div>
+                        <div>{time}</div>
+                        </div>
                     </div>
                     <UI.ItemNote type="default"
-                        label={time}
                         icon="ion-chevron-right" />
                 </div>
             </Link>
@@ -48,13 +52,11 @@ var ComplexListItem = React.createClass({
 
 var ComplexList = React.createClass({
     render: function () {
-
         var events = [];
-        console.log(this.props.events)
 
         this.props.events.forEach(function (event, i) {
-            event.key = 'event-' + i;
-            events.push(React.createElement(ComplexListItem, { event: event }));
+            var key = 'event-' + i;
+            events.push(React.createElement(ComplexListItem, { key: key, event: event }));
         });
 
         return (

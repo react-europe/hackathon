@@ -16,3 +16,11 @@ Once the theme is posted, you will need to:
 - you will still be able to update your pull request until July 1st 4pm UTC just like people attending the hackathon at Mozilla office.
 **REQUIRED: In your pull request title, make to specify "challenge RedBadger" or "challenge Thinkmill" at the start of your PR's title. What could help: screenshots and a screencast in your PR, they can be posted as commets after the deadline**.
 - The two winners will get 5 minutes each to present their app at the start of the lightning session on the 2nd of July at 6pm.
+
+# Ideas:
+
+* Twitter streams that mention conference speakers and topics close to speakers.
+
+* Foursquare mashup with useful locations near to conference.
+
+
