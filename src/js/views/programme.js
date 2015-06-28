@@ -32,7 +32,7 @@ var ComplexListItem = React.createClass({
                     speaker ?
                         this.props.event.speakers[0].pic : "img/reacteurope.png"}
                     avatarInitials={initials} />
-                <div className="item-inner">
+                <div className="item-inner" style={{fontSize:"90%"}}>
                     <div style={{padding: "0 4px"}} className="item-content">
                         {this.props.event.title}
 
@@ -44,7 +44,8 @@ var ComplexListItem = React.createClass({
                         <div className="item-subtitle">{lastName}</div>
                         <div style={{paddingTop: "2px"}} className="item-subtitle">{time}</div>
                         </div>
-                        </MUI.ItemNote>
+                    </MUI.ItemNote>
+                    <UI.ItemNote icon="ion-chevron-right"/>
                 </div>
             </Link>
         );
