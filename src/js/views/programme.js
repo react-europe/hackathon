@@ -40,7 +40,7 @@ var ComplexListItem = React.createClass({
                         <div className="item-subtitle">{firstName}
                         </div>
                         <div className="item-subtitle">{lastName}</div>
-                        <div className="item-subtitle">{time}</div>
+                        <div style={{paddingTop: "2px"}} className="item-subtitle">{time}</div>
                         </div>
                         </MUI.ItemNote>
                 </div>
