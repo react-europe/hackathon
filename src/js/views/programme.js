@@ -19,7 +19,9 @@ var ComplexListItem = React.createClass({
             lastName = speaker ? speaker.lastName : '',
             date = new Date(this.props.event.time),
             language = navigator.language || 'en-US',
-            time = date.toLocaleTimeString(language, {hour: '2-digit', minute:'2-digit'}), //http://stackoverflow.com/a/20430558
+            time = date.toLocaleTimeString(
+                language, {hour: '2-digit', minute:'2-digit'}),
+                    //http://stackoverflow.com/a/20430558
             initials = firstName.charAt(0).toUpperCase() +
                 lastName.charAt(0).toUpperCase();
 
