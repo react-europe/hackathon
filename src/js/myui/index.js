@@ -2,5 +2,6 @@
 module.exports = {
     Range: require('./Range'),
     BackgroundPanel: require('./BackgroundPanel'),
-    ItemNote: require('./ItemNote')
+    ItemNote: require('./ItemNote'),
+    FlipMedia: require('./FlipMedia'),
 };
