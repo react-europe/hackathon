@@ -7,14 +7,14 @@ module.exports = React.createClass({
     propTypes: {
         initialValue: React.PropTypes.number,
         minValue: React.PropTypes.number,
-        maxValue: React.PropTypes.number
+        maxValue: React.PropTypes.number,
     },
 
     getDefaultProps: function () {
         return {
             initialValue: 0,
             minValue: 0,
-            maxValue: 100
+            maxValue: 100,
         };
     },
 
@@ -35,7 +35,7 @@ module.exports = React.createClass({
             this.props.position, this.props.startIcon, {
         });
 
-        var innerClassName = classnames(this.props.endIcon)
+        var innerClassName = classnames(this.props.endIcon);
 
         return <div className={outerClassName}>
 
@@ -45,6 +45,6 @@ module.exports = React.createClass({
                     min={this.props.minValue} max={this.props.maxValue} />
 
                 <span className={innerClassName} />
-        </div>
-    }
+        </div>;
+    },
 });
