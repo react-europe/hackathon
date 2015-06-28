@@ -4,14 +4,22 @@ var React = require('react/addons');
 module.exports = React.createClass({
     displayName: 'Range',
 
+    propTypes: {
+        initialValue: React.PropTypes.number,
+        minValue: React.PropTypes.number,
+        maxValue: React.PropTypes.number
+    },
 
     getDefaultProps: function () {
         return {
-
+            initialValue: 0,
+            minValue: 0,
+            maxValue: 100
         };
     },
+
     getInitialState: function() {
-        return {value: 0};
+        return {value: this.props.initialValue};
     },
 
     handleChange: function() {
@@ -29,9 +37,9 @@ module.exports = React.createClass({
         return <div className={outerClassName}>
 
                <input
-                     type="range" onChange={this.handleChange}
+                    type="range" onChange={this.handleChange}
                     value={this.state.value}
-                     min="0" max="100" />
+                    min={this.props.minValue} max={this.props.maxValue} />
 
                 <span className={innerClassName} />
         </div>
