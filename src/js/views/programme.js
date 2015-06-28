@@ -5,25 +5,41 @@ var React = require('react'),
     Link = require('touchstonejs').Link,
     UI = require('touchstonejs').UI;
 
-var People = require('../../data/people');
+var Events = require('../../data/programme');
+
+console.log(Events);
 
 var ComplexListItem = React.createClass({
     mixins: [Navigation],
 
     render: function () {
 
-        var initials = this.props.user.name.first.charAt(0).toUpperCase() +
-            this.props.user.name.last.charAt(0).toUpperCase();
+        var speakers = this.props.event.speakers,
+            speaker = speakers && speakers.length > 0 ? speakers[0] : undefined,
+            firstName = speaker ? speaker.firstName : '',
+            lastName = speaker ? speaker.lastName : '',
+            date = new Date(this.props.event.time),
+            time = date.getHours() + ":" + date.getMinutes(),
+            initials = firstName.charAt(0).toUpperCase() +
+            lastName.charAt(0).toUpperCase();
 
         return (
-            <Link to="details" viewTransition="show-from-right" params={{ user: this.props.user, prevView: 'component-complex-list' }} className="list-item" component="div">
-                <UI.ItemMedia avatar={this.props.user.img} avatarInitials={initials} />
+            <Link viewTransition="show-from-right"
+                className="list-item" component="div">
+                <UI.ItemMedia avatar={speaker ? this.props.event.speakers[0].pic : undefined}
+                    avatarInitials={initials} />
                 <div className="item-inner">
                     <div className="item-content">
-                        <div className="item-title">{[this.props.user.name.first, this.props.user.name.last].join(' ')}</div>
-                        <div className="item-subtitle">{this.props.user.location}</div>
+                        <div className="item-title">{this.props.event.title}</div>
+                        <div className="item-subtitle">
+                            {[
+                            firstName,
+                            lastName].join(' ')}
+                        </div>
                     </div>
-                    <UI.ItemNote type="default" label={this.props.user.joinedDate.slice(-4)} icon="ion-chevron-right" />
+                    <UI.ItemNote type="default"
+                        label={time}
+                        icon="ion-chevron-right" />
                 </div>
             </Link>
         );
@@ -33,20 +49,23 @@ var ComplexListItem = React.createClass({
 var ComplexList = React.createClass({
     render: function () {
 
-        var users = [];
+        var events = [];
+        console.log(this.props.events)
 
-        this.props.users.forEach(function (user, i) {
-            user.key = 'user-' + i;
-            users.push(React.createElement(ComplexListItem, { user: user }));
+        this.props.events.forEach(function (event, i) {
+            event.key = 'event-' + i;
+            events.push(React.createElement(ComplexListItem, { event: event }));
         });
 
         return (
             <div>
                 <div className="panel panel--first avatar-list">
-                    {users}
+                    {events}
                 </div>
             </div>
         );
+
+        // return (<div/>)
     }
 });
 
@@ -63,7 +82,7 @@ module.exports = React.createClass({
                         label="Back" icon="ion-chevron-left" />
                 </UI.Headerbar>
                 <UI.ViewContent grow scrollable>
-                    <ComplexList users={People} />
+                    <ComplexList events={Events} />
                 </UI.ViewContent>
             </UI.View>
         );
