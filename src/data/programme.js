@@ -20,7 +20,7 @@ module.exports = [
             twitter: "https://twitter.com/chantastic",
             github: "https://github.com/chantastic",
             web: "http://chantastic.io/",
-            pic: "https://www.react-europe.org/images/michael-chan.jpg",
+            //pic: "https://www.react-europe.org/images/michael-chan.jpg",
         }],
     },
     {

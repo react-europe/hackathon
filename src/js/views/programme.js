@@ -27,8 +27,8 @@ var ComplexListItem = React.createClass({
             avatar = speaker ?
                         this.props.event.speakers[0].pic : "img/reacteurope.png";
 
-        var maybeMedia = this.props.index === 0 ? <MUI.FlipMedia avatar={avatar}
-                    avatarInitials={initials}/> : <span/>;
+        var maybeMedia = <MUI.FlipMedia avatar={avatar}
+                    avatarInitials={initials}/>;
 
         return (
             <Link viewTransition="show-from-right"

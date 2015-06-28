@@ -68,6 +68,28 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.item-avatar2 {
+    .inline-align();
+    .square(@item-avatar-size);
+    .translateY(-50%);
+    color: white;
+    font-size: @ionicons-size-large;
+    line-height: @item-avatar-size;
+    left: @padding-base-horizontal;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+
+    > img {
+        .square(100%);
+        border-radius: 50%;
+        display: block;
+        height: auto;
+    }
 }
 
 /* front pane, placed above back */
