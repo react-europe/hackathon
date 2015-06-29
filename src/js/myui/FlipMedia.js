@@ -11,12 +11,38 @@ module.exports = React.createClass({
         thumbnail: React.PropTypes.string,
     },
 
+    getInitialState: function() {
+        return {
+            flipped: false,
+        };
+    },
+
+    componentDidMount: function() {
+        var self = this,
+            ordinal = this.props.index && this.props.index + 1,
+            multiplier = (ordinal || 1),
+            delay = 1500 + multiplier * 500;
+
+        var toggle = function() {
+            var flipped = self.state.flipped;
+
+            self.setState({flipped: !flipped});
+        };
+
+        this.timer = setInterval(toggle, delay);
+    },
+
+    componentWillUnmount: function() {
+        clearInterval(this.timer);
+    },
+
     render: function () {
         var className = classnames('flip-container', {
             'item-media': true,
             'is-icon': this.props.icon,
             'is-avatar': this.props.avatar || this.props.avatarInitials,
             'is-thumbnail': this.props.thumbnail,
+            'flipped': this.state.flipped,
         }, this.props.className);
 
         // media types
@@ -29,11 +55,15 @@ module.exports = React.createClass({
                 <div className={classnames("item-avatar2", 'flipper')}>
                     {this.props.avatar ?
                     <img className="front" src={this.props.avatar} /> :
-                        <div style={{backgroundColor: 'orange', borderRadius: '50%'}} className='front'>{this.props.avatarInitials}</div>}
+                        <div style={{
+                            backgroundColor: 'orange', borderRadius: '50%'}}
+                            className='front'>{this.props.avatarInitials}</div>}
 
                     {true ?
                     <img className="back" src='img/reacteurope.png' /> :
-                        <div style={{backgroundColor: 'grey', borderRadius: '50%'}} className='back'>FW</div> }
+
+                        <div style={{backgroundColor: 'grey', borderRadius: '50%'}}
+                        className='back'>FW</div> }
                 </div>
 
         ) : null;
