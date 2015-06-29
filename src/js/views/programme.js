@@ -21,15 +21,16 @@ var ComplexListItem = React.createClass({
     componentDidMount: function() {
         var self = this;
         var toggle = function() {
-            self.setState({tick: self.state.tick+1});
+            self.setState({tick: self.state.tick + 1});
         };
 
-        this.timer = 
-        setInterval(toggle, 5000);
+        this.timer = setInterval(toggle, 5000);
     },
 
     componentWillUnmount: function() {
-        clearInterval(this.timer);
+        if (this.timer) {
+            clearInterval(this.timer);
+        }
     },
 
     render: function () {
@@ -49,7 +50,7 @@ var ComplexListItem = React.createClass({
             avatar = speaker ?
                         speaker.pic : "img/reacteurope.png";
 
-        var maybeMedia = <MUI.FlipAvatar index={this.props.index} avatar={avatar}
+        var maybeMedia = <MUI.FlipMedia2 index={this.props.index} avatar={avatar}
                     avatarInitials={initials}/>;
 
         return (

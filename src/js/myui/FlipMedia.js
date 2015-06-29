@@ -2,7 +2,7 @@ var React = require('react/addons'),
     classnames = require('classnames');
 
 module.exports = React.createClass({
-    displayName: 'ItemMedia',
+    displayName: 'FlipMedia',
     propTypes: {
         avatar: React.PropTypes.string,
         avatarInitials: React.PropTypes.string,
