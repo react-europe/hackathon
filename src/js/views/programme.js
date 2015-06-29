@@ -1,6 +1,7 @@
 var React = require('react'),
     SetClass = require('classnames'),
     Tappable = require('react-tappable'),
+    moment = require('moment'),
     Navigation = require('touchstonejs').Navigation,
     Link = require('touchstonejs').Link,
     UI = require('touchstonejs').UI,
@@ -11,23 +12,44 @@ var Events = require('../../data/programme');
 var ComplexListItem = React.createClass({
     mixins: [Navigation],
 
+    getInitialState: function() {
+        return {
+            tick: 0,
+        };
+    },
+
+    componentDidMount: function() {
+        var self = this;
+        var toggle = function() {
+            self.setState({tick: self.state.tick+1});
+        };
+
+        this.timer = 
+        setTimeout(toggle, 5000);
+    },
+
+    componentWillUnmount: function() {
+        // clearInterval(this.timer);
+    },
+
     render: function () {
 
         var speakers = this.props.event.speakers,
-            speaker = speakers && speakers.length > 0 ? speakers[0] : undefined,
+            speaker = speakers && speakers.length > 0 ? speakers[
+                this.state.tick % speakers.length] : undefined,
             firstName = speaker ? speaker.firstName : '',
             lastName = speaker ? speaker.lastName : '',
-            date = new Date(this.props.event.time),
+            date = moment(new Date(this.props.event.time)),
             language = navigator.language || 'en-US',
-            time = date.toLocaleTimeString(
-                language, {hour: '2-digit', minute: '2-digit'}),
+            date = date.locale(language),
+            time = date.format('LT'),
                     //http://stackoverflow.com/a/20430558
             initials = firstName.charAt(0).toUpperCase() +
                 lastName.charAt(0).toUpperCase(),
             avatar = speaker ?
-                        this.props.event.speakers[0].pic : "img/reacteurope.png";
+                        speaker.pic : "img/reacteurope.png";
 
-        var maybeMedia = <MUI.FlipMedia index={this.props.index} avatar={avatar}
+        var maybeMedia = <MUI.FlipAvatar index={this.props.index} avatar={avatar}
                     avatarInitials={initials}/>;
 
         return (

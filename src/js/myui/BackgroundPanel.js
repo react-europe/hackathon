@@ -39,7 +39,7 @@ module.exports = React.createClass({
                     backgroundPosition: this.props.backgroundPosition,
                     backgroundSize: this.props.backgroundSize,
                     backgroundRepeat: this.props.backgroundRepeat,
-        }}/>
+        }}/>;
 
         return <div style={{
                             width: "100%",
@@ -49,6 +49,6 @@ module.exports = React.createClass({
                 {before}
 
                 {this.props.children}
-        </div>
-    }
+        </div>;
+    },
 });

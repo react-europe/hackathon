@@ -4,4 +4,5 @@ module.exports = {
     BackgroundPanel: require('./BackgroundPanel'),
     ItemNote: require('./ItemNote'),
     FlipMedia: require('./FlipMedia'),
+    FlipAvatar: require('./FlipAvatar'),
 };

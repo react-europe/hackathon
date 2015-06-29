@@ -14,8 +14,8 @@ module.exports = React.createClass({
     getInitialState: function () {
         return {
             popup: {
-                visible: false
-            }
+                visible: false,
+            },
         };
     },
     showLoadingPopup: function () {
@@ -25,8 +25,8 @@ module.exports = React.createClass({
                 loading: true,
                 header: 'Loading',
                 iconName: 'ion-load-c',
-                iconType: 'default'
-            }
+                iconType: 'default',
+            },
         });
 
         var self = this;
@@ -38,16 +38,16 @@ module.exports = React.createClass({
                     loading: false,
                     header: 'Done!',
                     iconName: 'ion-ios7-checkmark',
-                    iconType: 'success'
-                }
+                    iconType: 'success',
+                },
             });
         }, 2000);
 
         this.setTimeout(function () {
             self.setState({
                 popup: {
-                    visible: false
-                }
+                    visible: false,
+                },
             });
         }, 3000);
     },
@@ -66,6 +66,7 @@ module.exports = React.createClass({
                             backgroundImage="url(img/reacteurope.png)">
 
                             <Link component="div"
+                                to="start"
                                 viewTransition="show-from-right"
                                 className="list-item is-tappable">
                                 <div className="item-inner">Getting there</div>
@@ -110,5 +111,5 @@ module.exports = React.createClass({
                 </UI.Footerbar>
             </UI.View>
         );
-    }
+    },
 });
