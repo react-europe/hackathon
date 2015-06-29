@@ -113,7 +113,7 @@ module.exports = React.createClass({
                     <ComplexList events={Events} />
                 </UI.ViewContent>
                 <UI.Footerbar type="default">
-                    <UI.FooterbarButton showView="start" viewTransition="show-from-right" label="Now" icon="ion-flash" />
+                    <UI.FooterbarButton showView="start" viewTransition="fade" label="Now" icon="ion-flash" />
                     <UI.FooterbarButton active label="Programme" icon="ion-mic-a" />
                     <UI.FooterbarButton label="Buzz" icon="ion-ios7-pulse-strong" />
                     <UI.FooterbarButton label="Explore" icon="ion-compass" />

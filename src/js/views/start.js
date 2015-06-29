@@ -104,7 +104,7 @@ module.exports = React.createClass({
                 <UI.Footerbar type="default">
                     <UI.FooterbarButton active label="Now" icon="ion-flash" />
                     <UI.FooterbarButton showView="programme"
-                        viewTransition="show-from-right"
+                        viewTransition="fade"
                         label="Programme" icon="ion-mic-a" />
                     <UI.FooterbarButton label="Buzz" icon="ion-ios7-pulse-strong" />
                     <UI.FooterbarButton label="Explore" icon="ion-compass" />
