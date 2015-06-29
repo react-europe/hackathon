@@ -1,25 +1,5 @@
 module.exports = [
     {
-        title: "Creating a GraphQL Server",
-        time: 'Thu Jul 03 2015 14:30:00 UTC+0200 (CEST)',
-        speakers: [{
-            firstName: "Nick",
-            lastName: "Schrock",
-            twitter: "https://twitter.com/schrockn",
-            facebook: "http://www.facebook.com/schrockn",
-            github: "https://github.com/schrockn",
-            pic: "https://www.react-europe.org/images/schrockn.jpg",
-        },
-        {
-            firstName: "Dan",
-            lastName: "Schafer",
-            twitter: "https://twitter.com/dlschafer",
-            facebook: "https://www.facebook.com/dschafer",
-            github: "https://github.com/dschafer",
-            pic: "https://www.react-europe.org/images/dlschafer.jpg",
-        }],
-    },
-    {
         title: "Keynote",
         time: 'Thu Jul 02 2015 10:00:00 UTC+0200 (CEST)',
         speakers: [{
@@ -202,7 +182,26 @@ module.exports = [
             pic: "https://www.react-europe.org/images/michael-jackson.jpg",
         }],
     },
-// put graphql here
+    {
+        title: "Creating a GraphQL Server",
+        time: 'Thu Jul 03 2015 14:30:00 UTC+0200 (CEST)',
+        speakers: [{
+            firstName: "Nick",
+            lastName: "Schrock",
+            twitter: "https://twitter.com/schrockn",
+            facebook: "http://www.facebook.com/schrockn",
+            github: "https://github.com/schrockn",
+            pic: "https://www.react-europe.org/images/schrockn.jpg",
+        },
+        {
+            firstName: "Dan",
+            lastName: "Schafer",
+            twitter: "https://twitter.com/dlschafer",
+            facebook: "https://www.facebook.com/dschafer",
+            github: "https://github.com/dschafer",
+            pic: "https://www.react-europe.org/images/dlschafer.jpg",
+        }],
+    },
     {
         title: "Isomorphic Flux",
         time: 'Thu Jul 03 2015 15:30:00 UTC+0200 (CEST)',
