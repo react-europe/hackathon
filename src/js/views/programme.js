@@ -105,9 +105,6 @@ module.exports = React.createClass({
         return (
             <UI.View>
                 <UI.Headerbar type="default" label="Programme">
-                    <UI.HeaderbarButton showView="start"
-                        viewTransition="reveal-from-right"
-                        label="Back" icon="ion-chevron-left" />
                 </UI.Headerbar>
                 <UI.ViewContent grow scrollable>
                     <ComplexList events={Events} />
