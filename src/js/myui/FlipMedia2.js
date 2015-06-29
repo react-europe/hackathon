@@ -18,9 +18,11 @@ module.exports = React.createClass({
     componentWillReceiveProps: function(nextProps) {
         var self = this;
         var flipped = this.state.flipped;
+        var avatar = this.props.avatar;
 
-        if (nextProps.avatar !== this.state.avatar) {
-            self.setState({flipped: !flipped});
+        if (nextProps.avatar !== avatar) {
+            self.setState({flipped: !flipped,
+                oldAvatar: avatar});
         }
     },
 
@@ -41,10 +43,10 @@ module.exports = React.createClass({
         }, this.props.className);
 
         var front = <img className="front"
-            src={!flipped ? this.props.avatar : this.props.oldAvatar} />;
+            src={!flipped ? this.props.avatar : this.state.oldAvatar} />;
 
         var back = <img className="back"
-            src={flipped ? this.props.avatar : this.props.oldAvatar} />;
+            src={flipped ? this.props.avatar : this.state.oldAvatar} />;
 
         var flipper =
             <div className={classnames("item-avatar2", 'flipper')}>
