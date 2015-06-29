@@ -68,7 +68,8 @@ var ComplexListItem = React.createClass({
                         <div className="item-subtitle">{firstName}
                         </div>
                         <div className="item-subtitle">{lastName}</div>
-                        <div style={{paddingTop: "2px"}} className="item-subtitle">{time}</div>
+                        <div style={{paddingTop: "2px"}}
+                            className="item-subtitle">{time}</div>
                         </div>
                     </MUI.ItemNote>
                     <UI.ItemNote icon="ion-chevron-right"/>
@@ -84,7 +85,8 @@ var ComplexList = React.createClass({
 
         this.props.events.forEach(function (event, i) {
             var key = 'event-' + i;
-            events.push(React.createElement(ComplexListItem, { index: i, key: key, event: event }));
+            events.push(React.createElement(
+                ComplexListItem, { index: i, key: key, event: event }));
         });
 
         return (
@@ -110,10 +112,15 @@ module.exports = React.createClass({
                     <ComplexList events={Events} />
                 </UI.ViewContent>
                 <UI.Footerbar type="default">
-                    <UI.FooterbarButton showView="start" viewTransition="fade" label="Now" icon="ion-flash" />
-                    <UI.FooterbarButton active label="Programme" icon="ion-mic-a" />
-                    <UI.FooterbarButton label="Buzz" icon="ion-ios7-pulse-strong" />
-                    <UI.FooterbarButton label="Explore" icon="ion-compass" />
+                    <UI.FooterbarButton showView="start"
+                        viewTransition="fade" label="Now"
+                        icon="ion-flash" />
+                    <UI.FooterbarButton active label="Programme"
+                        icon="ion-mic-a" />
+                    <UI.FooterbarButton label="Buzz"
+                        icon="ion-ios7-pulse-strong" />
+                    <UI.FooterbarButton label="Explore"
+                        icon="ion-compass" />
                 </UI.Footerbar>
             </UI.View>
         );
