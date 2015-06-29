@@ -27,7 +27,7 @@ var ComplexListItem = React.createClass({
             avatar = speaker ?
                         this.props.event.speakers[0].pic : "img/reacteurope.png";
 
-        var maybeMedia = <MUI.FlipMedia avatar={avatar}
+        var maybeMedia = <MUI.FlipMedia index={this.props.index} avatar={avatar}
                     avatarInitials={initials}/>;
 
         return (

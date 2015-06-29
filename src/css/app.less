@@ -1,4 +1,4 @@
-// 
+//
 // App
 // ==============================
 
@@ -19,9 +19,13 @@
 //    padding: 12px 0;
     min-height: 44px;
 
+    vertical-align: middle;
 
-  align-items: center;
-  justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-justifiy-content: center;
+    justify-content: center;
 
     &::before {
         font-size: @ionicons-size-large;
@@ -40,11 +44,18 @@
 
 /* entire container, keeps perspective */
 .flip-container {
+    // -webkit-perspective: 1000;
     perspective: 1000;
 }
 
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg) translateY(-50%);
+    transform: rotateY(180deg) translateY(-50%);
+}
+
+.flip-container.flipped .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg) translateY(-50%);
     transform: rotateY(180deg) translateY(-50%);
 }
 
@@ -55,7 +66,9 @@
 
 /* flip speed goes here */
 .flipper {
+    -webkit-transition: 0.6s;
     transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
 
     // position: relative;
@@ -63,6 +76,7 @@
 
 /* hide back of pane during swap */
 .front, .back {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     position: absolute;
@@ -72,6 +86,8 @@
     height: 100%;
 }
 
+
+/* same item-avatar but without he grey background or borderRadius setting */
 .item-avatar2 {
     .inline-align();
     .square(@item-avatar-size);
@@ -95,12 +111,14 @@
 /* front pane, placed above back */
 .front {
     z-index: 2;
+    -webkit-transform: rotateY(0deg);
     /* for firefox 31 */
     transform: rotateY(0deg);
 }
 
 /* back, initially hidden pane */
 .back {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
