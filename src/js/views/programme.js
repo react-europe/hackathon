@@ -25,11 +25,11 @@ var ComplexListItem = React.createClass({
         };
 
         this.timer = 
-        setTimeout(toggle, 5000);
+        setInterval(toggle, 5000);
     },
 
     componentWillUnmount: function() {
-        // clearInterval(this.timer);
+        clearInterval(this.timer);
     },
 
     render: function () {
