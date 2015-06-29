@@ -1,0 +1,22 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "The ReactEurope hackathon.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sprzybylski/hackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sprzybylski/hackathon/issues"
+  },
+  "homepage": "https://github.com/sprzybylski/hackathon",
+  "dependencies": {
+    "react": "^0.13.3"
+  }
+}
