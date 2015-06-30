@@ -6,10 +6,10 @@ var UI = require('touchstonejs').UI;
 
 var MUI = require('../myui');
 
-var Timers = require('react-timers')();
+var Timers = require('react-timers');
 
 module.exports = React.createClass({
-    mixins: [Navigation, Timers],
+    mixins: [Navigation, Timers()],
 
     getInitialState: function () {
         return {

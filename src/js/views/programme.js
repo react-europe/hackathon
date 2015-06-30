@@ -54,7 +54,11 @@ var ComplexListItem = React.createClass({
                     avatarInitials={initials}/>;
 
         return (
-            <Link viewTransition="show-from-right"
+            <Link viewTransition="show-from-right" to="event-details"
+                params={{
+                    prevView: 'programme',
+                    event: this.props.event,
+                }}
                 className="list-item" component="div">
                 {maybeMedia}
 

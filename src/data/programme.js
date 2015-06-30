@@ -10,6 +10,9 @@ module.exports = [
             web: "http://blog.vjeux.com/",
             github: "https://github.com/vjeux",
             pic: "https://www.react-europe.org/images/christopher-chedeau.jpg",
+            interview:
+                "https://medium.com/@patcito/\
+                reacteurope-interview-19-christopher-chedeau-b191e0f67286",
         }],
         description: "For more than a year now, React.js has changed the way \
         we think about client-side applications through concepts such as the \
@@ -23,6 +26,7 @@ module.exports = [
     },
     {
         title: "Inline Styles: themes, media queries, contexts, and when it's best to use CSS",
+        shortTitle: "Inline Styles",
         time: 'Thu Jul 02 2015 10:30:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Michael",
@@ -31,6 +35,8 @@ module.exports = [
             github: "https://github.com/chantastic",
             web: "http://chantastic.io/",
             pic: "https://www.react-europe.org/images/michael-chan.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-10-michael-chan-f47183912785",
         }],
         description: "React allows you to write styles inline and bypass a \
             host of CSS shortcomings. Scope, dependency management, dead code \
@@ -52,6 +58,8 @@ module.exports = [
             github: "https://github.com/elierotenberg",
             web: "https://elie.rotenberg.io/",
             pic: "https://www.react-europe.org/images/elie-rotenberg.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-2-elie-rotenberg-20d2bec578ad",
         }],
         description: "Flux is most often used to implement shared state \
         within a single window. But done properly, this architecture can be \
@@ -68,6 +76,7 @@ module.exports = [
     },
     {
         title: "React Native: Building Fluid User Experiences",
+        shortTitle: "React Native",
         time: 'Thu Jul 02 2015 12:00:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Spencer",
@@ -76,6 +85,8 @@ module.exports = [
             facebook: "https://www.facebook.com/spencer",
             linkedin: "https://www.linkedin.com/pub/spencer-ahrens/6/733/360",
             pic: "https://www.react-europe.org/images/spencer-ahrens.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-9-spencer-arhens-72c50c7e7abb",
         }],
         description: "React Native's architecture has opened up many \
         possibilities for re-inventing the clunkier aspects of UX construction \
@@ -94,6 +105,8 @@ module.exports = [
             linkedin: "http://leebyron.com/",
             github: "https://github.com/leebyron",
             pic: "https://www.react-europe.org/images/lee-byron.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-18-lee-byron-af81838df52a",
         }],
         description: "At React.js Conf last January, we introduced the idea \
         of GraphQL: a data fetching language that allows clients to \
@@ -111,6 +124,8 @@ module.exports = [
             web: "https://reactjs-training.com/",
             github: "https://github.com/ryanflorence",
             pic: "https://www.react-europe.org/images/ryan-florence.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-16-ryan-florence-cc9e89f8ee1",
         }],
         description: "Your front and back ends are already successfully in \
         production but you don't have to miss out on the productivity that \
@@ -118,6 +133,7 @@ module.exports = [
     },
     {
         title: "Live React: Hot Reloading with Time Travel",
+        shortTitle: "Live React",
         time: 'Thu Jul 02 2015 15:30:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Dan",
@@ -126,6 +142,8 @@ module.exports = [
             web: "https://medium.com/@dan_abramov",
             github: "https://github.com/gaearon",
             pic: "https://www.react-europe.org/images/dan-abramov.jpg",
+            interview: "https://medium.com/@patcito/\
+            first-reacteurope-interview-dan-abramov-de328761cd5a",
         }],
         description: "React’s unique strength is bringing to JavaScript \
         development some of the benefits previously exclusive to more \
@@ -139,6 +157,7 @@ module.exports = [
     },
     {
         title: "Relay: An Application Framework For React",
+        shortTitle: "Relay",
         time: 'Thu Jul 02 2015 16:00:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Joseph",
@@ -147,6 +166,8 @@ module.exports = [
             web: "http://josephsavona.com/",
             github: "https://github.com/josephsavona",
             pic: "https://www.react-europe.org/images/joseph-savona.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-11-joseph-savona-4c0a5fb92193",
         }],
         description: "Relay is a new framework from Facebook that enables \
         declarative data fetching & updates for React applications. Relay \
@@ -167,6 +188,8 @@ module.exports = [
             linkedin: "http://azproduction.ru/",
             github: "https://github.com/azproduction",
             pic: "https://www.react-europe.org/images/mikhail-davydov.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-3-mikhail-davydov-3c72924d52ee",
         }],
         description: "Paradoxically that today it is easier to create GUI \
         than Text UI. Developer has an arsenal of different GUI libraries \
@@ -187,6 +210,8 @@ module.exports = [
             linkedin: "https://www.linkedin.com/in/sebmarkbage",
             github: "https://github.com/sebmarkbage/",
             pic: "https://www.react-europe.org/images/SebastianProfile.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-17-sebastian-markb%C3%A5ge-23bef96905af",
         }],
         description: "React has always been about the Virtual DOM. A nice \
         way to render HTML (and some of SVG and maybe some Web Components). \
@@ -203,6 +228,7 @@ module.exports = [
     },
     {
         title: "Improving Your Workflow With Code Transformation",
+        shortTitle: "BabelJS",
         time: 'Thu Jul 03 2015 10:00:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Sebastian",
@@ -211,6 +237,8 @@ module.exports = [
             web: "https://babeljs.io/",
             github: "https://github.com/sebmck",
             pic: "https://www.react-europe.org/images/sebastian-mcKenzie.png",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-14-sebastian-mckenzie-6096aa6261da",
         }],
         description: "Most React developers already use a build pipeline to \
         transform their JSX into vanilla JavaScript. This is usually \
@@ -224,6 +252,7 @@ module.exports = [
     },
     {
         title: "The State of Animation in React",
+        shortTitle: "Animation in React",
         time: 'Thu Jul 03 2015 10:30:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Cheng",
@@ -248,6 +277,8 @@ module.exports = [
             linkedin: "https://www.linkedin.com/pub/kevin-robinson/4/676/11a",
             github: "https://github.com/kevinrobinson",
             pic: "https://www.react-europe.org/images/kevin-robinson.png",
+            interview: "https://medium.com/@patcito/\
+                reacteurope-interview-5-kevin-robinson-9d5f382ac13b",
         }],
         description: "At Twitter, teams have starting adopting React because \
         it’s enabled UI engineers to forget about time when writing \
@@ -311,6 +342,8 @@ module.exports = [
             web: "https://reactjs-training.com/",
             github: "https://github.com/mjackson",
             pic: "https://www.react-europe.org/images/michael-jackson.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-14-michael-jackson-a9d3af90774f",
         }],
         description: "Since May 2014 over 100 people have contributed code to \
         React Router and many, many more have filed issues, given talks, \
@@ -331,6 +364,7 @@ module.exports = [
     },
     {
         title: "Creating a GraphQL Server",
+        shortTitle: "GraphQL",
         time: 'Thu Jul 03 2015 14:30:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Nick",
@@ -339,6 +373,8 @@ module.exports = [
             facebook: "http://www.facebook.com/schrockn",
             github: "https://github.com/schrockn",
             pic: "https://www.react-europe.org/images/schrockn.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-6-nick-schrock-c71f99fe78e6",
         },
         {
             firstName: "Dan",
@@ -347,6 +383,8 @@ module.exports = [
             facebook: "https://www.facebook.com/dschafer",
             github: "https://github.com/dschafer",
             pic: "https://www.react-europe.org/images/dlschafer.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-7-dan-schafer-b93f09485a63",
         }],
         description: "In this talk, we'll take a deeper dive into putting \
         GraphQL to work. How can we build a GraphQL API to work with an \
@@ -366,6 +404,8 @@ module.exports = [
             web: "http://theridgway.com/",
             github: "https://github.com/mridgway",
             pic: "https://www.react-europe.org/images/michael-ridgway.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-4-michael-ridgway-f773ae92c212",
         }],
         description: "Flux provides a good framework for building rich client \
         applications, but did you know you can reuse the flux architecture for \
@@ -380,6 +420,7 @@ module.exports = [
     },
     {
         title: "Building submarines that don't leak",
+        shortTitle: "Pure Components",
         time: 'Thu Jul 03 2015 16:00:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Aria",
@@ -388,6 +429,8 @@ module.exports = [
             web: "https://sourcegraph.com/ariabuckles",
             github: "https://github.com/ariabuckles",
             pic: "https://www.react-europe.org/images/aria-buckles.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-8-aria-buckles-f51b6ab34d2b",
         }],
         description: "React provides us with a lot of tools for building \
         components, but isn't prescriptive about how we use those. Objects \
@@ -401,6 +444,7 @@ module.exports = [
     },
     {
         title: "How React & Flux Turn Applications Into Extensible Platforms",
+        shortTitle: "Extensible Platforms",
         time: 'Thu Jul 03 2015 17:00:00 UTC+0200 (CEST)',
         speakers: [{
             firstName: "Evan",
@@ -409,6 +453,8 @@ module.exports = [
             linkedin: "https://www.linkedin.com/in/evanmorikawa",
             github: "https://github.com/emorikawa",
             pic: "https://www.react-europe.org/images/evan-morikawa.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-12-evan-morikawa-2d077dbdaa3",
         },
         {
             firstName: "Ben",
@@ -417,6 +463,8 @@ module.exports = [
             linkedin: "http://foundry376.com/",
             github: "https://github.com/bengotow",
             pic: "https://www.react-europe.org/images/ben-gotow.jpg",
+            interview: "https://medium.com/@patcito/\
+            reacteurope-interview-13-ben-gotow-6fe44a5da751",
         }],
         description: "Chrome is great, but 3rd party extensions make it \
         better. The iPhone is great, but apps make it better. You React-app \

@@ -39,6 +39,8 @@ var views = {
   'radio-list': require('./views/radio-list'),
 
   'programme': require('./views/programme'),
+
+  'event-details': require('./views/event-details'),
 };
 
 var App = React.createClass({
@@ -56,7 +58,7 @@ var App = React.createClass({
 
     var initialState = {
       currentView: startView,
-      isNativeApp: (typeof cordova !== 'undefined')
+      isNativeApp: (typeof cordova !== 'undefined'),
     };
 
     return initialState;
@@ -69,7 +71,7 @@ var App = React.createClass({
   render: function () {
     var appWrapperClassName = classnames({
       'app-wrapper': true,
-      'is-native-app': this.state.isNativeApp
+      'is-native-app': this.state.isNativeApp,
     });
 
     return (
