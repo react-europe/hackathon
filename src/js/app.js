@@ -48,7 +48,7 @@ var App = React.createClass({
   mixins: [Touchstone.createApp(views)],
 
   getInitialState: function () {
-    var startView = 'start';
+    var startView = 'programme';
 
     // resort to #viewName if it exists
     if (window.location.hash) {
@@ -68,7 +68,7 @@ var App = React.createClass({
   },
 
   gotoDefaultView: function () {
-    this.showView('start', 'fade');
+    this.showView('programme', 'fade');
   },
 
   render: function () {
