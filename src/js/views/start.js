@@ -107,7 +107,7 @@ module.exports = React.createClass({
                         viewTransition="fade"
                         label="Programme" icon="ion-mic-a" />
                     <UI.FooterbarButton label="Buzz" icon="ion-ios7-pulse-strong" />
-                    <UI.FooterbarButton label="Explore" icon="ion-compass" />
+                    { /*<UI.FooterbarButton label="Explore" icon="ion-compass"/> */ }
                 </UI.Footerbar>
             </UI.View>
         );

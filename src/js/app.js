@@ -41,6 +41,7 @@ var views = {
   'programme': require('./views/programme'),
 
   'event-details': require('./views/event-details'),
+  'speaker-details': require('./views/speaker-details'),
 };
 
 var App = React.createClass({
@@ -53,7 +54,9 @@ var App = React.createClass({
     if (window.location.hash) {
       var hash = window.location.hash.slice(1);
 
-      if (hash in views) startView = hash;
+      if (hash in views) {
+        startView = hash;
+      }
     }
 
     var initialState = {

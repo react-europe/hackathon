@@ -1,6 +1,4 @@
 var React = require('react'),
-    classnames = require('classnames'),
-    Tappable = require('react-tappable'),
     Dialogs = require('touchstonejs').Dialogs,
     Navigation = require('touchstonejs').Navigation,
     Link = require('touchstonejs').Link,
@@ -8,6 +6,8 @@ var React = require('react'),
 
 var Timers = require('react-timers');
 
+
+// TODO SpeakerListItem can be factored into a shared component
 var SpeakerListItem = React.createClass({
     mixins: [Navigation],
 
@@ -19,7 +19,9 @@ var SpeakerListItem = React.createClass({
         return (
             <Link viewTransition="show-from-right" to="speaker-details"
                     params={{
-
+                        prevView: 'event-details',
+                        prevViewProps: {event: this.props.event},
+                        speaker: this.props.speaker,
                     }}
                  className="list-item" component="div">
                 <UI.ItemMedia avatar={this.props.speaker.pic}
@@ -45,12 +47,14 @@ var SpeakerList = React.createClass({
     },
 
     render: function () {
+        var that = this;
 
         var speakers = [];
 
         this.props.speakers.forEach(function (speaker, i) {
             var key = 'speaker-' + i;
-            speakers.push(React.createElement(SpeakerListItem, { key: key, speaker: speaker }));
+            speakers.push(React.createElement(SpeakerListItem, {
+                key: key, event: that.props.event, speaker: speaker }));
         });
 
         return (
@@ -97,7 +101,7 @@ module.exports = React.createClass({
                 <UI.ViewContent grow scrollable>
                     <div className="panel-header text-caps">Speakers</div>
 
-                    {this.props.event.speakers ? <SpeakerList speakers={this.props.event.speakers}/>
+                    {this.props.event.speakers ? <SpeakerList event={this.props.event} speakers={this.props.event.speakers}/>
                         : null}
 
                     <div className="panel-header text-caps">Details</div>
