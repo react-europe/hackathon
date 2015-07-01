@@ -1,0 +1,8 @@
+from tweepy import Stream
+from tweepy import OAuthHandler
+from tweepy.streaming import StreamListener
+
+ckey="Up4TEdBjNLbYX9FTVNvHmLWTl"
+csecret="L5B5M0ZrCFsQoRLzAoCE2H4xc7miVcddT7Z3fsJN726Fz5NuMT"
+atoken="984449647-Z84gfx0YPshxVGW3IVEBx1atsvaKHZpXWRwSTgPI"
+asecret="6iAefPifIlWNQPZgmLJ2eTdVUuJKUhlrYnUqQdfLBQKtR"
