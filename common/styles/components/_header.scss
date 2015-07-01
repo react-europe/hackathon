@@ -1,3 +1,4 @@
+
 $header-border-width: 0px;
 .header {
 	position: fixed;
@@ -99,6 +100,12 @@ $header-border-width: 0px;
 	&.active {
 		color: mix($header-font-color, $action-color, $fat-tint);
 	}
+}
+
+.header__right--full {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .header__searchbox.header__searchbox {
