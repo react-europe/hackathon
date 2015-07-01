@@ -2,10 +2,14 @@
 
 var React = require("react");
 
+var GoogleMap = require('./map');
+
 module.exports = React.createClass({
   displayName: 'App',
 
   render() {
-    return <div>it works</div>
+    return (
+        <GoogleMap />
+    )
   }
 });

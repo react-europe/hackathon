@@ -8,3 +8,6 @@ npm-debug.log
 
 #Project
 dist
+
+#Project sensitive info
+app/js/config.jsx
