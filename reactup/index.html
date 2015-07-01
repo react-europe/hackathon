@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<title>React Up</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="icon" href="https://www.react-europe.org/favicon.ico">
+<link rel="stylesheet" href="node_modules/mapbox-gl/dist/mapbox-gl.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body, input, button, select, textarea{
+  font-family: sans-serif;
+  font-size: 16px;
+}
+body {
+  margin:0;
+  padding:0;
+}
+#list {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+#list h1{
+  font-size: 1em;
+  padding: 10px;
+  margin: 0;
+  background-color: #222;
+  color: #61dafb;
+  font-weight: normal;
+}
+#list ol{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#list ol a{
+  display: block;
+  padding: 0 10px 0 0;
+  text-decoration: none;
+  color: #000;
+  line-height: 32px;
+  height: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+#list ol a:hover{
+  color: #fff;
+  background-color: #61dafb;
+}
+#list ol a img{
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 50%;
+  width:100%;
+}
+.center-container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+</style>
+<div id="app"></div>
+<script src="config.js"></script>
+<script src="node_modules/babel-core/browser.js"></script>
+<script src="node_modules/react/dist/react.js"></script>
+<script src="node_modules/mapbox-gl/dist/mapbox-gl-dev.js"></script>
+<script type="text/babel">
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      data: null,
+      auth: false,
+      flyLocation: null
+    };
+  }
+  componentDidMount(){
+    var self = this;
+    var map = this.state.map;
+
+    var token = (location.hash.match(/access_token=([^&?]+)/) || [,null])[1];
+    var expires_in = (location.hash.match(/expires_in=([^&?]+)/) || [,null])[1];
+    if (token){
+      localStorage.meetup_access_token = token;
+      localStorage.meetup_expires_in = expires_in;
+      history.replaceState({}, document.title, '/');
+      this.setState({
+        auth: true
+      });
+    }
+
+    fetch('https://api.meetup.com/2/groups?topic=reactjs&page=100&desc=false&order=name&access_token=' + localStorage.meetup_access_token).then(function(response){
+      return response.json();
+    }).then(function(response){
+      self.setState({
+        auth: true,
+        data: response
+      });
+    }, function(){
+      self.setState({
+        auth: false
+      });
+    });
+  }
+  auth(){
+    location = 'https://secure.meetup.com/oauth2/authorize?client_id=' + CONFIG.MEETUP_CLIENT_ID + '&response_type=token&set_mobile=on&redirect_uri=' + location.href;
+  }
+  mapWillMount(map){
+    map.addControl(new mapboxgl.Navigation());
+  }
+  onMeetupItemClick(data){
+    this.setState({
+      flyLocation: [data.lat, data.lon]
+    });
+  }
+  render(){
+    if (!this.state.auth) return <div className="center-container"><button onClick={this.auth}>Login with Meetup.com</button></div>
+    if (!this.state.data) return <div className="center-container"><div style="text-align: center">Loading&hellip;</div></div>
+    return (
+      <div>
+        <div id="list">
+          <h1>ReactJS Meetups around the world</h1>
+          <Meetups data={this.state.data} onItemClick={this.onMeetupItemClick.bind(this)} />
+        </div>
+        <Map accessToken={CONFIG.MAPBOX_ACCESS_TOKEN} mapWillMount={this.mapWillMount} data={this.state.data} flyTo={this.state.flyLocation} />
+      </div>
+    );
+  }
+}
+
+class Meetups extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      data: props.data
+    };
+  }
+  onItemClick(data){
+    this.props.onItemClick(data);
+  }
+  render(){
+    var self = this;
+    var meetupNodes = this.state.data.results.map(function(meetup){
+      return <li key={meetup.id}><Meetup data={meetup} onClick={self.onItemClick.bind(self)} /></li>
+    });
+    return <ol>{meetupNodes}</ol>
+  }
+}
+
+class Meetup extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      data: props.data
+    };
+  }
+  onClick(data){
+    this.props.onClick(data);
+  }
+  render(){
+    var data = this.state.data;
+    var img = data.group_photo ? data.group_photo.thumb_link : 'http://img2.meetupstatic.com/img/44824024200340517185/m/ios/Icon-60pt@2x.png';
+    return <a onClick={this.onClick.bind(this, data)}><img src={img} alt="" /> {data.name}</a>
+  }
+}
+
+class Map extends React.Component{
+  constructor(props){
+    super(props);
+    mapboxgl.accessToken = props.accessToken;
+    this.state = {
+      flyTo: props.flyTo,
+      data: props.data,
+      map: null
+    };
+  }
+  componentDidMount(){
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'https://www.mapbox.com/mapbox-gl-styles/styles/outdoors-v7.json',
+      center: [0, 0],
+      zoom: 0
+    });
+    var self = this;
+    map.on('style.load', function(){
+      self.setState({
+        map: map
+      });
+
+      if (self.props.mapWillMount){
+        self.props.mapWillMount(map, mapboxgl);
+      }
+    });
+  }
+  componentWillReceiveProps(props){
+    var map = this.state.map;
+    var flyTo = props.flyTo;
+    if (flyTo){
+      map.flyTo({
+        center: flyTo,
+        zoom: 8,
+        speed: 1,
+        curve: 1
+      });
+    }
+  }
+  render(){
+    var self = this;
+    var data = this.state.data;
+    var map = this.state.map;
+    if (data && map && !map.getSource('markers')){
+      map.addSource('markers', {
+        type: 'geojson',
+        data: {
+          type: 'FeatureCollection',
+          features: data.results.map(function(result){
+            return {
+              type: 'Feature',
+              geometry: {
+                type: 'Point',
+                coordinates: [result.lon, result.lat]
+              },
+              properties: {
+                title: result.name
+              }
+            };
+          })
+        }
+      });
+
+      map.addLayer({
+        id: 'markers',
+        type: 'symbol',
+        source: 'markers',
+        'layout': {
+          'icon-image': 'marker-12',
+          'text-field': '{title}',
+          'text-font': 'Open Sans Semibold, Arial Unicode MS Bold',
+          'text-offset': [0, 0.6],
+          'text-fill': '#036', // Not working?!?
+          'text-anchor': 'top'
+        },
+        paint: {
+          'text-size': 12
+        }
+      });
+    }
+    return <div id="map"></div>
+  }
+}
+
+React.render(<App />, document.getElementById('app'));
+</script>
