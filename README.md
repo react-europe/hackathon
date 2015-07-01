@@ -22,6 +22,8 @@ NOTE : Requires Python 2.7+ and a running redis-server
 
 ## Screenshots
 
-![First Screenshot"](http://github.com/rakannimer/screenshots/1.png "First Screenshot")
-![Second Screenshot"](http://full/path/to/img.jpg "Second Screenshot")
-![Third Screenshot"](http://full/path/to/img.jpg "Third Screenshot")
+![First Screenshot"](https://github.com/rakannimer/screenshots/1.png "First Screenshot")
+
+![Second Screenshot"](https://github.com/rakannimer/screenshots/2.png "Second Screenshot")
+
+![Third Screenshot"](https://github.com/rakannimer/screenshots/3.png "Third Screenshot")
