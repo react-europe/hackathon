@@ -1,6 +1,6 @@
 # hackathon
 The ReactEurope hackathon.
-Uses the Touchstone framework
+News Reader using touchstonejs, flask, redis, reddit and twitter apis 
 
 ## Installation
 
