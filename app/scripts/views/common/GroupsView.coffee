@@ -12,7 +12,6 @@ module.exports = React.createClass
 	displayName: 'GroupsView'
 
 	render: ->
-		console.log @props
 		return null unless @props.groups
 		# filterByFilter = (group) -> group.name.indexOf @props.filterString > -1
 		{groups, sorting, filterString} = @props

@@ -9,7 +9,6 @@ AppView = require './AppView'
 AuthenticatedView = require '../views/pages/AuthenticatedView'
 LoginView = require '../views/pages/LoginView'
 HomeView = require '../views/pages/HomeView'
-NotFoundView = require '../views/pages/NotFoundView'
 Application = require './Application'
 
 routes = ->
@@ -30,13 +29,6 @@ routes = ->
 					name: 'home'
 					handler: HomeView
 					key: 'HomeView'
-		Route
-			path: Application.state.config.baseRoute
-			handler: AppView
-		,
-			NotFoundRoute
-				handler: NotFoundView
-				key: 'NotFoundView'
 	]
 
 module.exports =

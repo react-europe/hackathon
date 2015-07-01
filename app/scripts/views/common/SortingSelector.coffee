@@ -41,5 +41,4 @@ module.exports = React.createClass
 
 	onClick: (e) ->
 		opt = e.currentTarget.dataset.opt
-		console.log opt, e
 		@actions.setSorting opt

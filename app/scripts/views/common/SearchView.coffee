@@ -28,7 +28,6 @@ module.exports = React.createClass
 	# 	document.addEventListener 'click', @onBodyClicked
 
 	onBodyClicked: (e) ->
-		console.log @state, e.target
 		if @isMounted() and @state.open and not DomUtil.isDescendant @getDOMNode(), e.target.parentNode
 			@closeSearch()
 			# @actions.setFilter null
