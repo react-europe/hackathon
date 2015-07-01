@@ -27,6 +27,7 @@ npm start # Starts the development server on port 3000
 cd cordova
 cordova platforms add ios
 cordova run ios
+# Then go to localhost:3000/cordova/www
 ```
 
 Run `npm run build` instead of `npm start` to build a production version of the app to run on a physical device.
