@@ -7,14 +7,11 @@ $header-border-width: 0px;
 	left: 0;
 	width: 100%;
 	height: $header-height + $header-border-width;
-	padding: 0 $base-spacing-unit 0 0;
+	padding: 0;
 	background-color: $header-bar-color;
 	color: $header-font-color;
 	z-index: $menu-layer;
 	@include layer;
-	@include media-query (xs) {
-		padding: 0;
-	}
 }
 .ios-web-app .header {
 	height: $header-height + $header-border-width + 20px;
