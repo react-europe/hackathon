@@ -63,7 +63,6 @@ module.exports = React.createClass({
 						<UI.LabelInput label="Name"     value={[this.props.user.name.first, this.props.user.name.last].join(' ')}       placeholder="Full name" first />
 						<UI.LabelInput label="Location" value={this.props.user.location}   placeholder="Suburb, Country" />
 						<UI.LabelInput label="Joined"   value={this.props.user.joinedDate} placeholder="Date" />
-						<UI.LabelTextarea label="Bio"   value={this.state.bioValue}        placeholder="(required)" onChange={this.handleBioInput} />
 					</div>
 					<div className="panel">
 						<Tappable onTap={this.showFlavourList} className="list-item is-first" component="div">
@@ -77,13 +76,7 @@ module.exports = React.createClass({
 						</Tappable>
 					</div>
 					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Primary Button.')} className="panel-button primary" component="button">
-						Primary Button
-					</Tappable>
-					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Default Button.')} className="panel-button" component="button">
-						Default Button
-					</Tappable>
-					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Danger Button.')} className="panel-button danger" component="button">
-						Danger Button
+						book now
 					</Tappable>
 				</UI.ViewContent>
 			</UI.View>
