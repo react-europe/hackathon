@@ -1,0 +1,40 @@
+{
+  "name": "react-movies",
+  "version": "0.0.1",
+  "description": "Track recently released movies",
+  "dependencies": {
+    "babel-core": "^5.5.4",
+    "babel-loader": "^5.1.4",
+    "classnames": "^2.1.2",
+    "file-loader": "^0.8.4",
+    "ionicons-pre": "^1.0.0-pre",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.3",
+    "node-libs-browser": "^0.5.2",
+    "react": "^0.13.3",
+    "react-tappable": "^0.5.2",
+    "redux": "^1.0.0-alpha",
+    "superagent": "^1.2.0",
+    "touchstonejs": "^0.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "^2.0.0",
+    "babel": "^5.5.4",
+    "css-loader": "^0.15.1",
+    "expose-loader": "^0.7.0",
+    "extract-text-webpack-plugin": "^0.3.8",
+    "less": "^2.5.1",
+    "less-loader": "^2.2.0",
+    "react-hot-loader": "^1.2.7",
+    "react-style-webpack-plugin": "^0.4.0",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.10",
+    "webpack-dev-server": "^1.9.0"
+  },
+  "scripts": {
+    "start": "babel-node ./scripts/server",
+    "build": "babel-node ./scripts/build"
+  },
+  "author": "Alexandre Kirszenberg <alexandre.kirszenberg@gmail.com>",
+  "license": "MIT"
+}
