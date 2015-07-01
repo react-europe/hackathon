@@ -22,8 +22,8 @@ NOTE : Requires Python 2.7+ and a running redis-server
 
 ## Screenshots
 
-![First Screenshot"](https://github.com/rakannimer/screenshots/1.png "First Screenshot")
+![First Screenshot"](https://github.com/RakanNimer/hackathon/blob/master/screenshots/1.png?raw=true "First Screenshot")
 
-![Second Screenshot"](https://github.com/rakannimer/screenshots/2.png "Second Screenshot")
+![Second Screenshot"](https://github.com/RakanNimer/hackathon/blob/master/screenshots/2.png?raw=true "Second Screenshot")
 
-![Third Screenshot"](https://github.com/rakannimer/screenshots/3.png "Third Screenshot")
+![Third Screenshot"](https://github.com/RakanNimer/hackathon/blob/master/screenshots/3.png?raw=true "Third Screenshot")
