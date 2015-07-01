@@ -13,6 +13,7 @@ module.exports = React.createClass({
 
   componentDidMount: function () {
     this._initMap();
+    this._insertMarkers(this.props.data);
   },
 
   _initMap() {
@@ -32,7 +33,7 @@ module.exports = React.createClass({
 
   _insertMarkers(data) {
     var map = this.state.map;
-    if (map) {
+    if (map && data) {
       data.forEach((member) => {
         this._addMarkerToMap(member);
       });
@@ -54,7 +55,6 @@ module.exports = React.createClass({
   },
 
   render() {
-    this._insertMarkers(this.props.data);
 
     return (
         <div id="google-maps" className="google-maps-chart">

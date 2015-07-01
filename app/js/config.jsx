@@ -2,7 +2,7 @@
 
 module.exports = {
   meetup: {
-    searchUrl: "http://api.meetup.com/find/groups?key=1d35494328415c587da4d2956653f18c",
-    membersUrl: "https://api.meetup.com/2/members?key=1d35494328415c587da4d2956653f18"
+    searchUrl: "http://api.meetup.com/find/groups?key=f2f14303864524413516c4327452b2c",
+    membersUrl: "https://api.meetup.com/2/members?key=f2f14303864524413516c4327452b2c"
   }
 };

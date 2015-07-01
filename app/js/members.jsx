@@ -8,7 +8,7 @@ module.exports = React.createClass({
   displayName: 'App',
 
   propTypes: {
-    cities: React.PropTypes.func
+    groupId: React.PropTypes.object.isRequired
   },
 
   getInitialState() {
@@ -17,7 +17,7 @@ module.exports = React.createClass({
 
 
   componentDidMount() {
-    Http.get(config.meetup.membersUrl, {"group_id": "13980992"}, response => {
+    Http.get(config.meetup.membersUrl, { "group_id": this.props.groupId }, response => {
 
       this.setState({
         cities: response
@@ -37,11 +37,9 @@ module.exports = React.createClass({
     var cities = this.state.cities;
     if (cities) {
       var stats = cities.map((c, i) =>
-          <div key={i}>
-            <span>{c.city}</span>
-            <span>{c.lon}</span>
-            <span>{c.lat}</span>
-            <span> {c.total}</span>
+          <div className="member" key={i}>
+            <span className="city">{c.city}</span>
+            <span className="total">{c.total}</span>
           </div>
       );
     }

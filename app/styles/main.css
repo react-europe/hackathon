@@ -33,6 +33,15 @@ body {
   padding: 0 3px 0 0;
 }
 
+.member .city {
+  float: left;
+}
+
+.member .total {
+  float: right;
+  font-weight: bold;
+}
+
 .google-maps-chart {
   height: 651px;
   width: 367px;
