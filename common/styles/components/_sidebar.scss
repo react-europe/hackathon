@@ -1,0 +1,61 @@
+.sidebar {
+	background-color: $header-bar-color;
+	width: $sidebar-width;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	border-right: none;
+	border-left: none;
+	border-bottom: $brand-border;
+	transform: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: $menu-layer;
+	height: 100vh;
+	@include layer;
+	@include media-query(xs) {
+		width: 100%;
+	}
+}
+.sidebar__close-btn {
+	.popup-is-open & {
+		display: none;
+	}
+}
+.sidebar--medium {
+	width: $sidebar-width-s;
+	transition: width $transition-easing $transition-speed;
+	.menu__section:not(.menu__section--nav),
+	.nav__link-text {
+		opacity: 0;
+		pointer-events: none;
+		// visibility: hidden;
+
+		transition: opacity linear $transition-speed;
+	}
+}
+// .sidebar--open {
+// 	width: $sidebar-width;
+// 	.menu__section:not(.menu__section--nav),
+// 	.nav__link-text {
+// 		opacity: 1;
+// 		pointer-events: auto;
+// 		// visibility: visible;
+// 	}
+// }
+
+.sidebar__section {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding-left: $base-spacing-unit;
+	padding-right: $base-spacing-unit;
+	border-right: $brand-border;
+	&:last-child {
+		border-right: none;
+	}
+}

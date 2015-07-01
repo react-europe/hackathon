@@ -1,0 +1,133 @@
+.searchbox {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin: $base-spacing-unit 0;
+	width: 100%;
+	min-width: $base-spacing-unit * 10;
+	flex-direction: row-reverse;
+	align-content: flex-end;
+}
+.searchbox__spinner {
+	position: absolute;
+	right: 0;
+	width: $base-spacing-unit * 2;
+	height: $base-spacing-unit * 2;
+}
+.searchbox__input {
+	display: inline-block;
+	zoom: 1;
+	-webkit-appearance: none !important;
+	width: 100%;
+	line-height: $base-line-height * 1.5 - 2 * $action-border-width;
+	border: $quiet-action-border;
+	padding: 0 $base-spacing-unit;
+	border-radius: $base-spacing-unit;
+	height: $base-spacing-unit * 2 - $action-border-width * 2;
+	background-color: $quiet-action-color;
+	outline: 0;
+	cursor: text;
+	-moz-outline: 0;
+	-webkit-appearance: none;
+	&::-webkit-input-placeholder {
+		color: $quiet-color;
+		transition: transform $transition-easing $transition-speed;
+		transform: translateX($base-spacing-unit);
+	}
+	&::-moz-placeholder {
+		color: transparent;
+		opacity: 0; // HACK! FF doesn't support transform of placeholder yet. Should find a better solution though.
+	}
+	&::-ms-input-placeholder {
+		color: transparent;
+		opacity: 0; // HACK! IE doesn't support transform of placeholder yet. Should find a better solution though.
+	}
+	.no-touch & {
+		transition: all $transition-speed $transition-easing;
+	}
+	&:hover, &:focus {
+		border: $action-border;
+	}
+	&:focus, &:active {
+		border: $action-border;
+		background-color: $quiet-action-active-color;
+		&::-webkit-input-placeholder {
+			transform: translateX($half-spacing-unit / 2);
+		}
+		&::-moz-placeholder {
+			transform: translateX($half-spacing-unit / 2);
+		}
+		&::-ms-input-placeholder {
+			transform: translateX($half-spacing-unit / 2);
+		}
+	}
+	&[disabled], &:disabled, &.disabled, &.inactive {
+		box-shadow: none;
+	}
+	&.touch-feedback {
+		background-color: mix($element-color, $action-color, $tint);
+	}
+}
+
+.searchbox__clear,
+.searchbox__search-icon {
+	position: absolute;
+	color: $quiet-color;
+	font-size: $base-spacing-unit;
+	line-height: 1;
+	cursor: pointer;
+	@include layer;
+	&:hover {
+		color: $action-color;
+	}
+}
+.searchbox__clear {
+	right: 0;
+	margin-left: - ($base-spacing-unit * 2);
+}
+.searchbox__search-icon {
+	left: 0;
+	transition: opacity $transition-easing $transition-speed;
+	&:hover {
+		color: $action-color;
+	}
+}
+.searchbox__input:active + .searchbox__search-icon,
+.searchbox__input:focus + .searchbox__search-icon {
+	opacity: 0;
+}
+
+.searchbox--l {
+	.searchbox__clear,
+	.searchbox__search-icon,
+	.searchbox__spinner {
+		top: $base-spacing-unit;
+		width: $base-spacing-unit * 2;
+		height: $base-spacing-unit * 2;
+	}
+	.searchbox__clear,
+	.searchbox__spinner {
+		right: $base-spacing-unit;
+	}
+	.searchbox__search-icon {
+		left: $base-spacing-unit * 0.75;
+	}
+	.icon--s {
+		padding: $base-spacing-unit - $icon-size--s;
+	}
+	.icon--s > svg {
+		width: $icon-size--s * 2;
+		height: $icon-size--s * 2;
+	}
+	// height: $base-spacing-unit * 4;
+	> .searchbox__input {
+		line-height: $base-line-height * 3.5 - 2 * $action-border-width;
+		height: $base-spacing-unit * 4 - $action-border-width * 2;
+		border-radius: $base-spacing-unit * 2;
+		padding: 0 $base-spacing-unit * 2;
+		font-weight: $bold;
+		@include font-size($h3-size);
+	}
+}
+
+

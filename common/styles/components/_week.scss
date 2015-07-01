@@ -1,0 +1,9 @@
+/**/.week {
+	min-width: 6em;
+	line-height: inherit;
+}
+.week__date {
+	@extend .quiet;
+	font-weight: $normal;
+}
+// .week__day--saturday,

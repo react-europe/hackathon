@@ -1,0 +1,69 @@
+$bg: rgba(#fff,.25);
+.bg-pattern--1 {
+	background-image: repeating-linear-gradient(90deg, transparent, transparent $half-spacing-unit, $bg $half-spacing-unit, $bg $half-spacing-unit * 2);
+}
+.bg-pattern--2 {
+	background-image:
+	linear-gradient(135deg, $bg 25%, transparent 25%),
+	linear-gradient(225deg, $bg 25%, transparent 25%),
+	linear-gradient(315deg, $bg 25%, transparent 25%),
+	linear-gradient(45deg, $bg 25%, transparent 25%);
+	background-position:  -$half-spacing-unit 0;
+	background-size: $half-spacing-unit * 2 $half-spacing-unit * 2;
+}
+.bg-pattern--3 {
+	background-image: radial-gradient($bg 25%, transparent 26%),
+		radial-gradient($bg 25%, transparent 26%);
+	background-size:$half-spacing-unit * 3 $half-spacing-unit * 3;
+	background-position: 0 0, $half-spacing-unit * 1.5 $half-spacing-unit * 1.5;
+}
+.bg-pattern--4 {
+	background-image: repeating-linear-gradient(45deg, transparent, transparent $half-spacing-unit, $bg $half-spacing-unit, $bg $half-spacing-unit * 2);
+}
+.bg-pattern--5 {
+	background-image: linear-gradient(45deg, $bg 24%, transparent 25%, transparent 74%, $bg 75%, $bg),
+	linear-gradient(45deg, $bg 24%, transparent 25%, transparent 74%, $bg 75%, $bg);
+	background-size: $half-spacing-unit * 3 $half-spacing-unit * 3;
+	background-position:0 0, $half-spacing-unit * 1.5 $half-spacing-unit * 1.5;
+}
+.bg-pattern--6 {
+	background-image: repeating-linear-gradient(0deg, transparent, transparent $half-spacing-unit, $bg $half-spacing-unit, $bg $half-spacing-unit * 2);
+}
+.bg-pattern--7 {
+	background-image: repeating-linear-gradient(-45deg, transparent, transparent $half-spacing-unit, $bg $half-spacing-unit, $bg $half-spacing-unit * 2);
+}
+// .bg-pattern--8 {
+// 	background-image:
+// 		linear-gradient(45deg, transparent 0, transparent 49%, $bg 49%, $bg 51%, $bg 51%, transparent 51%, transparent 100%),
+// 		linear-gradient(135deg, transparent 0, transparent 49%, $bg 49%, $bg 51%, $bg 51%, transparent 51%, transparent 100%);
+// 	background-size: $half-spacing-unit * 2 $half-spacing-unit * 1, $half-spacing-unit * 2 $half-spacing-unit * 1;
+// 	background-position: 0 0, $half-spacing-unit 0;
+// }
+.bg-pattern--8 {
+	background-image:
+		radial-gradient($bg 50%, transparent 50%);
+	background-size: $half-spacing-unit * 2 $half-spacing-unit * 2;
+	// background-position: 0 0, $half-spacing-unit * 1.5 $half-spacing-unit * 1.5;
+}
+.bg-pattern--9 {
+	background-image: linear-gradient(45deg, transparent 50%, $bg 50%);
+	background-size: $half-spacing-unit * 2 $half-spacing-unit * 2;
+}
+.bg-pattern--10 {
+	background-image:
+		linear-gradient(115deg, transparent 75%, $bg 75%),
+		linear-gradient(245deg, transparent 75%, $bg 75%),
+		linear-gradient(115deg, transparent 75%, $bg 75%),
+		linear-gradient(245deg, transparent 75%, $bg 75%);
+	background-position: 0 0, 0 0, $base-spacing-unit $base-spacing-unit, $base-spacing-unit $base-spacing-unit;
+	background-size: $base-spacing-unit $base-spacing-unit * 2;
+}
+.bg-pattern--11 {
+	background-image:
+		linear-gradient(135deg, $bg 25%, transparent 25%),
+		linear-gradient(225deg, $bg 25%, transparent 25%),
+		linear-gradient(315deg, $bg 25%, transparent 25%),
+		linear-gradient(45deg, $bg 25%, transparent 25%);
+	background-position: -$half-spacing-unit 0, -$half-spacing-unit 0, 0 0, 0 0;
+	background-size: $base-spacing-unit $base-spacing-unit;
+}

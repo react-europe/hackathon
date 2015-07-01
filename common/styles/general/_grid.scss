@@ -1,0 +1,12 @@
+/**/
+// Shorter (inuit 4-style) class names for grids
+.gw {
+	width: 100%;
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: $base-spacing-unit;
+	@include media-query(xs) {
+		padding-right: $base-spacing-unit/2;
+		padding-left: $base-spacing-unit/2;
+	}
+}

@@ -1,0 +1,35 @@
+.submit-buttons__right,
+.submit-buttons {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	flex-grow: 1;
+	@include media-query (xs) {
+		flex-direction: column;
+		align-items: stretch;
+	}
+}
+
+.submit-buttons {
+	justify-content: space-between;
+	margin-top: $base-spacing-unit * 2;
+	.btn {
+		@include media-query (xs) {
+			width: 100%;
+			margin-bottom: $base-spacing-unit;
+		}
+	}
+}
+.submit-buttons__right {
+	justify-content: flex-start;
+}
+.submit-buttons__left {
+	justify-content: flex-end;
+}
+
+.submit-buttons__cancel {
+	margin-right: $base-spacing-unit * 2;
+	@include media-query (xs) {
+		margin-right: 0;
+	}
+}

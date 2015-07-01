@@ -1,0 +1,99 @@
+
+// Module colors
+$insights-color:								$turqoise-light;
+$organisation-color:						$orange-light;
+$schedule-color:								$red-light;
+$time-color:										$blue-light;
+$settings-color:								$green-light;
+$webpunch-color:								$yellow-light;
+
+// UI element colors
+$element-color:									$dark-base;
+$background-color:							darken($element-color, 5%);
+$body-background-color:					darken($background-color, 5%);
+$quiet-color:										#bbb;
+$font-color: 										#fff;
+
+$primary-action-color:					darken($green, 7%);
+$primary-action-color-light:		darken($green-light, 7%);
+$primary-action-color-dark:			darken($green-dark, 7%);
+$primary-action-border-color:		darken($green, 7%);
+
+
+$link-color:										lighten($blue, 20%);
+$selection-bg-color:						lighten($blue, 20%);
+$selection-font-color:					$font-color;
+
+$action-color:									darken($blue, 5%);
+$action-color-light:						darken($blue-light,5%);
+$action-color-dark:							darken($blue-dark,5%);
+$action-border-color:						darken($blue,5%);
+$action-font-color:							$font-color;
+
+$quiet-action-color:						darken($background-color, 10%);
+$quiet-action-color-light:			darken($background-color, 15%);
+$quiet-action-color-dark:				darken($background-color, 20%);
+$quiet-action-border-color:			darken($background-color, 10%);
+$quiet-action-font-color:				lighten($action-color, 15%);
+$quiet-action-active-border-color: lighten($background-color, 5%);
+$quiet-action-active-color:			$quiet-action-color-dark;
+
+$button-color:									darken($blue, 5%);
+$button-color-light:						darken($blue-light, 5%);
+$button-color-dark:							darken($blue-dark, 5%);
+$button-border-color:						darken($blue-light, 5%);
+$button-font-color:							$font-color;
+
+$disabled-color:								$background-color + 50;
+$disabled-color-light:					$background-color + 60;
+$disabled-color-dark:						$background-color + 40;
+$disabled-border-color:					$background-color + 50;
+$disabled-font-color:						$quiet-color;
+
+$warning-color:									darken($red,5%);
+$warning-color-light:						darken($red-light,5%);
+$warning-color-dark:						darken($red-dark,5%);
+$warning-border-color:					darken($red ,5%);
+$warning-font-color:						$font-color;
+$quiet-warning-font-color:			lighten($red, 8%);
+$quiet-action-active-border-color: lighten($background-color, 5%);
+
+$info-color:										lighten($yellow,0%);
+$info-color-light:							lighten($yellow-light,0%);
+$info-color-dark:								lighten($yellow-dark,0%);
+$info-border-color:							lighten($yellow ,0%);
+$info-font-color:								darken($background-color, 10%);
+
+$chart-colors: 									lighten($green-light, 10%) lighten($turqoise-light, 10%) lighten($blue-light, 10%) lighten($purple-light, 10%) lighten($red-light, 10%) lighten($orange-light, 10%) lighten($yellow-light, 10%);
+
+
+$header-bar-color:							darken($background-color, 10%);
+// $header-bar-color:						#000;
+$header-font-color:							$font-color;
+
+$login-background-color:				$body-background-color;
+$login-font-color:							$font-color;
+$login-form-background-color:		$body-background-color;
+$login-form-font-color:					$font-color;
+
+$topbar-color: 									$background-color;
+
+$inverted-background-color: 		$font-color;
+
+
+$modal-shadow: 									0 0 40px 2px rgba(#000, 0.6);
+
+
+// Borders
+$border-color:									lighten($element-color, 0%);
+$quiet-border-color:						mix($background-color, $font-color, $heavy-tint);
+$heavy-border-color:						darken($border-color, 8%);
+$header-border-color:						lighten($header-bar-color, 5%);
+
+$border-width:									1px;
+$action-border-width:						0px;
+$list-border-width:							1px;
+$table-border-width:						1px;
+$container-border-width:				0px;
+
+

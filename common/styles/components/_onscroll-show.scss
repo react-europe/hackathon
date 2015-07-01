@@ -1,0 +1,13 @@
+.onscroll-show {
+	position: absolute;
+	z-index: $top-layer;
+	width: calc(100% - #{$sidebar-width-s});
+	top: 0;
+	@include layer;
+	@include media-query(s) {
+		width: 100%;
+	}
+}
+.onscroll-show--fixed {
+	position: fixed;
+}

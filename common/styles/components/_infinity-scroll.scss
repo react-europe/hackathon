@@ -1,0 +1,15 @@
+
+@keyframes fader {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.infinity-sub {
+	animation-name: fader;
+	animation-duration: $transition-speed;
+	@include layer;
+}

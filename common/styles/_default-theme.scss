@@ -1,0 +1,205 @@
+
+// Font and spacing
+
+$font-color: $dark-base!default;
+$brand-bg-color: $light-base!default;
+
+$border-width:								0px!default;
+$action-border-width:					1px!default;
+$list-border-width:						1px!default;
+$table-border-width:						1px!default;
+$container-border-width:				1px!default;
+
+
+// Module colors
+$insights-color:								$turqoise-dark!default;
+$organisation-color:						$orange-dark!default;
+$schedule-color:								$blue-dark!default;
+$people-color:								$purple-dark!default;
+$settings-color:								$green!default;
+$webpunch-color:								$yellow!default;
+
+// UI element colors
+// $body-background-color:				mix($background-color, $quiet-color, $heavy-tint)!default;
+$body-background-color:				$background-color;
+
+$action-color:							$blue!default;
+$action-color-light:					$blue-light!default;
+$action-color-dark:						$blue-dark!default;
+$action-border-color:					$blue!default;
+$action-font-color:					$element-color!default;
+
+$primary-action-color:					$green!default;
+$primary-action-color-light:		$green-light!default;
+$primary-action-color-dark:			$green-dark!default;
+$primary-action-border-color:		$green !default;
+$primary-action-font-color:					$action-font-color!default;
+
+$quiet-action-color:					$element-color!default;
+$quiet-action-color-light:			$element-color!default;
+$quiet-action-color-dark:			darken($element-color, 10%)!default;
+$quiet-action-border-color:		$action-color !default;
+$quiet-action-font-color:					$action-color!default;
+$quiet-action-active-color:					$element-color!default;
+$quiet-action-active-border-color:					$action-color!default;
+
+$button-color:							$blue!default;
+$button-color-light:					$blue-light!default;
+$button-color-dark:						$blue-dark!default;
+$button-border-color:					$blue !default;
+$button-font-color:					$action-font-color!default;
+
+$warning-color:							$red!default;
+$warning-color-light:					$red-light!default;
+$warning-color-dark:					$red-dark!default;
+$warning-border-color:					$red !default;
+$warning-font-color:					$action-font-color!default;
+$quiet-warning-font-color:					$warning-color!default;
+$quiet-warning-active-border-color:					$warning-color!default;
+
+$info-color:							$yellow!default;
+$info-color-light:					$yellow-light!default;
+$info-color-dark:					$yellow-dark!default;
+$info-border-color:					$yellow !default;
+$info-font-color:					$action-font-color!default;
+
+$disabled-color:							$quiet-color + 20!default;
+$disabled-font-color:					$quiet-color + 70!default;
+$disabled-color-light:					$quiet-color + 30!default;
+$disabled-color-dark:					$quiet-color!default;
+$disabled-border-color:					$quiet-color + 20!default;
+
+$success-color: $green !default;
+$waiting-color: $yellow !default;
+$error-color: $red !default;
+
+$link-color:							$action-color!default;
+$selection-bg-color: lighten($blue, 40%)!default;
+$selection-font-color: inherit!default;
+
+$chart-colors:
+	$green-base
+	$dark-base
+	$red-base
+	$blue-base
+	$yellow-base
+	$purple-base
+	$turqoise-base
+	$violet-base
+	$pink-base
+	$teal-base
+	$lime-base
+	$orange-base
+	darken($green-base, 15%)
+	darken($orange-base, 15%)
+	darken($blue-base, 15%)
+	darken($red-base, 15%)
+	darken($purple-base, 15%)
+	darken($yellow-base, 15%)
+	darken($turqoise-base, 15%)
+	darken($violet-base, 15%)
+	darken($pink-base, 15%)
+	darken($teal-base, 15%)
+	darken($lime-base, 15%)
+	lighten($green-base, 25%)
+	lighten($orange-base, 25%)
+	lighten($blue-base, 25%)
+	lighten($red-base, 25%)
+	lighten($purple-base, 25%)
+	lighten($yellow-base, 25%)
+	lighten($turqoise-base, 25%)
+	lighten($violet-base, 25%)
+	lighten($pink-base, 25%)
+	lighten($teal-base, 25%)
+	lighten($lime-base, 25%)
+	!default;
+
+$shift-colors:
+	$green-base
+	$red-base
+	$blue-base
+	$yellow-base
+	$purple-base
+	$turqoise-base
+	$violet-base
+	$pink-base
+	$teal-base
+	$lime-base
+	$orange-base
+	!default;
+
+
+// Borders
+$border-color:							mix($background-color, $font-color, $fat-tint)!default;
+$quiet-border-color:					mix($background-color, $font-color, $heavy-tint)!default;
+$header-border-color:					mix($font-color, $background-color, $heavy-tint)!default;
+$heavy-border-color:					darken($border-color, 8%)!default;
+
+// Action borders
+$action-border:							$action-border-width $action-color solid!default;
+$action-border-dark:						$action-border-width $action-border-color solid!default;
+
+$primary-action-border:					$action-border-width $primary-action-color solid!default;
+$primary-action-border-dark:			$action-border-width $primary-action-border-color solid!default;
+
+$warning-border:							$action-border-width $warning-color solid!default;
+$warning-border-dark:					$action-border-width $warning-border-color solid!default;
+$quiet-warning-border:					$action-border-width $border-color solid!default;
+
+$quiet-action-border:					$action-border-width $border-color solid!default;
+$quiet-action-border-dark:				$action-border-width $quiet-border-color solid!default;
+
+$button-border:								$action-border-width $button-color solid!default;
+$button-border-dark:						$action-border-width $button-border-color solid!default;
+
+
+//Default borders
+$brand-border:								$border-width $border-color solid!default;
+$heavy-border:								$border-width $heavy-border-color solid!default;
+$inverted-border:							$border-width $header-border-color solid!default;
+$quiet-border:								$border-width $quiet-border-color solid!default;
+
+//Container borders
+$container-border:							$container-border-width $border-color solid!default;
+$container-heavy-border:				$container-border-width $heavy-border-color solid!default;
+$container-inverted-border:				$container-border-width $header-border-color solid!default;
+$container-quiet-border:					$container-border-width $quiet-border-color solid!default;
+
+//Table borders
+$table-border:								$table-border-width $border-color solid!default;
+$table-heavy-border:						$table-border-width $heavy-border-color solid!default;
+$table-inverted-border:					$table-border-width $header-border-color solid!default;
+$table-quiet-border:						$table-border-width $quiet-border-color solid!default;
+
+//Table borders
+$list-border:								$list-border-width $border-color solid!default;
+$list-heavy-border:						$list-border-width $heavy-border-color solid!default;
+$list-inverted-border:					$list-border-width $header-border-color solid!default;
+$list-quiet-border:						$list-border-width $quiet-border-color solid!default;
+
+$fail-background-color: mix($background-color, $red, $heavy-tint)!default;
+$success-background-color: mix($background-color, $green, $fat-tint)!default;
+$waiting-background-color: mix($background-color, $yellow, $fat-tint)!default;
+$changed-background-color: mix($background-color, $turqoise, $fat-tint)!default;
+
+$header-bar-color:						$dark-base!default;
+$header-highlight-color:				darken($header-bar-color, 100 - $tint)!default;
+$header-font-color:						$background-color!default;
+$header-height:							$base-spacing-unit * 3!default;
+
+$login-background-color: $header-bar-color!default;
+$login-font-color: $header-font-color!default;
+$login-form-background-color: $background-color!default;
+$login-form-font-color: $font-color!default;
+
+$inverted-background-color: $header-bar-color!default;
+
+$modal-shadow: none!default;
+$dim-background-color: rgba(#000, 0.4)!default;
+
+$popup-border: $container-border !default;
+$popup-border-color: $header-bar-color !default;
+$popup-background-color: $header-bar-color !default;
+$popup-font-color: $header-font-color !default;
+$arrow-height: $half-spacing-unit !default;
+$overlay-color: rgba($background-color, 0.95)!default;

@@ -1,0 +1,19 @@
+
+.app__main-content {
+	background-color: $body-background-color;
+}
+.main-content__center {
+	display: block;
+	position: relative;
+	@extend .center;
+	padding-top: $base-spacing-unit;
+}
+.app__main-content--has-sidebar {
+	@include media-query (xs) {
+		padding-top: $header-height;
+
+		> .main-content__center {
+			padding-top: $base-spacing-unit;
+		}
+	}
+}

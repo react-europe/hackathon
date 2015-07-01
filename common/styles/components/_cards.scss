@@ -1,0 +1,78 @@
+
+// @import "~../vars";
+
+.cards-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.cards-wrapper--centered {
+	justify-content: center;
+}
+
+.card-wrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	@include media-query(xs) {
+		width: 100%;
+	}
+}
+
+.card {
+	background-color: $background-color;
+	padding: $base-spacing-unit - $container-border-width;
+	margin-right: $base-spacing-unit;
+	margin-bottom: $base-spacing-unit;
+	min-width: $base-spacing-unit * 10;
+	max-width: 100%;
+	height: auto;
+	border-radius: $brand-round;
+	border: $container-border;
+	@include layer;
+	@include media-query(xs) {
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+}
+.card--flex {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	> * {
+		margin: 0 $base-spacing-unit  $base-spacing-unit;
+		flex-grow: 1;
+	}
+	@include media-query(xs) {
+		flex-direction: column;
+		> * {
+			margin: 0 0 $base-spacing-unit;
+
+		}
+	}
+}
+.card--panel {
+	margin-right: 0;
+	@include media-query(xs) {
+		margin-left: 0;
+		border-left: 0;
+		border-radius: 0;
+		border-right: 0;
+	}
+}
+
+.card--action {
+	cursor: pointer;
+	border: $action-border;
+	transition: all $transition-easing $transition-speed;
+	&:hover {
+		background-color: mix($element-color, $action-color, $tint);
+	}
+	&:active,
+	&:focus {
+		background-color: mix($element-color,$action-color, $heavy-tint);
+	}
+}

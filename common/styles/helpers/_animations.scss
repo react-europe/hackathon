@@ -1,0 +1,51 @@
+@mixin animation($animationName) {
+	animation: $animationName $transition-easing $transition-speed;
+}
+@mixin fadeIn {
+	animation: a-fadeIn $transition-easing $transition-speed;
+}
+@mixin fadeOut {
+	animation: a-fadeOut $transition-easing $transition-speed;
+}
+
+@keyframes a-fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes a-fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+@keyframes a-fadeInLeft {
+	0% {
+		transform: translateX(-$half-spacing-unit);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes a-fadeOutLeft {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-$half-spacing-unit);
+		opacity: 0;
+	}
+}
+
+

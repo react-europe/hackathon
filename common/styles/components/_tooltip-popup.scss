@@ -1,0 +1,105 @@
+
+.tooltip-popup {
+	position: relative;
+	display: block;
+	user-select: none;
+	@include media-query (xs) {
+		z-index: auto;
+	}
+}
+
+.tooltip-popup__link {
+	cursor: pointer;
+	display: flex;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.tooltip-popup__link-content {
+	display: flex;
+	justify-content: center;
+	align-content: stretch;
+	flex: 1 0 auto;
+	max-width: 100%;
+	> * {
+		flex: 1 0 auto;
+	}
+}
+.tooltip-popup__box.tooltip-popup__box { //Specificity hack!
+	display: block;
+	position: absolute;
+	text-align: left;
+	background-color: $popup-background-color;
+	color: $popup-font-color;
+	border: $popup-border;
+	border-radius: $brand-round;
+	@include layer;
+	z-index: $popup-layer;
+	> .tooltip-popup__box-content {
+		position: relative;
+		padding: $base-spacing-unit;
+		@include touch-scroll;
+		ul {
+			padding: 0;
+			white-space: nowrap;
+		}
+	}
+}
+.tooltip-popup__box--bottom-right,
+.tooltip-popup__box--bottom-left {
+	margin-top: $arrow-height;
+}
+.tooltip-popup__box--top-right,
+.tooltip-popup__box--top-left {
+	margin-bottom: $arrow-height;
+}
+// .tooltip-popup__box,
+.tooltip-popup__link,
+.tooltip-popup__link:before,
+.tooltip-popup__link:after {
+	&{
+		transition: margin-top $transition-easing $transition-speed,
+			transform $transition-easing $transition-speed,
+			margin-bottom $transition-easing $transition-speed,
+			margin-right $transition-easing $transition-speed,
+			opacity $transition-easing $transition-speed,
+			background-color $transition-easing $transition-speed,
+			visibility 0s linear $transition-speed;
+	}
+}
+.tooltip-popup__box--bottom-right {
+	top: 100%;
+	right: 0;
+	margin-left: $arrow-height;
+	@include arrow(top, right, $popup-background-color, $popup-border-color);
+}
+.tooltip-popup__box--center-right {
+	margin-top: -$half-spacing-unit;
+	top: 0;
+	right: 0;
+	transform: translateX(-100%);
+	margin-right: calc(#{$arrow-height} + 100%);
+	@include arrow(right, center, $popup-background-color, $popup-border-color);
+}
+.tooltip-popup__box--bottom-left {
+	top: 100%;
+	left: 0;
+	margin-right: $arrow-height;
+	@include arrow(top, left, $popup-background-color, $popup-border-color);
+}
+.tooltip-popup__box--top-left {
+	bottom: 100%;
+	left: 0;
+	margin-right: $arrow-height;
+	@include arrow(bottom, left, $popup-background-color, $popup-border-color);
+}
+.tooltip-popup__box--top-right {
+	bottom: 100%;
+	right: 0;
+	margin-bottom: $base-spacing-unit;
+	margin-left: $arrow-height;
+	@include arrow(bottom, right, $popup-background-color, $popup-border-color);
+}
+
+.tooltip-popup--round-btn {
+	padding: 0 $half-spacing-unit / 2;
+}

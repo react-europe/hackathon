@@ -1,0 +1,105 @@
+{
+	"Translations": {
+		"*": "x",
+		"-": "-",
+		"actual/last year sales": "This year / Last year sales",
+		"available employees": "Available employees",
+		"budgeted available employees": "Budgeted available employees",
+		"budgeted sales": "Budgeted sales",
+		"budgeted transactions": "Budgeted transactions",
+		"forecasted available employees": "Forecasted available employees",
+		"forecasted optimal staffing": "Forecasted optimal staffing",
+		"forecasted sales": "Forecasted sales",
+		"forecasted transactions x 1.42": "Forecasted transactions x 1.42",
+		"forecasted transactions": "Forecasted transactions",
+		"last week worked hours": "Last week worked hours",
+		"last year sales": "Last year sales",
+		"leave hours": "Leave hours",
+		"multiple_District": "Districts",
+		"multiple_Domain": "Domains",
+		"multiple_Region": "Regions",
+		"multiple_Sharing group": "Sharing groups",
+		"multiple_Section": "Sections",
+		"multiple_MaxShare": "MaxShares",
+		"multiple_Unit": "Units",
+		"optimal hours/forecasted sales": "Optimal hours / Forecasted sales",
+		"optimal staffing": "Optimal staffing",
+		"real sales/forecasted sales": "Sales / Forecasted sales",
+		"sales": "Sales",
+		"scheduled hours": "Scheduled hours",
+		"staffing costs": "Staffing costs",
+		"transactions": "Transactions",
+		"weekly average sales trend": "Weekly average sales trend",
+		"worked hours": "Worked hours",
+		"worked hours/sales": "Worked hours / Sales"
+	},
+	"Config": {
+		"Timestamp": {
+			"Months": {
+				"fullMonth": {
+					"primary": {
+						"from": "MMM D",
+						"to": "MMM D"
+					}
+				},
+				"default": {
+					"primary": {
+						"from": "MMM D",
+						"to": "MMM D"
+					},
+					"secondary": "YYYY"
+				}
+			},
+			"Weeks": {
+				"fullWeek": {
+					"primary": {
+						"from": "MMM D",
+						"to": "MMM D"
+					}
+				},
+				"default": {
+					"primary": {
+						"from": "MMM D",
+						"to": "MMM D"
+					}
+				}
+			},
+		"Partdays": {
+			"hour": "Ha"
+		},
+			"Days": {
+				"yesterday": {
+					"primary": "[Yesterday]",
+					"secondary": "ddd"
+				},
+				"today": {
+					"primary": "[Today]",
+					"secondary": "ddd"
+				},
+				"tomorrow": {
+					"primary": "[Tomorrow]",
+					"secondary": "ddd"
+				},
+				"default": {
+					"primary": "MMM D",
+					"secondary": "ddd"
+				}
+			},
+			"Anytime": {
+				"default": {
+					"primary": "D MMM",
+					"secondary": "ddd"
+				}
+			},
+			"Precise": {
+				"midnight": {
+					"primary": "HH:mm",
+					"secondary": "MMM D"
+				},
+				"default": {
+					"primary": "HH:mm"
+				}
+			}
+		}
+	}
+}

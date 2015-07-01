@@ -1,0 +1,151 @@
+
+@import 'generated/props.scss';
+@import 'helpers/functions.scss';
+
+// Font and spacing
+
+$font-scale-ratio: 						1.25;
+$base-font-size: 							font-scale(0);
+
+$h1-size:											font-scale(4);
+$h2-size:											font-scale(3);
+$h3-size:											font-scale(2);
+$h4-size:											font-scale(1);
+$h5-size:											font-scale(0);
+
+$centi-size:									font-scale(-1);
+$micro-size:									font-scale(-2);
+
+$half-spacing-unit:						$base-spacing-unit / 2;
+$line-height-ratio:						$base-line-height / $base-font-size;
+
+// UI color variations
+
+$teal-lighter:								lighten($teal-base, 20%);
+$lime-lighter:								lighten($lime-base, 20%);
+$violet-lighter:							lighten($violet-base, 20%);
+$pink-lighter:								lighten($pink-base, 20%);
+$orange-lighter:							lighten($orange-base, 20%);
+$yellow-lighter:							lighten($yellow-base, 20%);
+$green-lighter:								lighten($green-base, 20%);
+$turqoise-lighter:						lighten($turqoise-base, 20%);
+$blue-lighter:								lighten($blue-base, 20%);
+$purple-lighter:							lighten($purple-base, 20%);
+$red-lighter:									lighten($red-base, 20%);
+$dark-lighter:								lighten($dark-base, 20%);
+$light-lighter:								lighten($light-base, 20%);
+
+$teal-light:									lighten($teal-base, 10%);
+$lime-light:									lighten($lime-base, 10%);
+$violet-light:								lighten($violet-base, 10%);
+$pink-light:									lighten($pink-base, 10%);
+$orange-light:								lighten($orange-base, 10%);
+$yellow-light:								lighten($yellow-base, 10%);
+$green-light:									lighten($green-base, 8%);
+$turqoise-light:							lighten($turqoise-base, 10%);
+$blue-light:									lighten($blue-base, 11%);
+$purple-light:								lighten($purple-base, 13%);
+$red-light:										lighten($red-base, 12%);
+$dark-light:									lighten($dark-base, 10%);
+$light-light:									lighten($light-base, 10%);
+
+$teal-dark:										darken($teal-base, 10%);
+$lime-dark:										darken($lime-base, 10%);
+$violet-dark:									darken($violet-base, 10%);
+$pink-dark:										darken($pink-base, 10%);
+$orange-dark:									darken($orange-base, 10%);
+$yellow-dark:									darken($yellow-base, 10%);
+$green-dark:									darken($green-base, 7%);
+$turqoise-dark:								darken($turqoise-base, 10%);
+$blue-dark:										darken($blue-base, 10%);
+$purple-dark:									darken($purple-base, 10%);
+$red-dark:										darken($red-base, 10%);
+$dark-dark:										darken($dark-base, 10%);
+$light-dark:									darken($light-base, 10%);
+
+$teal-darker:									darken($teal-base, 20%);
+$lime-darker:									darken($lime-base, 20%);
+$violet-darker:								darken($violet-base, 20%);
+$pink-darker:									darken($pink-base, 20%);
+$orange-darker:								darken($orange-base, 20%);
+$yellow-darker:								darken($yellow-base, 20%);
+$green-darker:								darken($green-base, 20%);
+$turqoise-darker:							darken($turqoise-base, 20%);
+$blue-darker:									darken($blue-base, 20%);
+$purple-darker:								darken($purple-base, 20%);
+$red-darker:									darken($red-base, 20%);
+$dark-darker:									darken($dark-base, 20%);
+$light-darker:								darken($light-base, 20%);
+
+$teal:												$teal-base;
+$lime:												$lime-base;
+$violet:											$violet-base;
+$pink:												$pink-base;
+$orange:											$orange-base;
+$yellow:											$yellow-base;
+$green:												$green-base;
+$turqoise:										$turqoise-base;
+$blue:												$blue-base;
+$purple:											$purple-base;
+$red:													$red-base;
+$dark:												$dark-base;
+$light:												$light-base;
+
+// Color tints
+$tint:												95%;
+$heavy-tint:									90%;
+$fat-tint:										75%;
+$light-tint:									97%;
+
+
+
+$font-color: 									$dark;
+$heading-font-color: 					$dark-darker;
+// $background-color: 				$light-base;
+$brand-bg-color: 							$light;
+
+
+// Widths
+
+$max-width:										960px;
+$small-max-width:							round($max-width * 0.67);
+$top-padding:									1px; /* Where does the horizontal grid start? */
+
+$icon-size:										24px;
+$icon-size--xs:								12px;
+$icon-size--s:								16px;
+$icon-size--l:								32px;
+$icon-size--xl:								48px;
+
+$transition-easing:						$easing;
+$transition-easing--bounce:		$easing-bounce;
+$transition-easing--smooth-bounce: $easing-smooth-bounce;
+
+$sidebar-width:								$base-spacing-unit * 16;
+$sidebar-width-s:							$base-spacing-unit * 4;
+$sidebar-height:							$base-spacing-unit * 5;
+$sidebar-color:								$background-color;
+$topbar-height:								$base-spacing-unit * 5;
+$topbar-color:								$background-color;
+
+$modal-shadow: none;
+
+/** Breakpoint sizes
+ */
+$xs-start:										0px; //Never used, just for clarity since we use the xs breakpoint in other places.
+$s-start:											550px;
+$m-start:											850px;
+$l-start:											1200px;
+$xl-start:										1650px;
+
+// Z-index
+$modal-layer:									11000;
+$notification-layer:					10000;
+$popup-layer:									9000;
+$menu-layer:									8000;
+$top-layer:										7000;
+$middle-layer:								6000;
+$low-layer:										5000;
+$bottom-layer:								4000;
+$half-layer: 									500;
+$quarter-layer: 							250;

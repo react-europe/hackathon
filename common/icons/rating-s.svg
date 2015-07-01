@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>star</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M7.74172533,11.9972512 L4.10719984,14.6470971 C3.21297262,15.2990568 2.7494833,14.9787745 3.07491108,13.9221692 L4.42648663,9.533847 L0.839206757,6.81749485 C-0.0433963012,6.14917211 0.138191466,5.59912807 1.24709991,5.58891586 L5.69279582,5.54797438 L7.1214188,1.18525593 C7.46400478,0.139069374 8.01805353,0.134815517 8.36203273,1.18525625 L9.79065655,5.54797543 L14.2363524,5.58891919 C15.3442286,5.59912246 15.5213355,6.15335045 14.644245,6.81749814 L11.056964,9.53384789 L12.4085397,13.9221695 C12.7326496,14.9744957 12.2648926,15.2949846 11.3762509,14.6470971 L7.74172533,11.9972512 Z" id="Star-1" fill="#000000" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

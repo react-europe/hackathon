@@ -1,0 +1,43 @@
+// A bunch of magic numbers here. To align the icon and stuff properly
+
+.actions-label {
+	display: inline-flex;
+	line-height: $base-spacing-unit * 2 - $action-border-width * 2;
+	padding: 0;
+	font-weight: $fat;
+	background-color: $element-color;
+	border: $quiet-action-border;
+	border-radius: $base-spacing-unit;
+	margin-bottom: $base-spacing-unit;
+}
+.actions-label__label {
+	display: block;
+	margin: 0 $half-spacing-unit;
+	margin-top: 1px;
+	margin-bottom: -1px;
+	white-space:nowrap;
+	overflow: visible;
+}
+.actions-label__action {
+	margin-left: $half-spacing-unit;
+	margin-top: 0;
+	&:first-child {
+		margin-left: 0;
+	}
+	&:last-child {
+		margin-right: $half-spacing-unit - 4;
+	}
+}
+.actions-label__content {
+	z-index: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity $transition-speed * 2 $transition-easing;
+	.actions-label--open > & {
+		opacity: 1;
+	}
+	@include layer;
+}

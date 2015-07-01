@@ -1,0 +1,63 @@
+/**/
+.vertical-padding {
+	padding-top: $base-spacing-unit;
+	padding-bottom: $base-spacing-unit;
+}
+.vertical-padding--double {
+	padding-top: $base-spacing-unit * 2;
+	padding-bottom: $base-spacing-unit * 2;
+}
+.vertical-padding--half {
+	padding-top: $half-spacing-unit;
+	padding-bottom: $half-spacing-unit;
+}
+.vertical-padding--none {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.right-padding {
+	padding-right: $base-spacing-unit;
+}
+.right-padding--half {
+	padding-right: $half-spacing-unit;
+}
+.right-padding--none {
+	padding-right: 0;
+}
+.left-padding {
+	padding-left: $base-spacing-unit;
+}
+.left-padding--half {
+	padding-left: $half-spacing-unit;
+}
+.left-padding--none {
+	padding-left: 0;
+}
+.bottom-padding {
+	padding-bottom: $base-spacing-unit;
+}
+.bottom-padding--half {
+	padding-bottom: $half-spacing-unit;
+}
+.bottom-padding--none {
+	padding-bottom: 0;
+}
+.top-padding {
+	padding-top: $base-spacing-unit;
+}
+.top-padding--half {
+	padding-top: $half-spacing-unit;
+}
+.top-padding--double {
+	padding-top: $base-spacing-unit * 2;
+}
+.top-padding--none {
+	padding-top: 0;
+}
+.no-padding {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}

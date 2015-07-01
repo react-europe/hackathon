@@ -1,0 +1,16 @@
+.delete-button__confirm {
+	display: flex;
+	flex-direction: column;
+	@include media-query(xs) {
+		margin-top: $base-spacing-unit * 2;
+		align-self: center;
+	}
+}
+.delete-button__confirm-button {
+	flex-grow: 0;
+}
+.delete-button__confirm-heading {
+	margin: 0 0 $half-spacing-unit 0;
+	text-align: center;
+	@include truncate($base-spacing-unit * 20); //This might break if we use really long strings...
+}

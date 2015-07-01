@@ -1,0 +1,47 @@
+/*
+## Lozenge & pill
+
+	<p class="top-padding">This is a sentence with a <span class="loz">lozenge</span> in it.
+	<p>This is a sentence with a <span class="pill">pill</span> in it.
+	<p>This is a sentence with a <a class="loz">lozenge link</a> in it.
+	<p class="bottom-padding">This is a sentence with a <a class="pill">pill link</a> in it.
+
+*/
+.pill,
+.loz {
+	display:inline-block;
+	min-width: ($line-height-ratio * 0.666667) * 1em;
+	text-align: center;
+	background-color: $background-color;
+	color: $font-color;
+	border: $action-border;
+	padding-bottom: 0;
+	line-height: $base-line-height * 2 - 2;
+	white-space: nowrap;
+	> *:last-child {
+		border-top-right-radius: $brand-round - 1 * $action-border-width;
+		border-bottom-right-radius: $brand-round - 1 * $action-border-width;
+	}
+	> *:first-child {
+		border-top-left-radius: $brand-round - 1 * $action-border-width;
+		border-bottom-left-radius: $brand-round - 1 * $action-border-width;
+	}
+	.no-touch & {
+		transition: all .1s linear;
+	}
+	@include tap {
+		background-color: mix($background-color, $action-color, $tint);
+	}
+}
+
+.loz:hover,
+.pill:hover,
+a.loz:hover,
+a.pill:hover {
+	border-color: $action-border-color;
+	text-decoration: none;
+}
+
+.loz {
+	border-radius:$brand-round;
+}

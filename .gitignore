@@ -1,0 +1,14 @@
+
+.idea
+.DS_Store
+npm-debug.log
+.sass-cache
+.tmp
+*.map
+private-config.json
+devData.coffee
+
+build
+coverage/
+test-results
+node_modules

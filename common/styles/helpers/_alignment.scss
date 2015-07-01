@@ -1,0 +1,22 @@
+/**/
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+
+.left-and-right-container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.auto-width {
+	width: auto;
+}

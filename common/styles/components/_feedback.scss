@@ -1,0 +1,33 @@
+.feedback {
+	position: relative;
+	color: $warning-color;
+}
+$arrow-size: $half-spacing-unit;
+.feedback-tooltip {
+	position: relative;
+	display: inline-block;
+	background-color: $info-color;
+	color: $info-font-color;
+	font-weight: $bold;
+	margin-top: $arrow-size;
+	margin-left: 0;
+	margin-bottom: $half-spacing-unit;
+	padding: $half-spacing-unit $half-spacing-unit ;
+	border-radius: $brand-round;
+	z-index: $low-layer;
+	@include layer;
+}
+.feedback-tooltip--arrow {
+	@include arrow(top, left, $info-color, transparent);
+	&.feedback-tooltip--warning {
+		@include arrow(top, left, $warning-color, transparent);
+	}
+}
+.feedback-tooltip--warning {
+	background-color: $warning-color;
+	color: $warning-font-color;
+}
+
+// input[type="radio"] ~ .feedbackMessage, input[type="checkbox"] ~ .feedbackMessage {
+// 	margin-top: 12px;
+// }

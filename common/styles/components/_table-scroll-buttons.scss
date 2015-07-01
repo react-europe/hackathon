@@ -1,0 +1,15 @@
+.table-scroll-buttons {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: $half-spacing-unit $half-spacing-unit 0;
+	> .hidden {
+		opacity: 0;
+		visibility: hidden;
+	}
+}

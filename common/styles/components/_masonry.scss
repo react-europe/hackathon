@@ -1,0 +1,58 @@
+.masonry {
+	width: calc(100% - #{$base-spacing-unit});
+	margin-left: $base-spacing-unit;
+	@include media-query(xs) {
+		margin-left: 0;
+	}
+}
+.masonry__item {
+	margin-bottom: $base-spacing-unit;
+	width: calc(66.6666666666666667% - #{$base-spacing-unit});
+}
+.masonry__sizer {
+	width: calc(33.3333333333333333% - #{$base-spacing-unit});
+	@include media-query(xl) {
+		width: calc(25% - #{$base-spacing-unit});
+	}
+	@include media-query(m) {
+		width: calc(50% - #{$base-spacing-unit});
+	}
+}
+.masonry__item--1 {
+	width: calc(33.3333333333333333% - #{$base-spacing-unit});
+	@include media-query(xl) {
+		width: calc(25% - #{$base-spacing-unit});
+	}
+	@include media-query(m) {
+		width: calc(50% - #{$base-spacing-unit});
+	}
+}
+.masonry__item--2 {
+	width: calc(66.6666666666666667% - #{$base-spacing-unit});
+	@include media-query(m) {
+		width: calc(100% - #{$base-spacing-unit});
+	}
+	@include media-query(xl) {
+		width: calc(50% - #{$base-spacing-unit});
+	}
+}
+.masonry__item--3 {
+	width: calc(100% - #{$base-spacing-unit});
+	@include media-query(xl) {
+		width: calc(50% - #{$base-spacing-unit});
+	}
+}
+.masonry__item--4 {
+	width: calc(100% - #{$base-spacing-unit});
+}
+.masonry,
+.masonry__sizer,
+.masonry__item,
+.masonry__item--1,
+.masonry__item--2,
+.masonry__item--3,
+.masonry__item--4 {
+	@include media-query(xs) {
+		width: 100%;
+	}
+}

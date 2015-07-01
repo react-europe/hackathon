@@ -1,0 +1,12 @@
+/**/
+.weekdate {
+	min-width: 6em;
+	line-height: inherit;
+}
+.weekdate__date {
+	@extend .quiet;
+	font-weight: $normal;
+}
+.weekdate__day--sunday {
+	color: $font-color;
+}

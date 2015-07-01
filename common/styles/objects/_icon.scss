@@ -1,0 +1,140 @@
+.icon {
+	display: inline-block;
+	height: $base-spacing-unit * 2;
+	width: $base-spacing-unit * 2;
+	padding: ($base-spacing-unit * 2 - $icon-size) / 2;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	g, svg, path, rect, polygon {
+		fill: $font-color;
+	}
+	> svg {
+		width: $icon-size;
+		height: $icon-size;
+	}
+	&.icon--no-left-padding {
+		padding-left: 0;
+		width: $icon-size + ($base-spacing-unit * 2 - $icon-size) / 2;
+	}
+	&.icon--no-right-padding {
+		padding-right: 0;
+		width: $icon-size + ($base-spacing-unit * 2 - $icon-size) / 2;
+	}
+}
+.icon--s {
+	> svg {
+		width: $icon-size--s;
+		height: $icon-size--s;
+	}
+	padding: ($base-spacing-unit * 2 - $icon-size--s) / 2;
+	&.icon--no-left-padding {
+		padding-left: 0;
+		width: $icon-size--s + ($base-spacing-unit * 2 - $icon-size--s) / 2;
+	}
+	&.icon--no-right-padding {
+		padding-right: 0;
+		width: $icon-size--s + ($base-spacing-unit * 2 - $icon-size--s) / 2;
+	}
+}
+.icon--xs {
+	> svg {
+		width: $icon-size--xs;
+		height: $icon-size--xs;
+	}
+	padding: ($base-spacing-unit * 2 - $icon-size--xs) / 2;
+	&.icon--no-left-padding {
+		padding-left: 0;
+		width: $icon-size--xs + ($base-spacing-unit * 2 - $icon-size--xs) / 2;
+	}
+	&.icon--no-right-padding {
+		padding-right: 0;
+		width: $icon-size--xs + ($base-spacing-unit * 2 - $icon-size--xs) / 2;
+	}
+}
+.icon--l {
+	> svg {
+		width: $icon-size--l;
+		height: $icon-size--l;
+	}
+	padding: ($base-spacing-unit * 2 - $icon-size--l) / 2;
+	&.icon--no-left-padding {
+		padding-left: 0;
+		width: $icon-size--l + ($base-spacing-unit * 2 - $icon-size--l) / 2;
+	}
+	&.icon--no-right-padding {
+		padding-right: 0;
+		width: $icon-size--l + ($base-spacing-unit * 2 - $icon-size--l) / 2;
+	}
+}
+.icon--big-logo {
+	width: $icon-size--l * 3;
+	height: $icon-size--l * 3;
+	> svg {
+		width: $icon-size--l * 3;
+		height: $icon-size--l * 3;
+	}
+}
+.icon--action {
+	&, g, svg, path, rect, polygon {
+		fill: $action-font-color;
+	}
+	[disabled] & {
+		g, svg, path, rect, polygon {
+			fill: $disabled-font-color;
+		}
+	}
+	.btn--disabled &,
+	.btn--quiet[disabled] & { // Specific hack
+		g, svg, path, rect, polygon {
+			fill: $disabled-font-color;
+		}
+	}
+}
+.icon--quiet-action {
+	&, g, svg, path, rect, polygon {
+		fill: $quiet-action-font-color;
+	}
+	[disabled] & {
+		g, svg, path, rect, polygon {
+			fill: $disabled-font-color;
+		}
+	}
+	.btn--disabled &,
+	.btn--quiet[disabled] & { // Specific hack
+		g, svg, path, rect, polygon {
+			fill: $disabled-font-color;
+		}
+	}
+}
+
+// .btn > .icon {
+// 	width: $base-spacing-unit * 1.5;
+// 	padding-left: 0;
+// }
+
+.sidebar .icon,
+.header .icon {
+	g, svg, path, rect, polygon {
+		fill: $header-font-color;
+	}
+}
+
+//Specials
+.icon--qlogo32.icon--qlogo32 {
+
+	g, svg, path, rect, polygon {
+		// fill: transparent;
+		fill: $logo-color;
+	}
+}
+
+.icon--rotating {
+	transform: rotate(0deg);
+	transition: transform $transition-easing $transition-speed;
+}
+.icon--rotating-45 {
+	transform: rotate(45deg);
+}

@@ -1,0 +1,17 @@
+/**/img {
+	display: block;
+	margin: 0 0 $base-spacing-unit;
+}
+
+.image--inline {
+	@extend .right-margin--half;
+	display: block;
+	float: left;
+	margin-bottom: 0;
+}
+
+.image--border {
+	border: 3px $font-color solid;
+	box-shadow: 1px 1px 3px #d1d1d1;
+	border-radius: $brand-round;
+}

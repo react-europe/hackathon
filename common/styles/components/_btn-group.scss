@@ -1,0 +1,48 @@
+.btn-group {
+	display: flex;
+	justify-content: center;
+}
+.btn-group__btn {
+	@extend .btn;
+}
+.btn-group .btn,
+.btn-group__btn {
+	display: block;
+	float: left;
+	margin-right: 0;
+	margin-left: 0;
+	border-radius: 0;
+	border-right-width: 0;
+	flex-grow: 1;
+	flex-shrink: 0;
+	&:not(:first-child) {
+		border-left-width: $action-border-width;
+	}
+	&.btn--normal {
+		border-color: $action-color-dark;
+	}
+	&.btn--shrink {
+		flex-grow: 0;
+	}
+	&.btn--quiet.btn--selected,
+	&.btn--quiet.btn--selected + .btn,
+	&.btn--quiet:hover + .btn {
+		border-left-color: $action-color;
+	}
+	&:first-child {
+		border-top-left-radius: $brand-round;
+		border-bottom-left-radius: $brand-round;
+	}
+	&:last-child {
+		border-right-width: $action-border-width;
+		border-top-right-radius: $brand-round;
+		border-bottom-right-radius: $brand-round;
+	}
+}
+
+.btn-group--s .btn {
+	@extend .btn--s;
+}
+.btn-group--l .btn {
+	@extend .btn--l;
+}

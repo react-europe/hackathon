@@ -1,0 +1,14 @@
+
+// @import '~../vars';
+
+.btn.back-btn {
+	display: inline-flex !important;
+	align-items: center;
+	flex-grow: 0;
+	> .icon {
+		margin-left: -#{round($icon-size / 4)}; //HACK
+	}
+	@include media-query(xs) {
+		margin-left: $base-spacing-unit;
+	}
+}

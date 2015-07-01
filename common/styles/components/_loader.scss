@@ -1,0 +1,43 @@
+.loader.loader {
+  animation: sssds 5s infinite $transition-easing;
+  animation-fill-mode: both;
+  path {
+    fill: $element-color;
+  }
+}
+
+// @keyframes loaderAnimation {
+//   0%    { transform: rotate(0deg); }
+//   25%    { transform: rotate(0deg); }
+//   55%   { transform: rotate(-90deg); }
+//   70%   { transform: rotate(-180deg); }
+//   100%   { transform: rotate(-360deg); }
+// }
+
+// CSSO has a bug that fucks up complex animations so we use a more simple one.
+@keyframes sssds {
+  0%    { transform: rotate(0deg); }
+  6,667%    { transform: rotate(90deg); }
+  8,333%   { transform: rotate(90deg); }
+  15%   { transform: rotate(180deg); }
+  16,667%   { transform: rotate(180deg); }
+  23,333%   { transform: rotate(90deg); }
+  25%   { transform: rotate(90deg); }
+  31,667%   { transform: rotate(180deg); }
+  33,333%   { transform: rotate(180deg); }
+  40%   { transform: rotate(270deg); }
+  41,667%   { transform: rotate(270deg); }
+  48,333%   { transform: rotate(180deg); }
+  50%   { transform: rotate(180deg); }
+  56,667%   { transform: rotate(270deg); }
+  58,333%   { transform: rotate(270deg); }
+  65%   { transform: rotate(360deg); }
+  66,667%   { transform: rotate(360deg); }
+  73,333%   { transform: rotate(270deg); }
+  75%   { transform: rotate(270deg); }
+  81,667%   { transform: rotate(360deg); }
+  83,333%   { transform: rotate(360deg); }
+  90%   { transform: rotate(450deg); }
+  91,667%   { transform: rotate(450deg); }
+  100%   { transform: rotate(360deg); }
+}

@@ -1,0 +1,178 @@
+
+// @import "~../vars";
+
+$headcol-width: $base-spacing-unit * 8;
+.table-wrapper {
+	position: relative;
+	display: flex;
+	flex-grow: 0;
+	width: 100%;
+	overflow: auto;
+	border-radius: $brand-round;
+	&.table--has-headcol {
+		tbody tr:nth-child(1) .td--headcol {
+			border-top: $table-border;
+			margin-top: -1px;
+		}
+	}
+	thead th:first-child {
+		border-top-left-radius: $brand-round;
+	}
+		thead th:last-child {
+		border-top-right-radius: $brand-round;
+	}
+		tfoot th:first-child {
+		border-bottom-left-radius: $brand-round;
+	}
+		tfoot th:last-child {
+		border-bottom-right-radius: $brand-round;
+	}
+	table {
+		width: 100%;
+		line-height: $base-line-height * 2 - 1 * $table-border-width;
+		border: none;
+		@include layer;
+		@include media-query(xs) {
+			font-size: $centi-size;
+		}
+	}
+	td, th {
+		display: table-cell;
+		padding: 0 $half-spacing-unit;
+		word-break: normal;
+		border-bottom: $table-quiet-border;
+		min-width: $base-spacing-unit * 2;
+	}
+	thead, tfoot {
+		> tr > td,
+		> tr > th {
+			padding: $half-spacing-unit * 1.5 $half-spacing-unit $half-spacing-unit * 1.5 - 1 * $table-border-width;
+			line-height: $base-line-height * 0.75;
+			font-weight: $bold;
+			word-break: normal;
+			hyphens: auto;
+		}
+	}
+	tr:last-child > td {
+		border-bottom: none;
+	}
+
+	thead > tr > th {
+		border-bottom: $table-border;
+		&.td--headcol {
+			height: 50%;
+		}
+	}
+	tfoot {
+		td, th {
+			border-top: $table-border;
+			border-bottom: none;
+			&.td--headcol {
+				font-weight: $bold;
+				text-align: center;
+			}
+		}
+	}
+}
+.table--overflow-left > .table__headcol,
+.table--overflow-right {
+	border-right: $quiet-border;
+	border-radius: 0;
+}
+
+.td--headcol {
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.table--cozy {
+	line-height: $base-line-height - 1 * $table-border-width;
+}
+.table--has-summary {
+	tr:nth-last-child(2) > td {
+		border-bottom: 0;
+	}
+}
+
+.table__body {
+	overflow: auto;
+	text-align: center;
+	width: 100%;
+	@include touch-scroll;
+	@include layer
+}
+
+.table__headcol {
+	// border-right: $table-quiet-border;
+	position: relative;
+	// height: 100%;
+	flex-shrink: 0;
+	align-self: flex-end;
+	text-align: left;
+	td {
+		font-weight: $bold;
+		@include truncate($base-spacing-unit * 16);
+		@include media-query (s) {
+			max-width: $base-spacing-unit * 13;
+		}
+		@include media-query (xs) {
+			max-width: $base-spacing-unit * 9;
+		}
+	}
+}
+
+.table__number {
+	white-space: nowrap;
+}
+.td--headcol {
+	position: absolute;
+	background: mix($background-color, $font-color, $light-tint);
+	font-weight: $bold;
+	text-align: left;
+	z-index: 0;
+	padding-left: $half-spacing-unit;
+	margin-left: -$headcol-width;
+	// border-right: $table-border;
+	@include layer;
+}
+
+.table--has-scroll-buttons {
+	.table__body,
+	.table__headcol {
+		padding-top: $base-spacing-unit * 3;
+	}
+}
+
+.table--rotate-headers {
+	.table__body > table {
+		margin-right: $base-spacing-unit * 4;
+	}
+	thead > tr > th {
+		white-space: nowrap;
+		overflow: visible;
+		vertical-align: bottom;
+		max-width: $base-spacing-unit * 1;
+		line-height: $base-line-height;
+		padding-bottom: $half-spacing-unit;
+		& > span,
+		& > a,
+		& > span.touch-feedback,
+		& > a.touch-feedback {
+			display: inline-block;
+          // NOTE: calc() does not work in IE inside translate (bug)
+			transform: translate3d(0, $base-spacing-unit * 3.5, 0) rotate(-35deg);
+			transform-origin: 0 0;
+			margin-bottom: $half-spacing-unit * 0;
+			margin-left: $half-spacing-unit / 2;
+			animation: none; // Avoid funky transform collisions with .touch-feedback
+		}
+	}
+}
+.table__header-spacer {
+	width: 100%;
+	float: left;
+	height: $base-spacing-unit * 3;
+	z-index: -1000000;
+	pointer-events: none;
+	visibility: hidden;
+	cursor: normal;
+}

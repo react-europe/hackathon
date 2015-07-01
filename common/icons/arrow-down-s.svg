@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>arrow-down-s</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M4.40775879,0.532275983 C4.96004354,0.532275983 5.40775879,0.979991233 5.40775879,1.53227598 L5.40775879,7.53603445 C5.40775879,8.09055473 5.84564014,8.54008226 6.41068812,8.54008226 L12.4077588,8.54008226 C12.9600436,8.54008226 13.4077588,8.98779746 13.4077588,9.54008226 C13.4077588,10.092367 12.9600436,10.5400823 12.4077588,10.5400823 L5.40515049,10.5400823 C4.30202152,10.5400823 3.40775879,9.64344736 3.40775879,8.54095806 L3.40775879,1.53227598 C3.40775879,0.979991233 3.85547404,0.532275983 4.40775879,0.532275983 Z" id="Line-copy" fill="#000000" sketch:type="MSShapeGroup" transform="translate(8.297781, 5.368849) rotate(-45.000000) translate(-8.297781, -5.368849) "></path>
+    </g>
+</svg>

@@ -1,0 +1,245 @@
+
+// @import "~../vars";
+
+.btn {
+	// -moz-outline: 0;
+	// outline: 0;
+	-webkit-appearance: none;
+	user-select: none;
+	border-radius: $brand-round;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 100%;
+	font-weight: $fat;
+	line-height: $base-line-height * 2 - 2 * $action-border-width;
+	min-width: $base-spacing-unit * 2;
+	padding: 0 round($half-spacing-unit * 1.5);
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	@include layer;
+	transition: background-color .1s linear;
+	.no-touch &:hover {
+		text-decoration:none;
+	}
+	&:active,
+	&.touch-feedback {
+		transition-duration: 0s;
+		// outline: none;
+	}
+	> .icon--s:only-child { //Buttons with only a small icon inside. Let's treat them differently
+		padding-left: 0;
+		padding-right: 0;
+		width: $icon-size--s;
+	}
+}
+
+.btn--normal,
+.btn--primary,
+.btn--warning {
+	color: $button-font-color;
+	&.btn--selected {
+		box-shadow:
+			0 0px 0px 3em rgba(#000, .2) inset,
+	}
+}
+.btn--normal {
+	background-color: $button-color;
+	border: $button-border-dark;
+	&:focus,
+	.no-touch &:hover {
+		background-color: $button-color-light;
+	}
+	&:active,
+	&.touch-feedback {
+		background-color: $button-color-dark;
+	}
+}
+
+.btn--full {
+	width:100%;
+	padding-right:0;
+	padding-left: 0;
+	text-align:center;
+}
+
+.btn--s {
+	font-size: $centi-size;
+	// line-height: $base-line-height * 1.5;
+	// height: $base-line-height * 1.5;
+	padding: 0 $half-spacing-unit;
+	min-width: $base-spacing-unit * 2;
+	// > .icon:only-child {
+	// 	padding-top: ($base-line-height * 1.5 - $icon-size--s) / 2;
+	// 	padding-bottom: ($base-line-height * 1.5 - $icon-size--s) / 2;
+	// 	height: $base-line-height * 1.5;
+	// }
+}
+.btn--l {
+	@include font-size($h3-size);
+	line-height: $base-line-height * 3 - $action-border-width * 2;
+	height: $base-line-height * 3;
+	padding: 0 $base-spacing-unit * 1.25;
+}
+
+.btn--pill {
+	border-radius: $base-spacing-unit * 2;
+}
+
+.btn--inline {
+	margin-left: round($half-spacing-unit / 2);
+	margin-bottom: $half-spacing-unit;
+}
+
+/*
+
+## Primary button
+
+		<input type="button" class="btn btn--primary" value="Click me!" />
+
+*/
+
+.btn--primary {
+	background-color: $primary-action-color;
+	border: $primary-action-border-dark;
+	&:focus,
+	.no-touch &:hover {
+		background-color: $primary-action-color-light;
+		border-color: $primary-action-border-color;
+	}
+	&.touch-feedback,
+	&:active {
+		background-color: $primary-action-color-dark;
+	}
+}
+
+/*
+
+## Button with warning
+
+		<input type="button" class="btn btn--warning" value="Click me!" />
+
+*/
+
+.btn--warning {
+	background-color: $warning-color;
+	border: $warning-border-dark;
+	&:focus,
+	.no-touch &:hover {
+		background-color: $warning-color-light;
+	}
+	&.touch-feedback,
+	&:active {
+		background-color: $warning-color-dark;
+	}
+}
+
+
+// Quiet buttons
+.btn--quiet,
+.btn--quiet-warning {
+	background-color: $quiet-action-color;
+	&:focus,
+	.no-touch &:hover {
+		background-color: $quiet-action-color-light;
+	}
+	&:active,
+	&.touch-feedback {
+		background-color: $quiet-action-active-color;
+	}
+}
+.btn--quiet-warning {
+	color: $quiet-warning-font-color;
+	border: $quiet-warning-border;
+	&:focus,
+	.no-touch &:hover {
+		border-color: $warning-color;
+	}
+}
+.btn--quiet {
+	color: $quiet-action-font-color;
+	border: $quiet-action-border;
+	&:focus,
+	.no-touch &:hover {
+		border-color: $quiet-action-active-border-color;
+	}
+	&.btn--selected,
+	.no-touch &:hover.btn--selected {
+		color: $button-font-color;
+		background-color: $button-color;
+		border-color: $button-border-color;
+		&:focus {
+			background-color: $button-color-light;
+		}
+	}
+}
+
+.btn--round-icon {
+	border-radius: 50%;
+	height: $base-spacing-unit * 1.5 - 1; // -1 so we can center icons properly
+	width: $base-spacing-unit * 1.5 - 1;
+	min-width: $base-spacing-unit * 1.5 - 1;
+	padding: 0;
+	margin-top: 1px;
+	> .icon--s:only-child {
+		height: $base-spacing-unit * 1.5 - 2 * $action-border-width;
+		width: $base-spacing-unit * 1.5 - 2 * $action-border-width ;
+	}
+
+}
+
+
+
+.btn[disabled],
+.btn:disabled,
+.btn--disabled,
+.btn--loading {
+	&,
+	&.touch-feedback,
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $disabled-color;
+		color: $disabled-font-color;
+		border-color: $disabled-border-color;
+		box-shadow: none;
+	}
+	// &.btn--quiet {
+	// 	&,
+	// 	.no-touch &:hover {
+	// 		color: $disabled-color;
+	// 		border-color: $quiet-action-color-dark;
+	// 		background-color: $quiet-action-color-light;
+	// 	}
+	// }
+}
+
+
+.btn--submit {
+	float: right;
+	align-self: flex-end;
+}
+
+.btn--grow {
+	flex-grow: 1;
+}
+
+.btn--loading {
+  animation: btnPulse ease-in-out 1.6s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: alternate; /*when the spec is finished*/
+  opacity: 1;
+}
+
+@keyframes btnPulse {
+  0% {
+    opacity: .95;
+  }
+  50% {
+    opacity: .6;
+  }
+  100% {
+    opacity: .95;
+  }
+}
+

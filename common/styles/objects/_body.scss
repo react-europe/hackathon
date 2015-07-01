@@ -1,0 +1,43 @@
+/*
+
+Body
+======
+
+		<div>A text in the body</div>
+
+*/
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	color: $font-color;
+	background-color: $body-background-color;
+}
+.ios-web-app {
+	margin-top: 20px;
+}
+* {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+.no-scroll {
+	overflow: hidden;
+}
+
+.body-content {
+	padding-top: $header-height;
+}
+.body-content--sidebar {
+	margin-left: $sidebar-width;
+	padding-top: 0;
+	// @include media-query(m) {
+		margin-left: $sidebar-width-s;
+	// }
+	@include media-query(s) {
+		margin-left: 0;
+	}
+}
+
+.app-container {
+	min-height: 100vh;
+}
