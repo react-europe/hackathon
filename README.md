@@ -17,17 +17,17 @@ cordova run ios
 # ScreenShots
 
 ## Mangas List: 
-![mangas list](https://raw.github.com/fdecampredon/hackathon/screenshots/manga-list.png)
+![mangas list](https://raw.githubusercontent.com/fdecampredon/hackathon/master/screenshots/manga-list.png)
 
 ## Search: 
-![search mangas](https://raw.github.com/fdecampredon/hackathon/screenshots/search.png)
+![search mangas](https://raw.githubusercontent.com/fdecampredon/hackathon/master/screenshots/search.png)
 
 ## Chapters list: 
-![chapters list](https://raw.github.com/fdecampredon/hackathon/screenshots/chapter-list.png)
+![chapters list](https://raw.githubusercontent.com/fdecampredon/hackathon/master/screenshots/chapter-list.png)
 
 ## Reader: 
-![reader](https://raw.github.com/fdecampredon/hackathon/screenshots/reader.png)
+![reader](https://raw.githubusercontent.com/fdecampredon/hackathon/master/screenshots/reader.png)
 
 ## Favorites: 
-![manga list](https://raw.github.com/fdecampredon/hackathon/screenshots/favorites.png)
+![manga list](https://raw.githubusercontent.com/fdecampredon/hackathon/master/screenshots/favorites.png)
 
