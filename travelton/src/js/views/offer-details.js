@@ -19,7 +19,7 @@ module.exports = React.createClass({
 		return {
 			processing: false,
 			formIsValid: false,
-			bioValue: this.props.user.bio || ''
+			bioValue: ''
 		}
 	},
 
@@ -53,36 +53,26 @@ module.exports = React.createClass({
 		// fields
 		return (
 			<UI.View>
-				<UI.Headerbar type="default" label={[this.props.user.name.first, this.props.user.name.last].join(' ')}>
+				<UI.Headerbar type="default" label={this.props.user.HOTEL_NAME}>
 					<UI.HeaderbarButton showView={this.props.prevView} viewTransition="reveal-from-right" label="Back" icon="ion-chevron-left" />
 					<UI.LoadingButton loading={this.state.processing} disabled={!this.state.formIsValid} onTap={this.processForm} label="Save" className="Headerbar-button right is-primary" />
 				</UI.Headerbar>
 				<UI.ViewContent grow scrollable>
 					<div className="panel-header text-caps">
-						<img className="teaser-product__img" src="http://images.hlx.com/hotel/medico/kgs92b/psalidi/palm-beach-startbild-1988832-2.jpg"/>
+						<img className="teaser-product__img" src={this.props.user.HOTEL_IMAGE_URL}/>
 						 	<div className="teaser-product__name">
-								The Aeolos Beach
+								{this.props.HOTEL_NAME}
 						 	</div>
 							<div className="teaser-product__location">
-								Lambi | Kos | Griechenland
+								{this.props.user.HOTEL_LOCATION_COUNTRY} | {this.props.user.HOTEL_LOCATION_REGION} | {this.props.user.HOTEL_LOCATION_CITY}
 						 	</div>
 					</div>
 					<div className="panel panel--first">
-						<UI.LabelInput label="Name"     value={[this.props.user.name.first, this.props.user.name.last].join(' ')}       placeholder="Full name" first />
-						<UI.LabelInput label="Location" value={this.props.user.location}   placeholder="Suburb, Country" />
-						<UI.LabelInput label="Joined"   value={this.props.user.joinedDate} placeholder="Date" />
-						<UI.LabelTextarea label="Bio"   value={this.state.bioValue}        placeholder="(required)" onChange={this.handleBioInput} />
-					</div>
-					<div className="panel">
-						<Tappable onTap={this.showFlavourList} className="list-item is-first" component="div">
-							<div className="item-inner">
-								Favourite Icecreafm
-								<div className="item-note default">
-									<div className="item-note-label">{this.props.user.flavour}</div>
-									<div className="item-note-icon ion-chevron-right" />
-								</div>
-							</div>
-						</Tappable>
+						<UI.LabelInput label="Name"     value={this.props.user.HOTEL_NAME}       placeholder="Full name" first />
+						<UI.LabelInput label="Location" value={this.props.user.HOTEL_LOCATION_COUNTRY}   placeholder="Suburb, Country" />
+						<UI.LabelInput label="Room" value={this.props.user.HOTEL_ROOM_NAME}   placeholder="Room" />
+						<UI.LabelInput label="Board" value={this.props.user.HOTEL_BOARD_NAME}   placeholder="Board" />
+						<UI.LabelInput label="Price" value={this.props.user.PRICE_ADULT + " €"}   placeholder="Price" />
 					</div>
 					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Primary Button.')} className="panel-button primary" component="button">
 						book now!
