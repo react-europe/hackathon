@@ -1,3 +1,31 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main .head {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search .keywords {
+  font-size: small;
+}
+
+.result {
+  display: flex;
+}
+
+.result .thumb {
+  width: 50px;
+  height: 50px;
+}
+
+.result .details {
+  flex: 1
+}
+
 .google-maps-chart {
   height: 651px;
   width: 367px;
