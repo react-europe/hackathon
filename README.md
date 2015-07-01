@@ -19,12 +19,13 @@ Once the theme is posted, you will need to:
 
 # react-movies
 
-To build the project:
+To build and run the project:
 
 ```sh
 npm install
 npm start # Starts the development server on port 3000
 cd cordova
+cordova platforms add ios
 cordova run ios
 ```
 
