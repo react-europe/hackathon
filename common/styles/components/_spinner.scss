@@ -1,0 +1,33 @@
+.spinner {
+  height: $base-spacing-unit * 1;
+  width: $base-spacing-unit * 1;
+	margin: $half-spacing-unit;
+	border-radius: $base-spacing-unit;
+	background-color: rgba($quiet-color, 0.4);
+	opacity: 0;
+	@include layer;
+}
+.spinner--display {
+	opacity: 1;
+	animation: spinner ease-in-out 1s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: alternate; /*when the spec is finished*/
+}
+.spinner--obvious {
+	background-color: $quiet-color;
+}
+
+@keyframes spinner {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	67% {
+		opacity: 0.2;
+		transform: scale(0.8);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

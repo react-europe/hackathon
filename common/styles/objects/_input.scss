@@ -1,0 +1,209 @@
+
+input::-ms-clear {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.input {
+	// display: inline-block; //it was breaking input time in mobiles
+	zoom: 1;
+	line-height: $base-line-height;
+	border: $quiet-action-border;
+	border-radius: $brand-round;
+	background-color: $quiet-action-color;
+	outline: 0;
+	cursor: text;
+	-moz-outline: 0;
+	-webkit-appearance: none;
+	.no-touch & {
+		transition: all $transition-speed $transition-easing;
+	}
+	&:hover, &:focus {
+		border: $action-border;
+	}
+	&:focus, &:active {
+		border: $action-border;
+		background-color: $quiet-action-active-color;
+	}
+	&[disabled], &:disabled, &.disabled, &.inactive {
+		box-shadow: none;
+	}
+	&.touch-feedback {
+		background-color: mix($background-color, $action-color, $tint);
+	}
+}
+.input--email,
+.input--password,
+.input--textarea,
+.input--number,
+.input--text {
+	min-width: $base-spacing-unit * 10;
+	height: $base-spacing-unit * 3;
+	padding: round($base-spacing-unit * .67) $half-spacing-unit 0;
+	&::-webkit-input-placeholder {
+		color: transparent;
+		transition: color 0.1s linear;
+	}
+	&::-moz-placeholder {
+		color: transparent;
+		transition: color 0.1s linear;
+	}
+	&::-ms-input-placeholder {
+		color: transparent;
+		transition: color 0.1s linear;
+	}
+	&:focus::-webkit-input-placeholder {
+			color: $quiet-color;
+	}
+	&:focus::-moz-placeholder {
+			color: $quiet-color;
+	}
+	&:focus::-ms-input-placeholder {
+			color: $quiet-color;
+	}
+}
+
+.input--form {
+	padding-top: 0;
+	height: $base-spacing-unit * 2;
+}
+.input--small {
+	padding: round($base-spacing-unit * .67) $half-spacing-unit 0;
+	height: $base-spacing-unit * 2;
+}
+.input--inline {
+	display: inline-block;
+	height: $base-spacing-unit * 1.5;
+	margin: 0 0.25em;
+	border-color: transparent;
+	text-align: center;
+	background-color: rgba($background-color - 20, 0.3);
+	&:hover, &:active, &:focus {
+	}
+}
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	> .input:focus + .input__label,
+	> .input__label {
+		display: block;
+		position: absolute;
+		top: 0;
+		cursor: text;
+		margin-top: $half-spacing-unit;
+		left: $half-spacing-unit;
+		color: $quiet-action-font-color;
+		font-weight: $bold;
+		transition: all $transition-easing $transition-speed / 2;
+		font-size: $micro-size;
+		line-height: $half-spacing-unit;
+	}
+	&:not(.fetch--fetching) > .input--empty:not(:focus) + .input__label {
+		margin-top: $base-spacing-unit * 1.25;
+		font-size: $base-font-size;
+		line-height: $half-spacing-unit;
+	}
+	&:not(.fetch--fetching) > .input--small.input--empty:not(:focus) + .input__label {
+		margin-top: $half-spacing-unit * 1.5;
+	}
+	> .input--small:focus + .input__label,
+	> .input--small + .input__label {
+		// margin-top: $half-spacing-unit / 2;
+		margin-top: ceil($half-spacing-unit / 3);
+	}
+}
+.input--full {
+	width: 100%;
+}
+.input--error {
+	input {
+		border-color: $warning-color;
+	}
+	.input__feedback {
+		display: inline;
+	}
+}
+.input__feedback {
+	display: none;
+	color: $primary-action-color;
+	&:before {
+		@extend .icon-x:before;
+		top: 2px; // Magic number
+		padding-right: $half-spacing-unit + $icon-size;
+		margin-left: -($half-spacing-unit + $icon-size);
+	}
+}
+.input__feedback--error {
+	color: $warning-color;
+}
+
+.input--changed {
+	animation: changedPulse ease-in-out 1.6s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes changedPulse {
+	0% {
+		border-color: $action-color;
+	}
+	50% {
+		border-color: $yellow-light;
+	}
+	100% {
+		border-color: $action-color;
+	}
+}
+
+.input--textarea {
+	padding-top: round($base-spacing-unit * 1.33);
+	height: $base-spacing-unit * 5;
+}
+.input--date {
+	&.input--inline {
+		width: $base-spacing-unit * 6;
+	}
+}
+.input--time.input--empty:not(:focus) {
+	color: transparent; //Because --:-- is fugly
+}
+
+.input--full {
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.input--inverted {
+	border: $action-border-width mix($background-color, $font-color, $fat-tint) solid;
+	background-color: $font-color;
+	color: $element-color;
+	&:focus, &:active {
+		background-color: mix($font-color, $background-color, $heavy-tint);
+		border-color: $element-color;
+	}
+}
+.input--no-label {
+	padding: $half-spacing-unit;
+}
+
+.input-wrapper--form {
+	margin-bottom: $base-spacing-unit;
+}
+
+
+
+//Should maybe be refactored...
+input.sync--success.sync--success {
+	border-color: $primary-action-color;
+}
+input.sync--failure.sync--failure {
+	border-color: $warning-color;
+}

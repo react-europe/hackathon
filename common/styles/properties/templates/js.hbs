@@ -1,0 +1,4 @@
+module.exports = [
+	{{#each properties}}"{{camelCase name}}": "{{value}}"{{#unless @last}},{{/unless}}
+	{{/each}}
+]

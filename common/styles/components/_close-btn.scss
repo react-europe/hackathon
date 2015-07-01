@@ -1,0 +1,104 @@
+
+
+$icon-bar-height: 2px;
+
+.close-btn {
+	position: fixed;
+	top: $half-spacing-unit;
+	right: $half-spacing-unit;
+	background-color: $header-bar-color;
+	border-radius: 50%;
+	cursor: pointer;
+	width: $base-spacing-unit * 2;
+	height: $base-spacing-unit * 2;
+	padding: ( $base-spacing-unit - $icon-bar-height * 2) / 2 $half-spacing-unit;
+	z-index: $menu-layer + $quarter-layer;
+	transition: background-color $transition-easing $transition-speed;
+	@include layer;
+	&.touch-feedback {
+		transform: scale(0.9);
+	}
+	> span {
+		margin: 0 auto;
+		position: relative;
+		top: $half-spacing-unit + $icon-bar-height / 2;
+		transition-duration: $transition-speed;
+		transition-delay: $transition-speed;
+		transition-timing-function: $transition-easing;
+		&,
+		&:before,
+		&:after {
+			width: $base-spacing-unit;
+			height: $icon-bar-height;
+			border-radius: $brand-round;
+			background-color: $header-font-color;
+			display: block;
+		}
+		&:before,
+		&:after {
+			position: absolute;
+			content: '';
+			transition-property: margin, transform, background-color;
+			transition-duration: $transition-speed;
+			transition-delay: $transition-speed, 0;
+			transition-timing-function: $transition-easing--bounce, $transition-easing;
+		}
+		&:before {
+			margin-top: -$half-spacing-unit / 2;
+		}
+		&:after {
+			margin-top: $half-spacing-unit / 2;
+		}
+	}
+}
+.close-btn--open {
+	.closing & {
+		background-color: $header-bar-color;
+	}
+	@include media-query(xs) {
+		background-color: $background-color;
+	}
+}
+.close-btn--open > span {
+	background-color: transparent;
+	transition-delay: $transition-speed / 3;
+	// transition-timing-function: $transition-easing;
+	&:before,
+	&:after {
+		margin-top: 0;
+		transition-delay: 0, $transition-speed;
+		transition-timing-function: $transition-easing, $transition-easing--bounce;
+		@include media-query(xs) {
+			background-color: $header-bar-color;
+		}
+	}
+	&:before {
+		transform: rotate(45deg);
+	}
+	&:after {
+		transform: rotate(-45deg);
+	}
+}
+
+
+.close-btn--popup {
+	bottom: auto;
+	left: auto;
+	top: $half-spacing-unit;
+	right: $half-spacing-unit;
+	z-index: 100000;
+	background-color: $font-color;
+	& > span {
+		&:before,
+		&:after {
+			background-color: $background-color;
+
+		}
+	}
+}
+.close-btn--double-padding {
+	width: $base-spacing-unit * 3;
+	height: $base-spacing-unit * 3;
+	padding: ( $base-spacing-unit * 2 - $icon-bar-height * 2) / 2 $base-spacing-unit;
+
+}

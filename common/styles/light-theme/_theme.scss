@@ -1,0 +1,37 @@
+$border-width:									1px;
+$action-border-width:						0px;
+$list-border-width:							1px;
+$table-border-width:						1px;
+$container-border-width:				0px;
+
+
+// UI element colors
+$background-color:							$light-base;
+$element-color:									darken($background-color, 13%);
+$body-background-color:					darken($background-color, 6%);
+$font-color: 										darken($dark-base, 10%);
+$quiet-color: 									#777;
+
+$login-background-color: 				$dark-base;
+$login-form-background-color: 	$dark-base;
+$login-form-font-color: 				$font-color;
+
+$quiet-action-color:						darken($background-color, 13%);
+$quiet-action-color-light:	 		darken($background-color, 6%);
+$quiet-action-active-color: 		darken($background-color, 9%);
+$quiet-action-border-color: 		$blue;
+$quiet-action-border:						$action-border-width $quiet-action-border-color solid;
+$quiet-warning-border-color: 		$red;
+$quiet-warning-border:					$action-border-width $quiet-warning-border-color solid;
+$action-font-color: 						#fff;
+
+$modal-shadow:									0 0 40px 2px rgba(#000, 0.1);
+
+$link-color:										darken($blue, 5%);
+
+// Borders
+$border-color:									darken($background-color, 15%);
+$quiet-border-color:						mix($background-color, $font-color, $heavy-tint);
+$heavy-border-color:						darken($border-color, 8%);
+
+$topbar-color: #fff;

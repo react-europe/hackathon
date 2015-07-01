@@ -1,0 +1,21 @@
+
+body {
+	&:after {
+		display: none;
+		@include media-query ('xl') {
+			content: 'media-query-xl';
+		}
+		@include media-query ('l') {
+			content: 'media-query-l';
+		}
+		@include media-query ('m') {
+			content: 'media-query-m';
+		}
+		@include media-query ('s') {
+			content: 'media-query-s';
+		}
+		@include media-query ('xs') {
+			content: 'media-query-xs';
+		}
+	}
+}

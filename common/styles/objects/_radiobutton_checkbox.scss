@@ -1,0 +1,103 @@
+
+	/*
+		Example markup
+		<label class="checkbox"><input class="checkbox__input" type="checkbox" label="Real sales">
+			<span class="checkbox__indicator"></span>
+			<span class="checkbox__label">Real sales</span>
+		</label>
+	 */
+.checkbox,
+.radiobutton {
+	position: relative;
+	display: flex;
+	padding-left: $icon-size + floor($half-spacing-unit / 2);
+	cursor: pointer;
+	line-height: $base-spacing-unit * 2;
+	@include truncate(100%);
+	> input {
+		position: absolute;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		z-index: 1;
+		@include layer;
+	}
+}
+
+.checkbox__label,
+.radiobutton__label {
+	@include truncate(100%);
+
+}
+.checkbox__indicator,
+.radiobutton__indicator {
+	position: absolute;
+	top: $half-spacing-unit;
+	left: 0;
+	display: block;
+	width: $base-spacing-unit;
+	height: $base-spacing-unit;
+	margin: -1 * $action-border-width 0 0;
+	color: $quiet-action-font-color;
+	text-align: center;
+	background-color: $quiet-action-color;
+	border: $quiet-action-border;
+	background-size: $half-spacing-unit + 1 $half-spacing-unit + 1 ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	user-select: none;
+	box-shadow: inset 0 0 0 0 $quiet-action-color;
+	border-radius: $brand-round;
+	transition: all $transition-speed / 2 linear;
+	@include layer;
+	.radiobutton:hover > input:not(:checked) ~ &,
+	.checkbox:hover > input:not(:checked) ~ & {
+		background-color: $quiet-action-active-color;
+	}
+	input:checked ~ & {
+		box-shadow: inset 0 0 0 $half-spacing-unit transparent;
+		background-color: $action-color;
+		border-color: $action-border-color;
+	}
+}
+.radiobutton__indicator {
+	border-radius: 50%;
+	input:focus ~ &,
+	input:active ~ & {
+		background-color: $quiet-action-color-light;
+	}
+	input:checked ~ & {
+		box-shadow: inset 0 0 0 $half-spacing-unit $button-color;
+	}
+	input:focus:checked ~ & {
+		box-shadow: inset 0 0 0 $half-spacing-unit $button-color-light;
+	}
+}
+.checkbox__indicator {
+	input:focus:checked ~ &,
+	input:active:checked ~ & {
+		background-color: $action-color-light;
+	}
+	input:focus ~ &,
+	input:active ~ & {
+		background-color: $quiet-action-color-light;
+	}
+}
+.checkbox__indicator-icon {
+	height: $icon-size--s;
+	width: $icon-size--s;
+	margin: (($base-spacing-unit - $icon-size--s) / 2) - $action-border-width;
+	padding: 0;
+	g, path, svg {
+		transition: all $transition-speed / 2 linear;
+		fill: transparent;
+	}
+	input:checked ~ .checkbox__indicator > & {
+		g, path, svg {
+			fill: $action-font-color;
+		}
+	}
+}
+

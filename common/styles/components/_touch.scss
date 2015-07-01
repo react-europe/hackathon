@@ -1,0 +1,9 @@
+.touch [data-touch-feedback] {
+	transition: transform 0.1s ease-out !important;
+}
+.touch-feedback {
+	outline: none;
+	transform-origin: 50% 50%;
+	transition-duration: 0.05s !important;
+	transform: scale(.95) !important;
+}

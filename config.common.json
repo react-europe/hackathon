@@ -1,0 +1,20 @@
+{
+	"lang": "en",
+	"languages": {
+		"English": {
+			"key": "en",
+			"moment-key": "en-gb",
+			"default": true
+		},
+		"Svenska": {
+			"key": "sv",
+			"moment-key": "sv"
+		},
+		"Norsk": {
+			"key": "no",
+			"moment-key": "no"
+		}
+	},
+	"login-url": "/login",
+	"analytics-disabled": true
+}

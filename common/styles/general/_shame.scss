@@ -1,0 +1,34 @@
+/**/
+
+.main-wrapper {
+	padding-top: $base-spacing-unit;
+}
+
+.no-show {
+	display: none;
+}
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.seperate-children {
+	> * {
+		margin-left: $base-spacing-unit;
+		margin-bottom: $base-spacing-unit;
+	}
+}
+
+.layer {
+	@include layer;
+}
+
+.forward {
+	z-index: $half-layer;
+}

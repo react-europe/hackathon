@@ -1,0 +1,122 @@
+
+$header-border-width: 0px;
+.header {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $header-height + $header-border-width;
+	padding: 0;
+	background-color: $header-bar-color;
+	color: $header-font-color;
+	z-index: $menu-layer;
+	@include layer;
+}
+.ios-web-app .header {
+	height: $header-height + $header-border-width + 20px;
+	padding-top: 20px;
+}
+.header__title {
+	line-height: $header-height;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.header--insights {
+	// background-color: $insights-color;
+	border-color: $insights-color;
+}
+.header--organisation {
+	border-color: $organisation-color;
+}
+.header--webpunch {
+	border-color: $webpunch-color;
+}
+.header__center {
+	flex-grow: 1;
+	align-self: center;
+}
+.header__left,
+.header__right {
+	display: flex;
+	align-items: center;
+}
+.header__section {
+	height: $header-height;
+	line-height: $base-spacing-unit;
+	&:last-child {
+		border-left: none;
+	}
+}
+
+.header__section--icon {
+	position: relative;
+	padding: 0 $base-spacing-unit;
+	height: $header-height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&.active {
+		background-color: $header-highlight-color;
+	}
+}
+
+
+.header__section-icon-notification {
+	position: absolute;
+	top: $half-spacing-unit / 2;
+	right: $half-spacing-unit;
+	text-align: center;
+	background-color: $red;
+	color: $header-font-color;
+	border-radius: 50%;
+	height: $base-spacing-unit;
+	width: $base-spacing-unit;
+	font-size: $centi-size;
+	line-height: $base-spacing-unit + 2; //Adjust for the fact that numbers son't have decenders. Still a bit of a hack.
+	letter-spacing: 1px; //Just hack
+}
+
+.header__nav {
+	flex: 1 0 auto;
+}
+.header__label {
+	height: $header-height;
+	line-height: $header-height;
+	padding: 0 $base-spacing-unit;
+}
+.header__logo {
+	margin: 0 $base-spacing-unit;
+	height: $header-height;
+	background-color: $header-bar-color;
+	flex-shrink: 0;
+}
+.header__link {
+	line-height: $header-height;
+	padding: 0 $base-spacing-unit;
+	transition: color $transition-speed $transition-easing;
+	&:hover,
+	&.active {
+		color: mix($header-font-color, $action-color, $fat-tint);
+	}
+}
+
+.header__right--full {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.header__searchbox.header__searchbox {
+	left: $half-spacing-unit;
+	width: calc(100vw - #{$base-spacing-unit});
+	> .searchbox__input {
+		background-color: $header-highlight-color;
+		color: $header-font-color;
+	}
+	margin: $half-spacing-unit 0;
+	.ios-web-app & {
+		margin-top: $half-spacing-unit + 20px;
+	}
+}

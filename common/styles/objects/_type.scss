@@ -1,0 +1,109 @@
+html{
+    font:#{($base-font-size/16px)*1em}/#{$line-height-ratio} $base-font;
+    font-weight: $normal;
+    line-height: $base-line-height;
+}
+
+body, button, input {
+	color: $font-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+}
+::selection {
+	background: $selection-bg-color;
+	color: $selection-font-color;
+}
+::-moz-selection {
+	background: mix($action-color, $font-color, $fat-tint);
+	color: $background-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: $base-line-height;
+	text-rendering: optimizeLegibility;
+	padding: $base-spacing-unit 0;
+	font-family: $header-font;
+}
+h1, h2 {
+	font-weight: $fat;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h3 {
+	font-weight: $fat;
+}
+h4, h5, h6 {
+	font-weight: $bold;
+}
+h1 {
+	@include font-size($h1-size);
+}
+h2 {
+	font-size: $h2-size;
+	line-height: $base-line-height * 2;
+}
+h3 {
+	font-size: $h3-size;
+	line-height: $base-line-height * 2;
+}
+h4 {
+	@include font-size($h4-size, false);
+	line-height: $base-line-height;
+}
+h5 {
+	@include font-size($h5-size, false);
+	line-height: $base-line-height;
+}
+p {
+	padding-bottom: $base-spacing-unit;
+}
+
+.section-heading {
+	margin-top: $base-spacing-unit * 2;
+	margin-bottom: $base-spacing-unit;
+}
+
+.h-1-size {
+	@extend .bottom-margin;
+	@extend .alpha;
+}
+
+.beefcake,
+.strong {
+	font-weight: $bold;
+}
+
+.bigger {
+	@include font-size($h3-size);
+	line-height: $base-line-height * 1.5;
+}
+.small,
+.centi {
+    @include font-size($centi-size);
+}
+.micro,
+.tiny {
+    @include font-size($micro-size);
+}
+
+.quiet {
+	color: mix($font-color, $background-color, 50%);
+}
+
+.warning {
+	color: $warning-color;
+}
+
+.one-line {
+	line-height: $base-line-height;
+}
+.two-lines {
+	line-height: $base-line-height * 2;
+}
+.three-lines {
+	line-height: $base-line-height * 3;
+}
+
+.right {
+	text-align: right;
+}
