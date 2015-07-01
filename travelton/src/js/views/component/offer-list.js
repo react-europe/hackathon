@@ -12,19 +12,17 @@ var ComplexListItem = React.createClass({
 
 	render: function () {
 
-		var initials = this.props.user.name.first.charAt(0).toUpperCase() +
-			this.props.user.name.last.charAt(0).toUpperCase();
+		var initials = this.props.offer.name.first.charAt(0).toUpperCase();
 
 		return (
-			<Link to="details" viewTransition="show-from-right" params={{ user: this.props.user, prevView: 'component-complex-list' }} className="list-item" component="div">
-				<UI.ItemMedia avatar={this.props.user.img} avatarInitials={initials} />
+			<Link to="details" viewTransition="show-from-right" params={{ user: this.props.offer, prevView: 'component-complex-list' }} className="list-item" component="div">
+				<UI.ItemMedia avatar={this.props.offer.img} avatarInitials={initials} />
 				<div className="item-inner">
 					<div className="item-content">
-						<div className="item-title">{[this.props.user.name.first, this.props.user.name.last].join(' ')}</div>
-						<div className="item-subtitle">{this.props.user.location}</div>
+						<div className="item-title">{this.props.offer.name}</div>
+						<div className="item-subtitle">{this.props.offer.location}</div>
 					</div>
-					<UI.ItemNote type="default" label="from 23 €" 
-					icon="ion-chevron-right" />
+					<UI.ItemNote type="default" label="from 23 €" icon="ion-chevron-right" />
 				</div>
 			</Link>
 		);
@@ -34,17 +32,17 @@ var ComplexListItem = React.createClass({
 var ComplexList = React.createClass({
 	render: function () {
 
-		var users = [];
+		var offers = [];
 
-		this.props.users.forEach(function (user, i) {
-			user.key = 'user-' + i;
-			users.push(React.createElement(ComplexListItem, { user: user }));
+		this.props.offers.forEach(function (offer, i) {
+			offer.key = 'offer-' + i;
+			offers.push(React.createElement(ComplexListItem, { offer: offer }));
 		});
 
 		return (
 			<div>
 				<div className="panel panel--first avatar-list">
-					{users}
+					{offers}
 				</div>
 			</div>
 		);
@@ -62,7 +60,7 @@ module.exports = React.createClass({
 					<UI.HeaderbarButton showView="home" viewTransition="reveal-from-right" label="Back" icon="ion-chevron-left" />
 				</UI.Headerbar>
 				<UI.ViewContent grow scrollable>
-					<ComplexList users={People} />
+					<ComplexList offers={People} />
 				</UI.ViewContent>
 			</UI.View>
 		);

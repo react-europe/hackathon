@@ -84,16 +84,8 @@ module.exports = React.createClass({
 							</div>
 						</Tappable>
 					</div>
-					
-
 					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Primary Button.')} className="panel-button primary" component="button">
-						Primary Button
-					</Tappable>
-					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Default Button.')} className="panel-button" component="button">
-						Default Button
-					</Tappable>
-					<Tappable onTap={this.flashAlert.bind(this, 'You clicked the Danger Button.')} className="panel-button danger" component="button">
-						Danger Button
+						book now!
 					</Tappable>
 				</UI.ViewContent>
 			</UI.View>
