@@ -43,6 +43,7 @@
 	color: $quiet-color;
 	// text-align: center;
 	@include font-size-centi;
+	padding-bottom: $base-spacing-unit;
 	p {
 		padding-bottom: $half-spacing-unit;
 	}

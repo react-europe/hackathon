@@ -55,7 +55,7 @@ module.exports = React.createClass
 					className: 'searchbox__spinner'
 					display: true
 					onClick: @_onClear
-			else if @props.value
+			else
 				Icon
 					name: 'x-s'
 					className: 'searchbox__clear icon--s icon--quiet-action'
