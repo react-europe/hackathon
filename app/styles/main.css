@@ -33,6 +33,10 @@ body {
   padding: 0 3px 0 0;
 }
 
+.member {
+  clear: both;
+}
+
 .member .city {
   float: left;
 }

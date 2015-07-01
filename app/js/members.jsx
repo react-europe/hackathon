@@ -38,8 +38,8 @@ module.exports = React.createClass({
     if (cities) {
       var stats = cities.map((c, i) =>
           <div className="member" key={i}>
-            <span className="city">{c.city}</span>
-            <span className="total">{c.total}</span>
+            <div className="city">{c.city}</div>
+            <div className="total">{c.total}</div>
           </div>
       );
     }
