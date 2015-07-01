@@ -7,13 +7,16 @@ var Http = {
 
   /**
    * Gets JSON data from a given URL.
-   *
-   * @param url The URL to be used for getting the data.
-   * @param callback Callback function that will be called after successful fetching of the data.
    */
-  get(url, callback) {
+  get(url, params, callback) {
+    if (!callback) {
+      callback = params;
+      params = {};
+    }
+
     request
       .get(url)
+      .query(params)
       .end(function(result) {
         if (result.ok) {
           var pageData;
