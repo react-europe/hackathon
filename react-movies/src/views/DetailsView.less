@@ -1,12 +1,28 @@
 .DetailsView-content {
   display: flex;
-  padding: 1em;
 }
 
-.DetailsView-left {
+.DetailsView-cover {
+  width: 100%;
+  background-size: 100% auto;
   flex-shrink: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
 }
 
-.DetailsView-right {
-  margin-left: 1em;
+.DetailsView-details {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.8);
+  line-height: 1.1em;
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.DetailsView-releases {
+  color: rgba(255, 255, 255, 0.6);
 }

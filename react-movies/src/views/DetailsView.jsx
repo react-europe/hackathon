@@ -1,6 +1,7 @@
 import React from 'react';
 import { UI } from 'touchstonejs';
 import { connect } from 'redux/react';
+import moment from 'moment';
 
 import { getImageUrl } from 'utils';
 import { addSavedMovie, removeSavedMovie } from 'actions/savedMoviesActions';
@@ -33,13 +34,27 @@ export default class DetailsView {
             onTap={() => dispatch(isSaved ? removeSavedMovie(movie) : addSavedMovie(movie))}
           />
         </UI.Headerbar>
-        <UI.ViewContent grow scrollable className="DetailsView-content">
-          <div className="DetailsView-left">
-            <img src={getImageUrl(movie.poster_path)} />
-          </div>
-          <div className="DetailsView-right">
-            <h3>{movie.title}</h3>
-            <p>{movie.overview}</p>
+        <UI.ViewContent grow scrollable className="DetailsView-content ">
+          <div
+            className="DetailsView-cover"
+            style={{ backgroundImage: `url(${getImageUrl(movie.poster_path, 1280)})` }}
+          >
+            <div className="DetailsView-details">
+              <h3>{movie.title}</h3>
+              <p>{movie.overview}</p>
+              <div className="DetailsView-releases">
+                <div className="DetailsView-theaterRelease">
+                  Theater release: {moment(movie.release_date, 'YYYY-MM-DD').format('MMMM Do YYYY')}
+                </div>
+                <div className="DetailsView-dvdRelease">
+                  DVD release: {
+                    movie.dvdRelease === 'N/A' ?
+                      'N/A' :
+                      moment(movie.dvdRelease, 'DD MMM YYYY').format('MMMM Do YYYY')
+                  }
+                </div>
+              </div>
+            </div>
           </div>
         </UI.ViewContent>
         <Footerbar />
