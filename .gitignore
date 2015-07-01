@@ -1,6 +1,9 @@
 cordova/www/*
 !cordova/www/.dummy
-node_modules/
+node_modules/*
+!cordova/platforms/ios/cordova/node_modules/*
+!cordova/platforms/ios/cordova/node_modules/nopt/node_modules/*
+
 .DS_Store
 npm-debug.log
 .brackets.json
