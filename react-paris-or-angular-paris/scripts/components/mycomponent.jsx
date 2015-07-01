@@ -145,7 +145,7 @@ let Mycomponent = React.createClass({
       } else {
         return (
           <div>
-            <p style="opacity: 0.5"><strong>React Paris or Angular Paris</strong> by Shu Uesugi (@chibicode)</p>
+            <p className="text-quiet"><strong>React Paris or Angular Paris</strong> by Shu Uesugi (@chibicode)</p>
             {this.renderCurrentPerson()}
           </div>
         );
