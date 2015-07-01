@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<script language="javascript">
+			
+			function translateLatLng(lat, lng)
+			{
+				var cols = 20;
+				var rows = 15;
+
+				var coords = new Object();
+				coords.X = 454 + (lng * 2.52) / cols;
+				coords.Y = 431 - (lat * 2.39) / rows;
+				coords.Col = Math.floor(454 + (lng * 2.52) / cols);
+				coords.Row = Math.floor(431 - (lat * 2.39) / rows);
+				
+				return coords;
+			}
+
+			function showCountry(country)
+			{
+				var svgMap = document.getElementById("map-svg").getSVGDocument();
+			    var country = svgMap.getElementById(country);
+			    if (country != undefined)
+			    {
+					country.setAttribute("fill", getRandomColor());
+				}
+    		}
+
+    		function getRandomColor() 
+    		{
+    			var elements = '0123456789ABCDEF'.split('');
+    			var color = '#';
+    			for (var i = 0; i < 6; i++ ) 
+    			{
+        			color += elements[Math.floor(Math.random() * 16)];
+    			}
+    			return color;
+			}
+
+		</script>
+	</head>
+	<body>
+			<div style="position: relative; width: 322; height: 242px; border: 1px solid blue;" id="map">
+				<object id="map-svg" width="320" height="240" type="image/svg+xml" data="world_map.svg"></object>
+				<div style="position: absolute; z-index: 2; background: green; width: 16px; height: 16px; top: 0px; left: 0px; border: 1px solid green;">
+					&nbsp;
+				</div>
+			</div>
+		<br>
+		<input type="button" value="foo" onClick="showCountry('germany');">
+		<br>
+	</body>
+</html>

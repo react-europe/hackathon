@@ -1,0 +1,7 @@
+scssLintReport.json
+node_modules
+.sass-cache
+build
+coverage
+testresults
+npm-debug.log

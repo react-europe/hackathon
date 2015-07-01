@@ -1,0 +1,30 @@
+.grid {
+  width: 320px;
+
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.background {
+  position: absolute; 
+  z-index: -1;
+}
+.gameover {
+  width: 320px;
+  height: 240px;
+  background-color: #00d7ff;
+  position: absolute;
+  text-align: center;
+  padding: 100px 0 0 0;
+  box-sizing: border-box;
+}
+
+.won {
+  width: 320px;
+  height: 240px;
+  background-color: #00d7ff;
+  position: absolute;
+  text-align: center;
+  padding: 100px 0 0 0;
+  box-sizing: border-box;
+}

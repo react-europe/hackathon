@@ -1,0 +1,17 @@
+.dot {
+  width: ( 320px / 20 );
+  height: ( 240px / 15 );
+  float: left;
+
+  &.snake {
+    background-color: #36bcd5;
+    border-radius: 5px;
+    border: 1px solid #006072;
+    box-sizing: border-box;
+  }
+  
+  &.meetup {
+    background: url(../../assets/images/react.png);
+    background-size: cover;
+  }
+}
