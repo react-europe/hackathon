@@ -20,6 +20,7 @@
 	justify-content: center;
 	align-content: center;
 	align-items: center;
+	flex-shrink: 0;
 	@include font-size-centi;
 }
 .group-list__property--icon {
@@ -31,6 +32,7 @@
 	border-radius: $brand-round;
 	background-color: $background-color;
 	background-size: cover;
+	flex-shrink: 0;
 	margin-right: $half-spacing-unit;
 }
 .group-list__thumb--default {
