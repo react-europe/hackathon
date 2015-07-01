@@ -18,9 +18,10 @@ module.exports = React.createClass
 		{groups, sorting, filterString} = @props
 		groups = groups.results
 		if filterString then groups = _.filter groups, (group) ->
-			group.name.toLowerCase().indexOf(filterString) > -1 or
-			group.city.toLowerCase().indexOf(filterString) > -1 or
-			group.country.toLowerCase().indexOf(filterString) > -1
+			str = filterString.toLowerCase()
+			group.name.toLowerCase().indexOf(str) > -1 or
+			group.city.toLowerCase().indexOf(str) > -1 or
+			group.country.toLowerCase().indexOf(str) > -1
 		groups = _.map groups, (group) => _.assign {}, group, distance: @calculateDistance group
 		groups = _.sortByOrder groups, sorting, not (sorting in ['rating', 'members'])
 		div {},
