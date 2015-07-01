@@ -1,0 +1,32 @@
+@import "bootstrap";
+
+$spinkit-spinner-color: #fff;
+@import "../bower_components/spinkit/scss/spinners/2-double-bounce";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: "avenir next", helvetica, arial, sans-serif;
+  background-repeat: no-repeat;
+  background-image: url(/images/paris.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.lead {
+  font-weight: 400;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.small-hr {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  width: 25%;
+  opacity: 0.5;
+}
