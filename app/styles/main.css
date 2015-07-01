@@ -17,13 +17,20 @@ body {
   display: flex;
 }
 
-.result .thumb {
+.result .thumb img {
   width: 50px;
   height: 50px;
 }
 
 .result .details {
-  flex: 1
+  flex: 1;
+  padding-left: 5px;
+}
+
+.result .city, .result .country {
+  color: #666;
+  font-size: small;
+  padding: 0 3px 0 0;
 }
 
 .google-maps-chart {
