@@ -60,8 +60,8 @@ class Grid extends React.Component {
       });
     });
 
-    let gameover = this.props.gameover ? <div className="gameover">Game over!</div> : '';
-    let won = this.props.won ? <div className="won">You won!</div> : '';
+    let gameover = this.props.gameover ? <div className="gameover">GAME OVER!<br/><br/><br/><img src="../../assets/images/animation.gif" /></div> : '';
+    let won = this.props.won ? <div className="won">YOU WON!</div> : '';
     
     return (
       <div className="grid">
