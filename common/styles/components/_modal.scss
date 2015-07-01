@@ -32,6 +32,10 @@
 	@include media-query(xs) {
 		height: calc(100% - #{$base-spacing-unit});
 		max-height: none;
+		.ios-web-app & {
+			margin-top: 20px;
+			height: calc(100% - #{$base-spacing-unit} - 20px);
+		}
 	}
 }
 .modal__content {

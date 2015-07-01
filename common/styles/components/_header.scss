@@ -224,4 +224,7 @@ $header-border-width: 0px;
 		color: $header-font-color;
 	}
 	margin: $half-spacing-unit 0;
+	.ios-web-app & {
+		margin-top: $half-spacing-unit + 20px;
+	}
 }

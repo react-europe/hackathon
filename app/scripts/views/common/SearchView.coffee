@@ -27,20 +27,20 @@ module.exports = React.createClass
 	# componentDidMount: ->
 	# 	document.addEventListener 'click', @onBodyClicked
 
-	onBodyClicked: (e) ->
-		if @isMounted() and @state.open and not DomUtil.isDescendant @getDOMNode(), e.target.parentNode
-			@closeSearch()
-			# @actions.setFilter null
+	# onBodyClicked: (e) ->
+	# 	if @isMounted() and @state.open and not DomUtil.isDescendant @getDOMNode(), e.target.parentNode
+	# 		@closeSearch()
+	# 		# @actions.setFilter null
 
 
-	componentDidUpdate:  ->
-		if @state.open
-			document.addEventListener 'click', @onBodyClicked
-		else
-			document.removeEventListener 'click', @onBodyClicked
+	# componentDidUpdate:  ->
+	# 	if @state.open
+	# 		document.addEventListener 'click', @onBodyClicked
+	# 	else
+	# 		document.removeEventListener 'click', @onBodyClicked
 
-	componentWillUnmount: ->
-		document.removeEventListener 'click', @onBodyClicked
+	# componentWillUnmount: ->
+	# 	document.removeEventListener 'click', @onBodyClicked
 
 	render: ->
 		if @state.open
