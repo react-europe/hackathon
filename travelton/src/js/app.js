@@ -12,6 +12,9 @@ var views = {
   'home': require('./views/home'),
 
   // components
+  'component-offer': require('./views/component/offer'),
+  'component-offer-list': require('./views/component/offer-list'),
+
   'component-feedback': require('./views/component/feedback'),
 
   'component-headerbar': require('./views/component/bar-header'),
@@ -33,7 +36,7 @@ var views = {
   'transitions-target': require('./views/transitions-target'),
 
   // details view
-  'details': require('./views/details'),
+  'details': require('./views/offer-details'),
   'radio-list': require('./views/radio-list')
 };
 

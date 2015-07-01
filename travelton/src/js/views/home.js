@@ -6,6 +6,8 @@ var UI = require('touchstonejs').UI;
 
 var Timers = require('react-timers');
 
+var People = require('../../data/teaser');
+
 module.exports = React.createClass({
 	mixins: [Navigation, Timers()],
 
@@ -53,12 +55,34 @@ module.exports = React.createClass({
 	render: function () {
 		return (
 			<UI.View>
-				<UI.Headerbar type="default" label="TouchstoneJS" />
+				<UI.Headerbar type="default" label="Travelton Holidays - Always the Best Price" />
 				<UI.ViewContent grow scrollable>
+
+					<Link component="div" to="component-offer" viewTransition="show-from-right" className="teaser-product is-tappable">
+						<img className="teaser-product__img" src="http://images.hlx.com/hotel/medico/kgs92b/psalidi/palm-beach-startbild-1988832-2.jpg"/>
+					 	<div className="teaser-product__name">
+							The Aeolos Beach
+					 	</div>
+						<div className="teaser-product__location">
+							Lambi | Kos | Griechenland
+					 	</div>
+					</Link>
+
+					<div className="panel-header text-caps">Hot Offers</div>
+					<div className="panel">
+						<Link component="div" to="component-offer-list" viewTransition="show-from-right" className="list-item is-tappable">
+							<div className="item-inner">Hot Sommer in Paris</div>
+						</Link>
+						<Link component="div" to="component-offer-list" viewTransition="show-from-right" className="list-item is-tappable">
+							<div className="item-inner">Relaxing in Spain</div>
+						</Link>
+					</div>
+
 					<div className="panel-header text-caps">Bars</div>
 					<div className="panel">
 						<Link component="div" to="component-headerbar" viewTransition="show-from-right" className="list-item is-tappable">
 							<div className="item-inner">Header Bar</div>
+							<img src="http://images.hlx.com/hotel/medico/kgs92b/psalidi/palm-beach-startbild-1988832-2.jpg"/>
 						</Link>
 						<Link component="div" to="component-headerbar-search" viewTransition="show-from-right" className="list-item is-tappable">
 							<div className="item-inner">Header Bar Search</div>
