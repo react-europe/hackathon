@@ -38,7 +38,7 @@ let Mycomponent = React.createClass({
     if (photoUrl) {
       return (<img src={photoUrl} width="200" className="img-thumbnail"/>);
     } else {
-      return (<img src="http://lorempixel.com/300/300" width="200" className="img-thumbnail" />);
+      return (<img src={ "http://lorempixel.com/300/300/animals/p" + this.state.turn } width="200" className="img-thumbnail" />);
     }
   },
   checkAnswer(reactOrAngular) {
