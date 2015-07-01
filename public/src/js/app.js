@@ -55,7 +55,7 @@ var App = React.createClass({
         <div className="demo-wrapper">
           <img src="img/logo-mark.svg" alt="TouchstoneJS" className="demo-brand" width="80" height="80" />
           <h1>
-            React Europe Hackathon 
+            Out of your Bubble News Reader
             <small> Demo</small>
           </h1>
           
