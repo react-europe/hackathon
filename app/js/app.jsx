@@ -5,6 +5,7 @@ var Http = require("./http");
 
 var Search = require("./search");
 var Results = require("./results");
+var Members = require("./members");
 
 module.exports = React.createClass({
   displayName: 'App',
