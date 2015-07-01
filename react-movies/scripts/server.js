@@ -1,4 +1,4 @@
-import { writeFileSync } from 'fs';
+import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { resolve } from 'path';
 import webpack from 'webpack';
 import WebpackDevServer from 'webpack-dev-server';
@@ -27,6 +27,9 @@ let compiler = webpack(config);
 
 compiler.plugin('done', stats => {
   let html = createHTML(stats);
+  if (!existsSync(r`cordova/www`)) {
+    mkdirSync(r`cordova/www`);
+  }
   writeFileSync(r`cordova/www/index.html`, html);
 });
 
