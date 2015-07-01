@@ -1,0 +1,54 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main .head {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.search .keywords {
+  font-size: small;
+}
+
+.result {
+  display: flex;
+}
+
+.result .thumb img {
+  width: 50px;
+  height: 50px;
+}
+
+.result .details {
+  flex: 1;
+  padding-left: 5px;
+}
+
+.result .city, .result .country {
+  color: #666;
+  font-size: small;
+  padding: 0 3px 0 0;
+}
+
+.member {
+  clear: both;
+}
+
+.member .city {
+  float: left;
+}
+
+.member .total {
+  float: right;
+  font-weight: bold;
+}
+
+.google-maps-chart {
+  height: 651px;
+  width: 367px;
+  margin: 0;
+  padding: 0;
+}

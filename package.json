@@ -1,0 +1,36 @@
+{
+  "name": "ReactJS-Hackathon-App",
+  "version": "1.0.0",
+  "description": "ReactJS Hackathon App",
+  "author": "Nca-Team",
+  "license": "open-source",
+  "main": "app/js/index.jsx",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oliverlaz/hackathon"
+  },
+  "browserify": {
+    "transform": [
+      ["reactify", { "es6": true }]
+    ]
+  },
+  "dependencies": {
+    "babel-runtime": "^4.7.16",
+    "classnames": "^2.1.2",
+    "immutable": "^3.7.4",
+    "react": "^0.13.3",
+    "superagent": "^0.21.0"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.5",
+    "browserify": "^10.2.4",
+    "del": "~1.2.0",
+    "gulp": "^3.9",
+    "gulp-babel": "5.1.0",
+    "reactify": "^1.1.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "start": "gulp clean && gulp"
+  }
+}
