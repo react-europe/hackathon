@@ -1,0 +1,255 @@
+2015-07-01 08:09:11.292 React Europe Hackaton Boilerplate[86443:5791013] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/74F2BE3D-DD26-4F27-8350-BBF0583056D0/Library/Cookies/Cookies.binarycookies
+2015-07-01 08:09:11.509 React Europe Hackaton Boilerplate[86443:5791013] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 08:09:11.509 React Europe Hackaton Boilerplate[86443:5791013] Multi-tasking -> Device: YES, App: YES
+2015-07-01 08:09:11.522 React Europe Hackaton Boilerplate[86443:5791013] Unlimited access to network resources
+2015-07-01 08:09:11.529 React Europe Hackaton Boilerplate[86443:5791013] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-01 08:09:11.886 React Europe Hackaton Boilerplate[86443:5791013] [CDVTimer][statusbar] 95.207989ms
+2015-07-01 08:09:11.886 React Europe Hackaton Boilerplate[86443:5791013] [CDVTimer][TotalPluginStartup] 95.330000ms
+2015-07-01 08:09:12.137 React Europe Hackaton Boilerplate[86443:5791013] Resetting plugins due to page load.
+2015-07-01 08:09:14.386 React Europe Hackaton Boilerplate[86443:5791013] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/701DED15-4C3B-41D5-9B55-884C86A02577/React%20Europe%20Hackaton%20Boilerplate.app/www/index.html
+2015-07-01 09:46:52.804 React Europe Hackaton Boilerplate[87200:5811246] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/F26048EE-2B29-4257-B78B-AA5EA2E55A5E/Library/Cookies/Cookies.binarycookies
+2015-07-01 09:46:52.865 React Europe Hackaton Boilerplate[87200:5811246] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 09:46:52.866 React Europe Hackaton Boilerplate[87200:5811246] Multi-tasking -> Device: YES, App: YES
+2015-07-01 09:46:52.867 React Europe Hackaton Boilerplate[87200:5811246] Unlimited access to network resources
+2015-07-01 09:46:52.869 React Europe Hackaton Boilerplate[87200:5811246] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-01 09:46:52.936 React Europe Hackaton Boilerplate[87200:5811246] [CDVTimer][statusbar] 12.171984ms
+2015-07-01 09:46:52.936 React Europe Hackaton Boilerplate[87200:5811246] [CDVTimer][TotalPluginStartup] 12.283981ms
+2015-07-01 09:46:52.994 React Europe Hackaton Boilerplate[87200:5811246] Resetting plugins due to page load.
+2015-07-01 09:47:11.788 React Europe Hackaton Boilerplate[87200:5811258] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-01 09:47:11.803 React Europe Hackaton Boilerplate[87200:5811246] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/53D392E8-E68D-4C0C-84D6-A5DC48DD6820/React%20Europe%20Hackaton%20Boilerplate.app/www/index.html
+2015-07-01 14:15:34.902 React Europe Hackaton Boilerplate[87425:5901546] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/13DDC1CA-D726-4F5E-95D2-D7BE8887C6B3/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:15:34.964 React Europe Hackaton Boilerplate[87425:5901546] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:15:34.964 React Europe Hackaton Boilerplate[87425:5901546] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:15:34.965 React Europe Hackaton Boilerplate[87425:5901546] Unlimited access to network resources
+2015-07-01 14:15:34.967 React Europe Hackaton Boilerplate[87425:5901546] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-01 14:15:35.058 React Europe Hackaton Boilerplate[87425:5901546] [CDVTimer][statusbar] 32.931983ms
+2015-07-01 14:15:35.059 React Europe Hackaton Boilerplate[87425:5901546] [CDVTimer][TotalPluginStartup] 33.059001ms
+2015-07-01 14:15:35.127 React Europe Hackaton Boilerplate[87425:5901546] Resetting plugins due to page load.
+2015-07-01 14:15:35.230 React Europe Hackaton Boilerplate[87425:5901546] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/48EE44E4-C40B-48A6-83C8-EAEC433008F0/React%20Europe%20Hackaton%20Boilerplate.app/www/index.html
+2015-07-01 14:16:31.257 React Europe Hackaton Boilerplate[87480:5902336] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/903D0BCC-B26E-49FF-A629-5E3737E8C620/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:16:31.312 React Europe Hackaton Boilerplate[87480:5902336] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:16:31.313 React Europe Hackaton Boilerplate[87480:5902336] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:16:31.315 React Europe Hackaton Boilerplate[87480:5902336] Unlimited access to network resources
+2015-07-01 14:16:31.316 React Europe Hackaton Boilerplate[87480:5902336] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-01 14:16:31.379 React Europe Hackaton Boilerplate[87480:5902336] [CDVTimer][statusbar] 10.680020ms
+2015-07-01 14:16:31.379 React Europe Hackaton Boilerplate[87480:5902336] [CDVTimer][TotalPluginStartup] 10.797024ms
+2015-07-01 14:16:31.439 React Europe Hackaton Boilerplate[87480:5902336] Resetting plugins due to page load.
+2015-07-01 14:16:31.504 React Europe Hackaton Boilerplate[87480:5902336] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/2183BED8-2854-4ABF-A5C6-1B6390017AAF/React%20Europe%20Hackaton%20Boilerplate.app/www/index.html
+2015-07-01 14:16:45.931 React Europe Hackaton Boilerplate[87571:5903248] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/EA62C22B-3CF8-460A-816C-75336CFD46E6/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:16:46.012 React Europe Hackaton Boilerplate[87571:5903248] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:16:46.012 React Europe Hackaton Boilerplate[87571:5903248] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:16:46.013 React Europe Hackaton Boilerplate[87571:5903248] Unlimited access to network resources
+2015-07-01 14:16:46.015 React Europe Hackaton Boilerplate[87571:5903248] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-07-01 14:16:46.078 React Europe Hackaton Boilerplate[87571:5903248] [CDVTimer][statusbar] 11.171043ms
+2015-07-01 14:16:46.078 React Europe Hackaton Boilerplate[87571:5903248] [CDVTimer][TotalPluginStartup] 11.303008ms
+2015-07-01 14:16:46.137 React Europe Hackaton Boilerplate[87571:5903248] Resetting plugins due to page load.
+2015-07-01 14:16:46.204 React Europe Hackaton Boilerplate[87571:5903248] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/BA41C0D3-FD9D-497B-A30C-5B7350123490/React%20Europe%20Hackaton%20Boilerplate.app/www/index.html
+2015-07-01 14:19:24.574 Manga Reader[87648:5904483] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/7821CB6D-502B-4736-90EA-9E4AE2FB92CF/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:19:24.647 Manga Reader[87648:5904483] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:19:24.647 Manga Reader[87648:5904483] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:19:24.649 Manga Reader[87648:5904483] Unlimited access to network resources
+2015-07-01 14:19:24.652 Manga Reader[87648:5904483] Restoring old webstorage backup. From: '/Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/7821CB6D-502B-4736-90EA-9E4AE2FB92CF/Library/WebKit/LocalStorage/file__0.localstorage' To: '/Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/7821CB6D-502B-4736-90EA-9E4AE2FB92CF/Library/Caches/file__0.localstorage'.
+2015-07-01 14:19:24.656 Manga Reader[87648:5904483] Removing old webstorage backup: '/Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/7821CB6D-502B-4736-90EA-9E4AE2FB92CF/Library/WebKit/LocalStorage/file__0.localstorage'.
+2015-07-01 14:19:24.720 Manga Reader[87648:5904483] [CDVTimer][statusbar] 11.150002ms
+2015-07-01 14:19:24.720 Manga Reader[87648:5904483] [CDVTimer][TotalPluginStartup] 11.260986ms
+2015-07-01 14:19:24.776 Manga Reader[87648:5904483] Resetting plugins due to page load.
+2015-07-01 14:19:24.835 Manga Reader[87648:5904483] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/8210006F-182C-4DF9-AB42-C1CF754B4523/Manga%20Reader.app/www/index.html
+2015-07-01 14:22:11.422 Manga Reader[87714:5906213] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/1ABE700B-0C85-415D-AB6B-5B3E1E99F462/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:22:11.482 Manga Reader[87714:5906213] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:22:11.482 Manga Reader[87714:5906213] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:22:11.483 Manga Reader[87714:5906213] Unlimited access to network resources
+2015-07-01 14:22:11.552 Manga Reader[87714:5906213] [CDVTimer][statusbar] 12.706995ms
+2015-07-01 14:22:11.552 Manga Reader[87714:5906213] [CDVTimer][TotalPluginStartup] 12.816012ms
+2015-07-01 14:22:11.607 Manga Reader[87714:5906213] Resetting plugins due to page load.
+2015-07-01 14:22:13.232 Manga Reader[87714:5906213] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/F5409BAE-09AB-4BF7-9D6F-2865E3D7641A/Manga%20Reader.app/www/index.html
+2015-07-01 14:22:40.604 Manga Reader[87761:5906750] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/276E1FE6-6F39-4B4A-9FCF-34B301A51063/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:22:40.650 Manga Reader[87761:5906750] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:22:40.650 Manga Reader[87761:5906750] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:22:40.651 Manga Reader[87761:5906750] Unlimited access to network resources
+2015-07-01 14:22:40.717 Manga Reader[87761:5906750] [CDVTimer][statusbar] 10.568023ms
+2015-07-01 14:22:40.717 Manga Reader[87761:5906750] [CDVTimer][TotalPluginStartup] 10.690033ms
+2015-07-01 14:22:40.791 Manga Reader[87761:5906750] Resetting plugins due to page load.
+2015-07-01 14:22:43.673 Manga Reader[87761:5906750] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/4B97D230-4771-4719-BE84-04A785FF6B2A/Manga%20Reader.app/www/index.html
+2015-07-01 14:23:39.016 Manga Reader[87809:5907458] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/A425067B-F02E-43F8-952B-70E4BE11A36D/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:23:39.071 Manga Reader[87809:5907458] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:23:39.071 Manga Reader[87809:5907458] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:23:39.072 Manga Reader[87809:5907458] Unlimited access to network resources
+2015-07-01 14:23:39.136 Manga Reader[87809:5907458] [CDVTimer][statusbar] 10.493994ms
+2015-07-01 14:23:39.136 Manga Reader[87809:5907458] [CDVTimer][TotalPluginStartup] 10.609984ms
+2015-07-01 14:23:39.194 Manga Reader[87809:5907458] Resetting plugins due to page load.
+2015-07-01 14:24:09.822 Manga Reader[87809:5907478] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-01 14:24:09.906 Manga Reader[87809:5907458] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/70BC52E0-B469-4A99-93ED-4807699A91BA/Manga%20Reader.app/www/index.html
+2015-07-01 14:25:04.241 Manga Reader[87859:5908292] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/7050E4CA-54E4-4529-9C4E-51C20E2ADFBE/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:25:04.316 Manga Reader[87859:5908292] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:25:04.316 Manga Reader[87859:5908292] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:25:04.317 Manga Reader[87859:5908292] Unlimited access to network resources
+2015-07-01 14:25:04.384 Manga Reader[87859:5908292] [CDVTimer][statusbar] 10.693967ms
+2015-07-01 14:25:04.384 Manga Reader[87859:5908292] [CDVTimer][TotalPluginStartup] 10.811031ms
+2015-07-01 14:25:04.434 Manga Reader[87859:5908292] Resetting plugins due to page load.
+2015-07-01 14:25:23.696 Manga Reader[87859:5908305] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
+2015-07-01 14:25:23.778 Manga Reader[87859:5908292] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/8A5DCCC1-0868-4232-961C-B57344D6A00E/Manga%20Reader.app/www/index.html
+2015-07-01 14:26:13.809 Manga Reader[87909:5909133] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/D898A966-6C19-49D0-923D-1E90C8FD12E2/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:26:13.862 Manga Reader[87909:5909133] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:26:13.862 Manga Reader[87909:5909133] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:26:13.863 Manga Reader[87909:5909133] Unlimited access to network resources
+2015-07-01 14:26:13.928 Manga Reader[87909:5909133] [CDVTimer][statusbar] 10.504961ms
+2015-07-01 14:26:13.928 Manga Reader[87909:5909133] [CDVTimer][TotalPluginStartup] 10.612011ms
+2015-07-01 14:26:13.996 Manga Reader[87909:5909133] Resetting plugins due to page load.
+2015-07-01 14:26:14.085 Manga Reader[87909:5909133] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/161B316E-D8A3-473A-B2E6-866B1E5EF161/Manga%20Reader.app/www/index.html
+2015-07-01 14:26:35.961 Manga Reader[87955:5909564] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/62AABBD5-CCC8-4071-93CE-3454878F72CE/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:26:36.034 Manga Reader[87955:5909564] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:26:36.034 Manga Reader[87955:5909564] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:26:36.035 Manga Reader[87955:5909564] Unlimited access to network resources
+2015-07-01 14:26:36.101 Manga Reader[87955:5909564] [CDVTimer][statusbar] 11.059999ms
+2015-07-01 14:26:36.101 Manga Reader[87955:5909564] [CDVTimer][TotalPluginStartup] 11.180997ms
+2015-07-01 14:26:36.164 Manga Reader[87955:5909564] Resetting plugins due to page load.
+2015-07-01 14:26:36.245 Manga Reader[87955:5909564] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/4031DD64-0DA6-4A38-A32B-41DA3691EFAA/Manga%20Reader.app/www/index.html
+2015-07-01 14:27:01.379 Manga Reader[88001:5910087] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/18B38D15-62F5-47C9-BEEE-505E0DB67D4C/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:27:01.433 Manga Reader[88001:5910087] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:27:01.433 Manga Reader[88001:5910087] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:27:01.434 Manga Reader[88001:5910087] Unlimited access to network resources
+2015-07-01 14:27:01.499 Manga Reader[88001:5910087] [CDVTimer][statusbar] 10.249972ms
+2015-07-01 14:27:01.499 Manga Reader[88001:5910087] [CDVTimer][TotalPluginStartup] 10.361016ms
+2015-07-01 14:27:01.560 Manga Reader[88001:5910087] Resetting plugins due to page load.
+2015-07-01 14:27:01.638 Manga Reader[88001:5910087] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/7C3FF79C-08E0-46B4-AA7E-A533C685714D/Manga%20Reader.app/www/index.html
+2015-07-01 14:27:21.503 Manga Reader[88046:5910512] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/654B9FB9-C73C-4BFE-BAAE-114AAE036B1F/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:27:21.555 Manga Reader[88046:5910512] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:27:21.555 Manga Reader[88046:5910512] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:27:21.556 Manga Reader[88046:5910512] Unlimited access to network resources
+2015-07-01 14:27:21.622 Manga Reader[88046:5910512] [CDVTimer][statusbar] 10.580003ms
+2015-07-01 14:27:21.622 Manga Reader[88046:5910512] [CDVTimer][TotalPluginStartup] 10.690033ms
+2015-07-01 14:27:21.683 Manga Reader[88046:5910512] Resetting plugins due to page load.
+2015-07-01 14:27:23.243 Manga Reader[88046:5910512] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/CCE25349-C0B1-4A67-B269-1B3BE7F2EF71/Manga%20Reader.app/www/index.html
+2015-07-01 14:27:57.835 Manga Reader[88092:5911005] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/B7C989D4-DA06-4699-AA93-EC5D0D451C41/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:27:57.885 Manga Reader[88092:5911005] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:27:57.885 Manga Reader[88092:5911005] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:27:57.886 Manga Reader[88092:5911005] Unlimited access to network resources
+2015-07-01 14:27:57.952 Manga Reader[88092:5911005] [CDVTimer][statusbar] 10.300040ms
+2015-07-01 14:27:57.952 Manga Reader[88092:5911005] [CDVTimer][TotalPluginStartup] 10.425031ms
+2015-07-01 14:27:58.014 Manga Reader[88092:5911005] Resetting plugins due to page load.
+2015-07-01 14:27:58.096 Manga Reader[88092:5911005] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/03DBBA7D-DD23-4C3B-94CA-A1CA4A8F0E0C/Manga%20Reader.app/www/index.html
+2015-07-01 14:28:23.652 Manga Reader[88138:5911474] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/A3F5D12B-28BD-41F5-8090-4AF80F28C362/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:28:23.706 Manga Reader[88138:5911474] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:28:23.706 Manga Reader[88138:5911474] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:28:23.707 Manga Reader[88138:5911474] Unlimited access to network resources
+2015-07-01 14:28:23.772 Manga Reader[88138:5911474] [CDVTimer][statusbar] 10.330021ms
+2015-07-01 14:28:23.772 Manga Reader[88138:5911474] [CDVTimer][TotalPluginStartup] 10.435998ms
+2015-07-01 14:28:23.831 Manga Reader[88138:5911474] Resetting plugins due to page load.
+2015-07-01 14:28:26.306 Manga Reader[88138:5911474] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/B5654E79-0B42-4866-B9E7-6E43C9AD2645/Manga%20Reader.app/www/index.html
+2015-07-01 14:28:49.606 Manga Reader[88184:5911896] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/529FE6FF-EE9C-4F1C-9F1E-8C10A9693077/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:28:49.654 Manga Reader[88184:5911896] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:28:49.654 Manga Reader[88184:5911896] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:28:49.655 Manga Reader[88184:5911896] Unlimited access to network resources
+2015-07-01 14:28:49.720 Manga Reader[88184:5911896] [CDVTimer][statusbar] 10.545969ms
+2015-07-01 14:28:49.720 Manga Reader[88184:5911896] [CDVTimer][TotalPluginStartup] 10.665953ms
+2015-07-01 14:28:49.782 Manga Reader[88184:5911896] Resetting plugins due to page load.
+2015-07-01 14:28:49.861 Manga Reader[88184:5911896] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/3012AC2A-0DCF-4F81-8223-943A520F67CE/Manga%20Reader.app/www/index.html
+2015-07-01 14:29:03.482 Manga Reader[88229:5912273] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/CDCDE993-C1E7-4ACA-BE6B-C1E0FFB1FAE6/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:29:03.536 Manga Reader[88229:5912273] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:29:03.536 Manga Reader[88229:5912273] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:29:03.537 Manga Reader[88229:5912273] Unlimited access to network resources
+2015-07-01 14:29:03.600 Manga Reader[88229:5912273] [CDVTimer][statusbar] 10.170043ms
+2015-07-01 14:29:03.601 Manga Reader[88229:5912273] [CDVTimer][TotalPluginStartup] 10.278046ms
+2015-07-01 14:29:03.661 Manga Reader[88229:5912273] Resetting plugins due to page load.
+2015-07-01 14:29:03.740 Manga Reader[88229:5912273] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/9F499582-C5B8-4EAF-AE7D-62B755D834C8/Manga%20Reader.app/www/index.html
+2015-07-01 14:29:40.808 Manga Reader[88275:5912759] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/538A5759-2423-4557-94B3-45C0F47BFAE3/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:29:40.856 Manga Reader[88275:5912759] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:29:40.856 Manga Reader[88275:5912759] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:29:40.857 Manga Reader[88275:5912759] Unlimited access to network resources
+2015-07-01 14:29:40.925 Manga Reader[88275:5912759] [CDVTimer][statusbar] 10.100007ms
+2015-07-01 14:29:40.925 Manga Reader[88275:5912759] [CDVTimer][TotalPluginStartup] 10.206997ms
+2015-07-01 14:29:40.988 Manga Reader[88275:5912759] Resetting plugins due to page load.
+2015-07-01 14:29:47.668 Manga Reader[88275:5912759] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/F4FE8CEE-DCFA-4364-A512-19BAFA2E435C/Manga%20Reader.app/www/index.html
+2015-07-01 14:31:37.332 Manga Reader[88328:5913711] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/BD0D51A0-E882-48E1-AC67-4D7907102793/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:31:37.391 Manga Reader[88328:5913711] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:31:37.391 Manga Reader[88328:5913711] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:31:37.392 Manga Reader[88328:5913711] Unlimited access to network resources
+2015-07-01 14:31:37.458 Manga Reader[88328:5913711] [CDVTimer][statusbar] 11.173010ms
+2015-07-01 14:31:37.458 Manga Reader[88328:5913711] [CDVTimer][TotalPluginStartup] 11.285961ms
+2015-07-01 14:31:37.522 Manga Reader[88328:5913711] Resetting plugins due to page load.
+2015-07-01 14:31:39.841 Manga Reader[88328:5913711] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/3AD62CC4-5CA5-4171-9C1C-17B63C6BA5F2/Manga%20Reader.app/www/index.html
+2015-07-01 14:31:53.231 Manga Reader[88373:5914088] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/23941D0B-E086-4B66-A41C-7177A2DB7B47/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:31:53.287 Manga Reader[88373:5914088] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:31:53.288 Manga Reader[88373:5914088] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:31:53.289 Manga Reader[88373:5914088] Unlimited access to network resources
+2015-07-01 14:31:53.355 Manga Reader[88373:5914088] [CDVTimer][statusbar] 10.342002ms
+2015-07-01 14:31:53.355 Manga Reader[88373:5914088] [CDVTimer][TotalPluginStartup] 10.464013ms
+2015-07-01 14:31:53.420 Manga Reader[88373:5914088] Resetting plugins due to page load.
+2015-07-01 14:31:54.990 Manga Reader[88373:5914088] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/45D0A2B6-774A-4D15-8BC5-4F4292436FB4/Manga%20Reader.app/www/index.html
+2015-07-01 14:32:05.476 Manga Reader[88418:5914460] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Data/Application/3FF6B9CC-2855-4A7B-8EA6-E80AC00C57AD/Library/Cookies/Cookies.binarycookies
+2015-07-01 14:32:05.535 Manga Reader[88418:5914460] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:32:05.535 Manga Reader[88418:5914460] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:32:05.536 Manga Reader[88418:5914460] Unlimited access to network resources
+2015-07-01 14:32:05.601 Manga Reader[88418:5914460] [CDVTimer][statusbar] 10.805964ms
+2015-07-01 14:32:05.601 Manga Reader[88418:5914460] [CDVTimer][TotalPluginStartup] 10.917962ms
+2015-07-01 14:32:05.652 Manga Reader[88418:5914460] Resetting plugins due to page load.
+2015-07-01 14:32:09.260 Manga Reader[88418:5914460] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/B9511F43-FCA4-4ED3-9B0F-28C7354343FE/Manga%20Reader.app/www/index.html
+2015-07-01 14:33:02.174 Manga Reader[88466:5915127] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:33:02.174 Manga Reader[88466:5915127] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:33:02.175 Manga Reader[88466:5915127] Unlimited access to network resources
+2015-07-01 14:33:02.240 Manga Reader[88466:5915127] [CDVTimer][statusbar] 10.556996ms
+2015-07-01 14:33:02.240 Manga Reader[88466:5915127] [CDVTimer][TotalPluginStartup] 10.666013ms
+2015-07-01 14:33:02.308 Manga Reader[88466:5915127] Resetting plugins due to page load.
+2015-07-01 14:33:05.344 Manga Reader[88466:5915127] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/9D2EB40A-173A-4080-A932-D3CC7C7722F5/Manga%20Reader.app/www/index.html
+2015-07-01 14:33:15.668 Manga Reader[88511:5915515] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:33:15.669 Manga Reader[88511:5915515] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:33:15.670 Manga Reader[88511:5915515] Unlimited access to network resources
+2015-07-01 14:33:15.734 Manga Reader[88511:5915515] [CDVTimer][statusbar] 10.672033ms
+2015-07-01 14:33:15.734 Manga Reader[88511:5915515] [CDVTimer][TotalPluginStartup] 10.789037ms
+2015-07-01 14:33:15.786 Manga Reader[88511:5915515] Resetting plugins due to page load.
+2015-07-01 14:33:18.487 Manga Reader[88511:5915515] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/48E8281B-BF52-4879-8FE8-FC148FD0B50B/Manga%20Reader.app/www/index.html
+2015-07-01 14:34:51.671 Manga Reader[88572:5917151] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:34:51.671 Manga Reader[88572:5917151] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:34:51.672 Manga Reader[88572:5917151] Unlimited access to network resources
+2015-07-01 14:34:51.739 Manga Reader[88572:5917151] [CDVTimer][statusbar] 11.467993ms
+2015-07-01 14:34:51.739 Manga Reader[88572:5917151] [CDVTimer][TotalPluginStartup] 11.582017ms
+2015-07-01 14:34:51.789 Manga Reader[88572:5917151] Resetting plugins due to page load.
+2015-07-01 14:34:52.014 Manga Reader[88572:5917151] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/DA9BC4E6-DA61-4AE6-8116-2E3CC178588E/Manga%20Reader.app/www/index.html
+2015-07-01 14:43:29.829 Manga Reader[88780:5922964] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:43:29.829 Manga Reader[88780:5922964] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:43:29.831 Manga Reader[88780:5922964] Unlimited access to network resources
+2015-07-01 14:43:29.916 Manga Reader[88780:5922964] [CDVTimer][statusbar] 28.246999ms
+2015-07-01 14:43:29.917 Manga Reader[88780:5922964] [CDVTimer][TotalPluginStartup] 28.370023ms
+2015-07-01 14:43:29.972 Manga Reader[88780:5922964] Resetting plugins due to page load.
+2015-07-01 14:43:30.135 Manga Reader[88780:5922964] Finished load of: file:///Users/fdecampredon/Library/Developer/CoreSimulator/Devices/9FF044AA-8439-460C-93A2-F366BA112AE3/data/Containers/Bundle/Application/7EA14498-07A1-4103-9D73-B33F08D0D202/Manga%20Reader.app/www/index.html
+2015-07-01 14:43:42.271 Manga Reader[88873:5923803] Apache Cordova native platform version 3.8.0 is starting.
+2015-07-01 14:43:42.272 Manga Reader[88873:5923803] Multi-tasking -> Device: YES, App: YES
+2015-07-01 14:43:42.273 Manga Reader[88873:5923803] Unlimited access to network resources
+2015-07-01 14:43:42.338 Manga Reader[88873:5923803] [CDVTimer][statusbar] 10.329008ms
+2015-07-01 14:43:42.338 Manga Reader[88873:5923803] [CDVTimer][TotalPluginStartup] 10.441959ms
+2015-07-01 14:43:42.400 Manga Reader[88873:5923803] Resetting plugins due to page load.

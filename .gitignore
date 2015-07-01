@@ -1,0 +1,6 @@
+cordova/www/*
+!cordova/www/.dummy
+node_modules/
+.DS_Store
+npm-debug.log
+.brackets.json
