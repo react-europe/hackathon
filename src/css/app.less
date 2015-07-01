@@ -1,0 +1,141 @@
+//
+// App
+// ==============================
+
+@import "ionicons/ionicons.less";
+@import "../../node_modules/touchstonejs/less/touchstone.less";
+@import "views/passcode.less";
+@import "demo.less";
+
+
+@re-blue: rgb(70, 86, 160);
+@re-yellow: #FDFD00;
+@re-light-blue: #3498DB;
+@re-orange: #EC971F;
+@re-grey: #F5F5F5;
+
+.Range-input {
+    .display-flex();
+//    padding: 12px 0;
+    min-height: 44px;
+
+    vertical-align: middle;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-justifiy-content: center;
+    justify-content: center;
+
+    &::before {
+        font-size: @ionicons-size-large;
+        padding: 0 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    span::before {
+        font-size: @ionicons-size-large;
+        padding: 0 5px;
+    }
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    // -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+/* flip the pane when hovered */
+// .flip-container:hover .flipper, .flip-container.hover .flipper {
+//     -webkit-transform: rotateY(180deg) translateY(-50%);
+//     transform: rotateY(180deg) translateY(-50%);
+// }
+
+.flip-container.flipped .flipper, .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg) translateY(-50%);
+    transform: rotateY(180deg) translateY(-50%);
+}
+
+// .flip-container, .front, .back {
+//     width: 320px;
+//     height: 480px;
+// }
+
+/* flip speed goes here */
+.flipper {
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+    // position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* same item-avatar but without he grey background or borderRadius setting */
+.item-avatar2 {
+    .inline-align();
+    .square(@item-avatar-size);
+    .translateY(-50%);
+    color: white;
+    font-size: @ionicons-size-large;
+    line-height: @item-avatar-size;
+    left: @padding-base-horizontal;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+
+    > img {
+        .square(100%);
+        border-radius: 50%;
+        display: block;
+        height: auto;
+    }
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    -webkit-transform: rotateY(0deg);
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+// TODO remove old inline background component
+.rebg {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-image: url(../img/reacteurope.png);
+        opacity: 0.6;
+        background-position: 50% 50%;
+        //background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
