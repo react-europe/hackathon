@@ -3,11 +3,9 @@ Router = require 'react-router'
 
 Route = React.createFactory Router.Route
 DefaultRoute = React.createFactory Router.DefaultRoute
-NotFoundRoute = React.createFactory Router.NotFoundRoute
 
 AppView = require './AppView'
 AuthenticatedView = require '../views/pages/AuthenticatedView'
-LoginView = require '../views/pages/LoginView'
 HomeView = require '../views/pages/HomeView'
 Application = require './Application'
 
@@ -17,10 +15,6 @@ routes = ->
 			path: Application.state.config.baseRoute
 			handler: AppView
 		,
-			Route
-				name: 'login',
-				handler: LoginView
-				key: 'LoginView'
 			Route
 				path: Application.state.config.baseRoute
 				handler: AuthenticatedView
