@@ -16,3 +16,18 @@ Once the theme is posted, you will need to:
 - you will still be able to update your pull request until July 1st 4pm UTC just like people attending the hackathon at Mozilla office.
 **REQUIRED: In your pull request title, make to specify "challenge RedBadger" or "challenge Thinkmill" at the start of your PR's title. What could help: screenshots and a screencast in your PR, they can be posted as commets after the deadline**.
 - The two winners will get 5 minutes each to present their app at the start of the lightning session on the 2nd of July at 6pm.
+
+# react-movies
+
+To build and run the project:
+
+```sh
+npm install
+npm start # Starts the development server on port 3000
+cd cordova
+cordova platforms add ios
+cordova run ios
+# Then go to localhost:3000/cordova/www
+```
+
+Run `npm run build` instead of `npm start` to build a production version of the app to run on a physical device.

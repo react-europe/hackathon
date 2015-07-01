@@ -1,0 +1,56 @@
+.MovieListItem {
+  display: flex;
+  cursor: pointer;
+}
+
+.MovieListItem--active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.MovieListItem-poster {
+  margin: .4em 0;
+  flex-shrink: 0;
+  width: 185px / 2;
+  height: 278px / 2;
+  background-size: 100%;
+  background-position: center center;
+  background-color: #DDD;
+  position: relative;
+}
+
+.MovieListItem-details {
+  flex-grow: 1;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.MovieListItem-title {
+  font-size: 1.1em;
+  margin-bottom: 0.4em;
+  flex-shrink: 0;
+}
+
+.MovieList {
+  align-self: stretch;
+}
+
+.MovieListItem-availabilityIndicator {
+  position: absolute;
+  right: .1em;
+  bottom: .1em;
+  font-size: 2em;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.MovieListItem-availabilityOk {
+  color: #01FF70;
+}
+
+.MovieListItem-availabilityNotOk {
+  color: #FFDC00;
+}
+
+.MovieListItem-availabilityError {
+  color: #FF4136;
+}

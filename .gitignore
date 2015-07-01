@@ -1,0 +1,7 @@
+react-movies/cordova/www/*
+react-movies/cordova/platforms/ios/*
+
+react-movies/node_modules/
+
+.DS_Store
+react-movies/npm-debug.log

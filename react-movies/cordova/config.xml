@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.traqr.react" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>React Movies</name>
+    <description>
+        Track recently released movies
+    </description>
+    <author email="alexandre.kirszenberg@gmail.com" href="https://github.com/Morhaus">
+        Alexandre Kirszenberg
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="DisallowOverscroll" value="true"/>
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+</widget>
