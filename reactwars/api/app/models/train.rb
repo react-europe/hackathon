@@ -1,0 +1,2 @@
+class Train < Action
+end
