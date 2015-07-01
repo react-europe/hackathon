@@ -2,9 +2,36 @@
 
 var React = require("react");
 
-module.exports = React.createClass({
+var Result = React.createClass({
 
-  displayName: "Results",
+  displayName: "Result",
+
+  propTypes: {
+    data: React.PropTypes.object.isRequired
+  },
+
+  render() {
+    var data = this.props.data;
+    return (
+      <div className="result">
+        <div className="thumb">
+          <img src={data.getIn(['photos', 0, 'thumb_link'])}/>
+        </div>
+        <div className="details">
+          <div className="name">{data.get("name")}</div>
+          <div className="location">
+            <span className="city">{data.get("city")}</span>
+            <span className="country">{data.get("country")}</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+});
+
+var ResultList = React.createClass({
+
+  displayName: "ResultList",
 
   propTypes: {
     data: React.PropTypes.object.isRequired
@@ -13,22 +40,9 @@ module.exports = React.createClass({
 
   render() {
     if (this.props.data) {
-      var results = this.props.data.map((result, index) => {
-        return (
-          <div className="result" key={index}>
-            <div className="thumb">
-              <img src={result.getIn(['photos', 0, 'thumb_link'])} />
-            </div>
-            <div className="details">
-              <div className="name">{result.get("name")}</div>
-              <div className="location">
-                <span className="city">{result.get("city")}</span>
-                <span className="country">{result.get("country")}</span>
-              </div>
-            </div>
-          </div>
-        );
-      });
+      var results = this.props.data.map(
+        (result, index) => <Result data={result} key={index} />
+      );
     }
 
     return (
@@ -38,3 +52,5 @@ module.exports = React.createClass({
     );
   }
 });
+
+module.exports = ResultList;
