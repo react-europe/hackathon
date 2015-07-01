@@ -40,7 +40,24 @@ export default class DetailsView {
             style={{ backgroundImage: `url(${getImageUrl(movie.poster_path, 1280)})` }}
           >
             <div className="DetailsView-details">
-              <h3>{movie.title}</h3>
+              <div className="DetailsView-title">
+                <h3>{movie.title}</h3>
+                <div className="DetailsView-availabilityIndicator">
+                  {
+                    movie.isLoadingDVDRelease ?
+                      <div className="MovieListItem-availabilityLoading loading-button-icon" /> :
+                    movie.hasDVDReleaseError ?
+                      <div className="MovieListItem-availabilityError ion-ios-close" /> :
+                    movie.dvdRelease ?
+                      (
+                        new Date(movie.dvdRelease) < new Date() ?
+                          <div className="MovieListItem-availabilityOk ion-ios-checkmark" /> :
+                          <div className="MovieListItem-availabilityNotOk ion-ios-clock" />
+                      ) :
+                      null
+                  }
+                </div>
+              </div>
               <p>{movie.overview}</p>
               <div className="DetailsView-releases">
                 <div className="DetailsView-theaterRelease">

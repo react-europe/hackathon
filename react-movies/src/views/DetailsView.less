@@ -19,10 +19,34 @@
   line-height: 1.1em;
 
   h3 {
-    margin-top: 0;
+    margin: 0;
   }
 }
 
 .DetailsView-releases {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.DetailsView-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.DetailsView-availabilityIndicator {
+  font-size: 1.5em;
+  margin-left: 10px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.DetailsView-availabilityOk {
+  color: #01FF70;
+}
+
+.DetailsView-availabilityNotOk {
+  color: #FFDC00;
+}
+
+.DetailsView-availabilityError {
+  color: #FF4136;
 }
