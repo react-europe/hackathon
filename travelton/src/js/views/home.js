@@ -6,7 +6,7 @@ var UI = require('touchstonejs').UI;
 
 var Timers = require('react-timers');
 
-var People = require('../../data/teaser');
+var People = require('../../data/people');
 
 module.exports = React.createClass({
 	mixins: [Navigation, Timers()],
@@ -58,7 +58,7 @@ module.exports = React.createClass({
 				<UI.Headerbar type="default" label="Travelton Holidays - Always the Best Price" />
 				<UI.ViewContent grow scrollable>
 
-					<Link component="div" to="component-offer" viewTransition="show-from-right" className="teaser-product is-tappable">
+					<Link component="div" to="details" viewTransition="show-from-right" className="teaser-product is-tappable">
 						<img className="teaser-product__img" src="http://images.hlx.com/hotel/medico/kgs92b/psalidi/palm-beach-startbild-1988832-2.jpg"/>
 					 	<div className="teaser-product__name">
 							The Aeolos Beach
@@ -67,6 +67,7 @@ module.exports = React.createClass({
 							Lambi | Kos | Griechenland
 					 	</div>
 					</Link>
+
 
 					<div className="panel-header text-caps">Hot Offers</div>
 					<div className="panel">
