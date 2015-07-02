@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meetup_data: 
+  meetup_token: 
+  meetup_member_id: 1
+
+two:
+  meetup_data: 
+  meetup_token: 
+  meetup_member_id: 1

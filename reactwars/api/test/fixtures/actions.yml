@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  initiator_id: 1
+  recipient_id: 1
+  code: 1
+  meta: 
+
+two:
+  type: 
+  initiator_id: 1
+  recipient_id: 1
+  code: 1
+  meta: 

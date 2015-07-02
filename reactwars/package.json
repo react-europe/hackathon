@@ -1,0 +1,19 @@
+{
+  "name": "reactwars",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react-native": "^0.6.0",
+    "react-native-device": "wootwoot1234/react-native-device#patch-1",
+    "shitty-qs": "^1.0.1",
+    "immutable": "^3.6.2",
+    "signals": "^1.0.0",
+    "mirrorkey": "^1.2.0",
+    "flux": "^2.0.1",
+    "underscore": "^1.7.0",
+    "bluebird": "^2.9.30"
+  }
+}
