@@ -1,0 +1,35 @@
+.score {
+  width: 320px;
+  margin: 0 auto;
+  
+  h1 {
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .locationdate {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 80%;
+    font-style: italic;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+  
+  .fadeout {
+    background: linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 90%);
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+
