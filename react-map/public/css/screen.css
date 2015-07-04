@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto';
+  margin: 5px;
+  font-weight: 400; }
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  border-bottom: solid 1px #e8eaf6;
+  -webkit-font-smoothing: antialiased; }
+
+.selected {
+  -ms-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2); }
+
+#logo {
+  width: 150px; }
