@@ -1,0 +1,23 @@
+{
+  "name": "reactup",
+  "version": "0.0.1",
+  "description": "ReactJS Meetup thingie",
+  "keywords": [
+    "react",
+    "reactjs",
+    "meetup"
+  ],
+  "author": "Lim Chee Aun <cheeaun@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^5.6.15",
+    "mapbox-gl": "^0.8.1",
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.0"
+  },
+  "scripts": {
+    "start": "http-server"
+  }
+}

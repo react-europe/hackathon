@@ -1,0 +1,4 @@
+var CONFIG = {
+  MEETUP_CLIENT_ID: 'uvr4c8a295cg1qn9p5umebrgl8',
+  MAPBOX_ACCESS_TOKEN: 'pk.eyJ1IjoiY2hlZWF1biIsImEiOiI4ODQ3MDY0Nzg2NzlmMjYzNTcyNDkyMzUzMDFhOGE0ZCJ9.ufujmBsohkWK-qrq1WB25w'
+};
